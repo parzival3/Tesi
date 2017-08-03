@@ -1,0 +1,5 @@
+# Esclusione dei file *.aux
+
+*.aux
+*.out
+
