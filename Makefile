@@ -1,5 +1,5 @@
 TEX = Tesi.tex
-LATEX = pdflatex
+LATEX = pdflatex -syntex=1 --shell-escape
 
 OUT = Tesi.pdf
 
@@ -11,7 +11,7 @@ compile: $(TEX)
 view: compile 
 	evince $(OUT)
 
-.PHONY: view clean
+.PHONY: compile view clean
 
 clean: 
 	rm -f *.aux

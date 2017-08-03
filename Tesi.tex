@@ -114,6 +114,7 @@
        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[utf8x]{inputenc}
 %\usepackage{latexsym}
 
 
@@ -176,6 +177,11 @@
 
 %\usepackage{makeidx}
 \usepackage{tocbibind}
+
+\input{Style/Abstract}
+\usepackage{textcomp}
+\newcommand{\tm}{\textsuperscript{\small\texttrademark}}
+
 %\makeindex
 
 % Ridefiniamo la riga di testa delle pagine:
@@ -195,7 +201,7 @@
                %    da usare nell'intestazione      %
                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \titolo{ Lora and IoT ,} 
+  \titolo{ Lora and IoT } 
  \laureando{ Enrico Tolotto}
   \annoaccademico{ 2016/2017.}
 % \facolta{Ingegneria} % (default)
@@ -204,7 +210,7 @@
   \corsodilaurea{ Ingegneria elettronica}
  \dipartimento{ (DPIA) Dipartimento Politecnico di Ingegneria e Architettura}
   \relatore[Prof.]{ Antonio Abramo}
- \correlatore[Prof.]{Talaltro dei Tali}
+ \correlatore[Prof.]{}
 %  \dedica{Ai miei genitori\\
 %    per non avermi tagliato i viveri} % (facoltativo)
 
@@ -249,20 +255,21 @@
   %   vari capitoli, che vengono caricati con \include      %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\include{sommario}
+\include{Tex_Files/Abstract/Sommario}
 
 \tableofcontents
 \listoffigures
-\include{introduzione}
+
+%\include{Tex_Files/Preface/Introduzione}
 
 \mainmatter
-\include{capitolo1}
 
-\include{capitolo2}
+%\include{Tex_Files/Chapters/Capitolo1}
 
-\include{conclusioni}
+%\include{Tex_Files/Chapters/Capitolo2}
 
-\include{ringraziamenti}
+%\include{Tex_Files/Chapters/Conclusioni}
+
 
 %\appendix
   
