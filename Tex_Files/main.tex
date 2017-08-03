@@ -1,0 +1,284 @@
+
+    %                     %            %
+    %                                  %
+    %                                  %
+   %%%    %%%%   %%%%%   %%           %%%    %%%%  %    %
+    %    %    % %         %            %    %    %  %  %
+    %    %%%%%%  %%%%     %            %    %%%%%%   %%
+    %    %           %    %            %    %        %%
+    %    %           %    %     %%     %    %       %  %
+     %%   %%%%% %%%%%    %%%    %%      %%   %%%%% %    %
+
+
+
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+         %                                      %
+         %  "Scheletro" di una tesi di laurea   %
+         %           (in Ingegneria)            %
+         %      dell'Universita` di Udine       %
+         %                                      %
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %    Autore: Gianluca Gorni      %
+            % Modificato (per ingegneria) da:%
+            %       Nicola Driutti           %
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   %%%%%  Ultima modifica:  8 febbraio 2006    %%%%%
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+                                 %            %%
+                                 %             %
+   %%%%  % %%   %%%   %%%% %%%%  %%%%   %%%    %    %%%
+   %   % %%  % %   % %   % % % % %   % %   %   %   %   %
+   %   % %     %%%%% %   % % % % %   % %   %   %   %   %
+   %   % %     %     %  %% % % % %   % %   %   %   %   %
+   %%%%  %      %%%%  %% % % % % %%%%   %%%   %%%   %%%
+   %
+   %
+
+
+
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Usare una versione di LaTeX con sillabazione italiana %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,twoside,italian]{book}
+
+% Usare "oneside" invece di "twoside"
+% nelle bozze, per risparmiare carta:
+% "twoside" produce diverse pagine bianche
+% alla fine dei capitoli.
+
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                    %         inputenc             %
+                    %  Usare l'opzione "latin1"    %
+                    %  se si vogliono scrivere     %
+                    %  lettere accentate da        %
+                    %  tastiera su Windows o Unix  %
+                    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[latin1]{inputenc}
+
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       %                  babel                     %
+       % Pacchetto tipico per una tesi in italiano. %
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{babel}
+
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   % Se nella tesi si inseriscono dei passi in un'altra       %
+   % lingua (inglese, per fissare le idee), si puo' istruire  %
+   % il TeX di sillabare quella parte di testo con le regole  %
+   % inglesi, invece che italiane. A questo scopo basta       %
+   % scrivere                                                 %
+   %                                                          %
+   %    \usepackage[english,italian]{babel}                   %
+   %                                                          %
+   % al posto di \usepackage[italian]{babel},                 %
+   % dopodiche la sillabazione sara' italiana fintanto che    %
+   % non si incontra il comando \selectlanguage{english}.     %
+   % Per tornare all'italiano si scrive                       %
+   % \selectlanguage{italian}                                 %
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{./Style/uniudtesi}
+
+% \usepackage{graphicx} % gia' caricato da uniudtesi
+\graphicspath{{./Images/}}
+
+% Per l'ipertesto:
+% \usepackage{hyperref} % gia' caricato da uniudtesi
+\hypersetup{
+  % pdfpagelayout=SinglePage, % default
+  % pdfpagemode=UseOutlines, % default
+  % bookmarksopen, % default
+  % bookmarksopenlevel=2, % default;
+  %plainpages=false
+  %pdfpagelabels
+  pdftitle=Lora ,
+  pdfauthor=Enrico Tolotto,
+  pdfsubject=Argomento tesi,
+  pdfkeywords=IoT Lora Industry 4.0 LPWAN} % Queste informazioni non vengono stampate, ma sono conservate nel documento pdf. Sono consultabili col menu "File>Document Properties>Description". Vengono buone a scopi archivistici.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       % Pacchetti tipici per una tesi con formule, ecc %
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[utf8x]{inputenc}
+%\usepackage{latexsym}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                    graphicx                         %
+%                                                     %
+%   Uno dei pacchetti per l'inserzione di figure      %
+%   in formato eps e` "graphicx". Ce ne sono diversi  %
+%   altri da cui scegliere.                           %
+%                                                     %
+%   Esempio di uso: avendo un file di nome            %
+%   figura1.eps questa si inserisce nella tesi        %
+%   col comando                                       %
+%                                                     %
+%        \begin{figure}[ht]                           %
+%        \begin{center}                               %
+%        \includegraphics{figura1.eps}                %
+%        \caption[nome breve]{nome lungo}             %
+%        \end{center}                                 %
+%        \end{figure}                                 %
+%                                                     %
+%   Il "nome breve" e` quello che apparira`           %
+%   nell'indice delle figure ed e' opzionale.         %
+%   Il "nome lungo" e' quello che appare              %
+%   sotto la figura.                                  %
+%   (Ci sono opzioni per scalare, spostare, ruotare   %
+%   le figure).                                       %
+%   Con \graphicspath{{./figure/}} si dice            %
+%   al LaTeX di cercare le figure nella cartella      %
+%   "figure" situata allo stesso livello di           %
+%   questo documento                                  %
+%                                                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+       %                   makeidx                           %
+       %                                                     %
+       % Pacchetto per la generazione automatica dell'indice %
+       % analitico. Per esempio, se vogliamo che la parola   %
+       % "analitico" venga indicizzata nella frase           %
+       %                                                     %
+       %    "un metodo analitico di soluzione"               %
+       %                                                     %
+       % bisogna scrivere                                    %
+       %                                                     %
+       %    "un metodo analitico\index{analitico} di         %
+       %              soluzione".                            %
+       %                                                     %
+       % Compilando il file, il LaTeX produrra' un file      %
+       % ausiliario che termina con ".idx". Bisogna far      %
+       % processare questo file idx dal programma            %
+       % ausiliario "bibtex", che produrra' a sua volta un   %
+       % altro file ancora. Dare infine un'ultima passata    %
+       % col LaTeX. Si puo' tranquillamente lasciare         %
+       % la compilazione dell'indice verso la fine della     %
+       % stesura del lavoro, quando tutto e' ormai quasi     %
+       % definitivo.                                         %
+       %                                                     %
+       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{makeidx}
+\usepackage{tocbibind}
+
+\input{Style/Abstract}
+\usepackage{textcomp}
+\newcommand{\tm}{\textsuperscript{\small\texttrademark}}
+
+%\makeindex
+
+% Ridefiniamo la riga di testa delle pagine:
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+               %  Informazioni generali sulla Tesi  %
+               %    da usare nell'intestazione      %
+               %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  \titolo{ Lora and IoT } 
+ \laureando{ Enrico Tolotto}
+  \annoaccademico{ 2016/2017.}
+% \facolta{Ingegneria} % (default)
+%  \corsodilaurea{Ingegneria meccanica} % per la laurea vecchio ordinamento
+% \corsodilaureaspecialistica{Ingegneria civile}
+  \corsodilaurea{ Ingegneria elettronica}
+ \dipartimento{ (DPIA) Dipartimento Politecnico di Ingegneria e Architettura}
+  \relatore[Prof.]{ Antonio Abramo}
+ \correlatore[Prof.]{}
+%  \dedica{Ai miei genitori\\
+%    per non avermi tagliato i viveri} % (facoltativo)
+
+
+   %%%                                    %        %%    %%
+  %   %                                   %         %     %
+  %      %%%  % %%  %%%%   %%%         %%%%  %%%    %     %    %%%%
+  %     %   % %%  % %   % %   %       %   % %   %   %     %   %   %
+  %     %   % %     %   % %   %       %   % %%%%%   %     %   %   %
+  %   % %   % %     %   % %   %       %   % %       %     %   %  %%
+   %%%   %%%  %     %%%%   %%%         %%%%  %%%%  %%%   %%%   %% %
+                    %
+                    %
+
+
+                          %%%%%               %
+                            %
+                            %    %%%   %%%%  %%
+                            %   %   % %       %
+                            %   %%%%%  %%%    %
+                            %   %         %   %
+                            %    %%%% %%%%   %%%
+
+
+ \begin{document}
+\selectlanguage{italian}
+
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+         %            Intestazione                       %
+         %                                               %
+         % Per l'intestazione completa bisogna           %
+         % essersi procurati il file "logouniud.pdf". %
+         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frontmatter
+\maketitle
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %   Si puo` scegliere fra scrivere tutta la tesi in un    %
+  %   solo file, oppure distribuire ogni capitolo in un     %
+  %   file a parte. Qui si e` scelto tenere separati i      %
+  %   vari capitoli, che vengono caricati con \include      %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Tex_Files/Abstract/Sommario}
+
+\tableofcontents
+\listoffigures
+
+%\include{Tex_Files/Preface/Introduzione}
+
+\mainmatter
+
+%\include{Tex_Files/Chapters/Capitolo1}
+
+%\include{Tex_Files/Chapters/Capitolo2}
+
+%\include{Tex_Files/Chapters/Conclusioni}
+
+
+%\appendix
+  
+%\include{appendici}
+
+\backmatter
+
+\include{biblio}
+
+ %\printindex % se si fa l'indice analitico.
+
+\end{document}

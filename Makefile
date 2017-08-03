@@ -1,7 +1,9 @@
-TEX = Tesi.tex
-LATEX = pdflatex -syntex=1 --shell-escape
+TEX = Tex_Files/main.tex
 
-OUT = Tesi.pdf
+OUT = Tesi
+
+LATEX = pdflatex -syntex=1 --jobname=$(OUT) --shell-escape
+
 
 all: compile view clean
 
@@ -9,7 +11,7 @@ compile: $(TEX)
 	$(LATEX) $(TEX)
 
 view: compile 
-	evince $(OUT)
+	evince $(OUT).pdf
 
 .PHONY: compile view clean
 
