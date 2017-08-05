@@ -25,4 +25,6 @@ clean:
 	rm -f *.toc
 	rm -f *.lof
 	rm -f *.out
+	rm -f *.bbl
+	rm -f *.blg
 
