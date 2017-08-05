@@ -3,11 +3,15 @@ TEX = Tex_Files/main.tex
 OUT = Tesi
 
 LATEX = pdflatex -syntex=1 --jobname=$(OUT) --shell-escape
+BIBTEX = bibtex 
 
 
 all: compile view clean
 
 compile: $(TEX)
+	$(LATEX) $(TEX)
+	$(BIBTEX) Tesi.aux
+	$(LATEX) $(TEX)
 	$(LATEX) $(TEX)
 
 view: compile 
