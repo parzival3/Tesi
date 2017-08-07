@@ -8,3 +8,6 @@
   - Possibili soluzini tramite l'uso di reti di tipo _LPWAN_
   - Cosa necessitaono le reti _LPWAN_ 
     - Scalabilità
+    - Basso consumo
+    - Devices economici
+    - ecc ...

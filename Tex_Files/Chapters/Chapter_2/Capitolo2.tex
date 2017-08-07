@@ -1,0 +1,26 @@
+\chapter{LPWAN e Lora}
+Nel seguente capitolo si approfondirà il concetto di rete \emph{LPWAN} e la sua
+struttura, andando ad analizzare i vari layer di cui è composta. 
+In particolare si farà riferimento alla tecnologia Lora che implementa questo
+tipo di rete, andandone ad analizzare i vari componenti, quali
+\begin{itemize}
+\item layer fisico
+\item la composizione dei pachetti 
+\item le classi di devices implementati
+\end{itemize}
+
+\section{LPWAN}
+Tra le varie tipologie di rete emergenti per l'IoT, LPWAN sta riscuotendo sempre
+più interesse. Questo tipo di rete si basa sulla topologia a stella, la quale
+permette di avere un elevato numero di devices connessi ad una sola stazione
+base.Inoltre per la sua struttura LPWAN supporta comunicazioni a lungo raggio
+risultando adatta per i vari \emph{use-case} del internet of things. I due
+principali concorrenti che implementano queste tecnologie sono Sigfox\tm e
+Semtech\tm possessore di Lora\tm. L'implementazione proposta da Sigfox utilizza
+la Ultra Narrow Band tramite la quale è possibili inviare messaggi con payload
+lungo 12 \emph{byte} in 6 secondi usando una frequenza di 100[Hz]. Per via delle
+varie regolazioni, utilizzando la tecnologia Sigfox si ha un numero limitato di
+messaggi per giorno.
+Al contrario la tecnologia Lora, implementa \emph{spread spectrum Physical
+Layer} (PHY) il quale permette una maggiore ricezione andando ad influire sul
+data-rate possibile
