@@ -36,6 +36,41 @@ fisico, e una parte libera chiamata LoRaWAN\cite{LoRaWAN101}.
 Alla base del layer fisico troviamo la modulazione (CSS), questo tipo di
 modulazione della frequenza, utilizzata anche in altre applicazioni radio, 
 esempio radar ecc..\improvement{Aggiungere qualche altro esempio}.
+Questo tipo di modulazione ha numerosi vantaggi quali 
+\begin{itemize}
+\item Uno spettro idealmente rettangolare, il quale utilizza tutta la capacità
+del canale e fornisce un ottima densità spettrale di potenza rispetto agli atri
+tipi di trasmissione.
+\item \textbf{Segnali di tipo Chirp} possono essere sovrapposti in modo tale da
+poter variare il data-rate e l'energia per bit in modo adattativo per aumentare
+l'efficienza complessiva.
+\item \textbf{Hanno guadagno programmabile}, il quale permette di raggiungere
+distanze considerevoli mantenendo un buon SNR .
+\item  \textbf{Ottima risoluzione nel asse del tempo}, quindi ottimi per coprire
+lunghe distanze.
+\item \textbf{Immuni al effetto Doppler} 
+\item \textbf{Immuni al degenerazioni per effetto di multipath} \info{Trovare
+termine per multipath}
+\end{itemize}
+Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
+$B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decresente
+compreso tra le due frequenze $f_0$ e $f_1$.
+
+\begin{figure}[h]
+\centering 
+\input{Images/Chirp.pdf_tex}
+\caption{Segnale Chirp nel dominio della frequenza}
+\end{figure}
+\begin{figure}[h]
+\centering 
+\includegraphics[width=10cm]{Time_Chirp}
+\caption{Simbolo codificato col metodo Chirp nel dominio del tempo}
+\end{figure}
+
+Il numero di bit codificati in un simbolo è come detto prima un parametro
+modificabile in base alle varie esigenze.
+
+
 Modulazione \emph{Chirp Spread Spectrum} (CSS). La banda di frequenze utilizzate
 è quella ISM. La specifica LoRa definisce LoRaWAN\cite{LoRaWAN101}, la quale
 descrive il protocollo (MAC) proprietario. Il MAC layer definisce tre classi di
