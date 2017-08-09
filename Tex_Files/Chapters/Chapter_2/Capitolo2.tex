@@ -26,8 +26,18 @@ Layer} (PHY) il quale permette una maggiore ricezione andando ad influire sul
 data-rate possibile
 
 \section{Lora}
-\emph{Lora} è una tecnologia proprietaria, sviluppata da Semtech,  basata sulla 
-modulazione \emph{Chirp Spread Spectrum} (CSS). La banda di frequenze utilizzate
+\emph{Lora} è una tecnologia semi-proprietaria, sviluppata da Semtech. Lora è
+composta da un parte proprietaria detta \emph{Lora}\cite{LoRaCss101} la quale definisce il layer
+fisico, e una parte libera chiamata LoRaWAN\cite{LoRaWAN101}.
+\improvement[inline]{Completare e riscrivere}
+
+
+\section{CSS}
+Alla base del layer fisico troviamo la modulazione (CSS), questo tipo di
+modulazione della frequenza, utilizzata anche in altre applicazioni radio, 
+esempio radar ecc..\improvement{Aggiungere qualche altro esempio}.
+Modulazione \emph{Chirp Spread Spectrum} (CSS). La banda di frequenze utilizzate
 è quella ISM. La specifica LoRa definisce LoRaWAN\cite{LoRaWAN101}, la quale
 descrive il protocollo (MAC) proprietario. Il MAC layer definisce tre classi di
 devices, ognuno dei quali ha un diverso use-case.
+
