@@ -53,26 +53,70 @@ lunghe distanze.
 termine per multipath}
 \end{itemize}
 Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
-$B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decresente
+$B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decrescente
 compreso tra le due frequenze $f_0$ e $f_1$.
 
 \begin{figure}[h]
 \centering 
-\input{Images/Chirp.pdf_tex}
+\import{Images/Eps/}{Chirp.eps_tex}
 \caption{Segnale Chirp nel dominio della frequenza}
 \end{figure}
+
+
 \begin{figure}[h]
 \centering 
 \includegraphics[width=10cm]{Time_Chirp}
 \caption{Simbolo codificato col metodo Chirp nel dominio del tempo}
 \end{figure}
 
-Il numero di bit codificati in un simbolo è come detto prima un parametro
-modificabile in base alle varie esigenze.
+Uno degli aspetti principali del layer fisico, è la possibilità di adattare il
+numero di bit codificati in un simbolo in base alle varie esigenze. Questa
+possibilità\info{Riscrivere} di adattamento permette a parità di potenza di
+riuscire a raggiunger distanze maggiori andando a variare, quello che nella
+documentazione ufficiale è chiamato \emph{Spread Factor}. Tutto ciò significa
+che (SF) rappresenta $2^{\text{SF}}$ bits in un simbolo. Un differente SF
+implica anche un differente tempo di comunicazione secondo la formula
+\begin{equation}
+        T_s=\frac{2^{\text{SF}}}{B}.
+\end{equation}
 
+Dalla quale si evince che andando ad aumentare lo spread factor di una unità,
+mantenendo una lunghezza di banda fissa $B$, otteniamo un raddoppio nel tempo di
+trasmissione. Il fatto di avere messaggi più lunghi, conferisce un robustezza
+superiore alle interferenze e al rumore. In discapito a tutto ciò, il fatto di
+dover codificare il messaggio con un maggiore numero di simboli, aumenta la
+possibilità di errore alla ricezione. 
 
-Modulazione \emph{Chirp Spread Spectrum} (CSS). La banda di frequenze utilizzate
-è quella ISM. La specifica LoRa definisce LoRaWAN\cite{LoRaWAN101}, la quale
-descrive il protocollo (MAC) proprietario. Il MAC layer definisce tre classi di
-devices, ognuno dei quali ha un diverso use-case.
+\begin{figure}[h]
+\centering 
+\import{Images/Eps/}{Chirp_SF.eps_tex}
+\caption{Comparazione simbolica dei vari SF}
+\end{figure}
 
+Questa nuovo modo di trasmettere i vari dati porta con se molti vantaggi.
+\begin{itemize}
+\item La modulazione Lora è semplice da implementare nei dispositivi, quindi i
+moduli radio al loro interno saranno economici.
+\item Resistente alle interferenze in banda e fuori banda.
+\item Resistente  all'effetto Doppler, in questo modo è possibili utilizzare
+cristalli non molto accurati al interno dei devices, in modo tale da abbattere i
+costi di produzione.
+\item Il modulo di ricezione è altrettanto semplice da costruire, quindi non
+molto costoso.
+\end{itemize}
+\improvement{Rivedere i vari punti e cambiare il linguaggio}
+
+Analizzando lo spettrogramma di una comunicazione Lora è possibili fare delle
+osservazioni interessanti. 
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{Chirp_Message}
+\caption{Comparazione simbolica dei vari SF}
+\end{figure}
+
+Le varie parti del pacchetto  sono facilmente determinabili, infatti e facile
+vedere che il preambolo è codificato con una serie di \emph{Up-chirp}, il quale
+finito inizia una serie di \emph{down-chirp} i quali determinano il SFD o Header
+il quale contiene informazioni aggiuntive e possibilmente dei bit per il
+controllo e correzione degli errori\unsure{Controllare header pachetto}

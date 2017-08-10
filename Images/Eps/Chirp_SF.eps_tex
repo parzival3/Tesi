@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.91, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'Chirp.pdf' (pdf, eps, ps)
+%% Accompanies image file 'Chirp_SF.eps' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -49,16 +49,14 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.46875)%
+    \put(0,0){\includegraphics[width=\unitlength]{Chirp_SF.eps}}%
     \put(0.30149222,0.72723397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
-    \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
-    \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
     \put(0.48030952,0.01080666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
+    \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
+    \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
     \put(0.04754423,0.22276038){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Chirp.pdf}}%
-    \put(0.29643417,0.4311829){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Simbolo}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Chirp.pdf}}%
+    \put(0.80818788,0.260323){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{SF=7}}}%
+    \put(0.80861561,0.17746535){\color[rgb]{0.33333333,0.83137255,0}\makebox(0,0)[b]{\smash{SF=8}}}%
+    \put(0.80823891,0.09575417){\color[rgb]{0.6,0.33333333,1}\makebox(0,0)[b]{\smash{SF=9}}}%
   \end{picture}%
 \endgroup%
