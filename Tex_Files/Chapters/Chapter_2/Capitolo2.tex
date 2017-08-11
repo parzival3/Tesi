@@ -56,17 +56,18 @@ Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
 $B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decrescente
 compreso tra le due frequenze $f_0$ e $f_1$.
 
-\begin{figure}[h]
-\centering 
+\begin{figure}
+\begin{subfigure}[h]{\textwidth}
+\centering
 \import{Images/Eps/}{Chirp.eps_tex}
 \caption{Segnale Chirp nel dominio della frequenza}
-\end{figure}
+\end{subfigure}
 
-
-\begin{figure}[h]
-\centering 
-\includegraphics[width=10cm]{Time_Chirp}
+\begin{subfigure}[h]{\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Time_Chirp}
 \caption{Simbolo codificato col metodo Chirp nel dominio del tempo}
+\end{subfigure}
 \end{figure}
 
 Uno degli aspetti principali del layer fisico, è la possibilità di adattare il
@@ -111,12 +112,36 @@ osservazioni interessanti.
 
 \begin{figure}[h]
 \centering 
-\includegraphics[width=11cm]{Chirp_Message}
-\caption{Comparazione simbolica dei vari SF}
+\includegraphics[width=9cm]{Chirp_Message}
+\caption{Struttura pacchetto Lora }
 \end{figure}
 
 Le varie parti del pacchetto  sono facilmente determinabili, infatti e facile
 vedere che il preambolo è codificato con una serie di \emph{Up-chirp}, il quale
 finito inizia una serie di \emph{down-chirp} i quali determinano il SFD o Header
 il quale contiene informazioni aggiuntive e possibilmente dei bit per il
-controllo e correzione degli errori\unsure{Controllare header pachetto}
+controllo e correzione degli errori\unsure{Controllare header pacchetto}.
+\improvement[inline]{Aggiungere immagine e finire la spiegazione}
+
+Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
+informazioni dato che la tecnologia è proprietaria di Semtech. Nella
+documentazione ufficiale è presente uno schema a blocchi il quale illustra i
+vari blocchi presenti al interno dei moduli radio
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{SX1301}
+\caption{Struttura interna ricevitore SX1301}
+\end{figure}
+Come possiamo vedere, il gateway rimane in ascolto su 8 frequenze diverse, le
+quali permettono di coprire tutti i vari SF. Questo tipo di ricevitore può
+demodulare fino ad un massimo di 8 pacchetti contemporaneamente. Inoltre questa
+topologia permette di avere vari vantaggi
+\begin{itemize}
+\item I vari nodi della rete, possono cambiare frequenza in ogni trasmissione in
+modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
+interferenze.
+\item Non è necessario avere tabelle contenenti informazioni riguardanti il
+datarate dei vari nodi. Ogni datarate viene demodulato contemporaneamente.
+\end{itemize}
+\unsure{Riguardare e aggiungere ultimo punto della documentazione pagina 14}
+

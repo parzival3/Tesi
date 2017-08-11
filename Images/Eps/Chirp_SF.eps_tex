@@ -55,8 +55,8 @@
     \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
     \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
     \put(0.04754423,0.22276038){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
-    \put(0.80818788,0.260323){\color[rgb]{1,0,0}\makebox(0,0)[b]{\smash{SF=7}}}%
-    \put(0.80861561,0.17746535){\color[rgb]{0.33333333,0.83137255,0}\makebox(0,0)[b]{\smash{SF=8}}}%
-    \put(0.80823891,0.09575417){\color[rgb]{0.6,0.33333333,1}\makebox(0,0)[b]{\smash{SF=9}}}%
+    \put(0.80818788,0.260323){\color[rgb]{0,0.53333333,0.66666667}\makebox(0,0)[b]{\smash{SF=7}}}%
+    \put(0.80861561,0.17746535){\color[rgb]{1,0.33333333,0.33333333}\makebox(0,0)[b]{\smash{SF=8}}}%
+    \put(0.80823891,0.09575417){\color[rgb]{1,0.8,0}\makebox(0,0)[b]{\smash{SF=9}}}%
   \end{picture}%
 \endgroup%

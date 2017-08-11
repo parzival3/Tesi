@@ -41,9 +41,9 @@
      id="namedview88"
      showgrid="false"
      units="cm"
-     inkscape:zoom="2.4"
-     inkscape:cx="174.29291"
-     inkscape:cy="197.53048"
+     inkscape:zoom="1.6970563"
+     inkscape:cx="285.34051"
+     inkscape:cy="-18.930736"
      inkscape:window-x="1920"
      inkscape:window-y="19"
      inkscape:window-maximized="0"
@@ -248,15 +248,15 @@ Linear Chirp
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="236.18271"
-     y="80.541649"
+     x="237.01604"
+     y="63.874981"
      id="text4238"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan4240"
-       x="236.18271"
-       y="80.541649"
-       style="font-size:26.25000381px">Tempo</tspan></text>
+       x="237.01604"
+       y="63.874981"
+       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:17.50000209px;font-family:'CMU Serif';-inkscape-font-specification:'CMU Serif Medium'">Tempo</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -269,7 +269,7 @@ Linear Chirp
        id="tspan4244"
        x="46.019913"
        y="-25.098408"
-       style="font-size:26.25000381px">Simbolo Chirp</tspan></text>
+       style="font-size:17.50000209px;-inkscape-font-specification:'CMU Serif Medium';font-family:'CMU Serif';font-weight:500;font-style:normal;font-stretch:normal;font-variant:normal">Simbolo Chirp</tspan></text>
   <flowRoot
      xml:space="preserve"
      id="flowRoot4246"
@@ -280,4 +280,4 @@ Linear Chirp
          height="459.61942"
          x="-8.2495794"
          y="-271.65314" /></flowRegion><flowPara
-       id="flowPara4252"></flowPara></flowRoot></svg>
+       id="flowPara4252" /></flowRoot></svg>
