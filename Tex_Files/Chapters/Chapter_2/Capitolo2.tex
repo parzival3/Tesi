@@ -133,7 +133,9 @@ vari blocchi presenti al interno dei moduli radio
 \caption{Struttura interna ricevitore SX1301}
 \end{figure}
 Come possiamo vedere, il gateway rimane in ascolto su 8 frequenze diverse, le
-quali permettono di coprire tutti i vari SF. Questo tipo di ricevitore può
+quali permettono di coprire tutti i vari SF. Tutto ciò è possibili anche grazie
+al fatto che i vari SF sono quasi ortogonali fra di loro, perciò il ricevitore è
+in grado di ricevere pacchetti da SF diversi contemporaneamente .Questo tipo di ricevitore può
 demodulare fino ad un massimo di 8 pacchetti contemporaneamente. Inoltre questa
 topologia permette di avere vari vantaggi
 \begin{itemize}
@@ -141,7 +143,28 @@ topologia permette di avere vari vantaggi
 modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
 interferenze.
 \item Non è necessario avere tabelle contenenti informazioni riguardanti il
-datarate dei vari nodi. Ogni datarate viene demodulato contemporaneamente.
+data-rate dei vari nodi. Ogni data-rate viene demodulato contemporaneamente.
 \end{itemize}
 \unsure{Riguardare e aggiungere ultimo punto della documentazione pagina 14}
+\section{LoRaWAN}
+La parte non proprietaria del protocollo è chiamata \emph{LoRaWAN}, in essa
+viene descritta la topologia di rete, la struttura dei pacchetti e le varie
+classi di device possibili.
+
+La topologia di rete utilizzata, è una topologia a stella, nella quale molti
+dispositivi sono connessi e comunicano con uno o più base station. Le BS non
+sono altro che dei ponti per poter trasmettere i messaggi ricevuto dai vari
+devices all Network Server. Per come è strutturata la rete, un messaggi inviato
+da un singolo device, può essere ricevuto e inoltrato da più BS all Network
+Server.
+
+Il NS ha il compito di interpretare e scartare i vari messaggi duplicati che
+arrivano, selezionare la BS più adatta per inviare il messaggio di downlink 
+creare un database di tutti i vari devices presenti nella rete 
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{LPWAN_Star_network}
+\caption{Struttura rete a stella LPWAN}
+\end{figure}
 
