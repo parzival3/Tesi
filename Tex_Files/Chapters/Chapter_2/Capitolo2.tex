@@ -1,29 +1,33 @@
 \chapter{LPWAN e Lora}
-Nel seguente capitolo si approfondirà il concetto di rete \emph{LPWAN} e la sua
-struttura, andando ad analizzare i vari layer di cui è composta. 
-In particolare si farà riferimento alla tecnologia Lora che implementa questo
-tipo di rete, andandone ad analizzare i vari componenti, quali
-\begin{itemize}
-\item layer fisico
-\item la composizione dei pachetti 
-\item le classi di devices implementati
-\end{itemize}
+Nel seguente capitolo si approfondirà il concetto di reti \emph{LPWAN} e la loro 
+struttura. Si analizzeranno i principali vantaggi che queste reti portano e i
+vari use-case, focalizzando l'attenzione sualla tecnologia Lora sviluppata da
+Semtech. 
 
 \section{LPWAN}
 Tra le varie tipologie di rete emergenti per l'IoT, LPWAN sta riscuotendo sempre
-più interesse. Questo tipo di rete si basa sulla topologia a stella, la quale
+più interesse. Questo tipo di reti si basano su una topologia a stella, la quale
 permette di avere un elevato numero di devices connessi ad una sola stazione
-base.Inoltre per la sua struttura LPWAN supporta comunicazioni a lungo raggio
-risultando adatta per i vari \emph{use-case} del internet of things. I due
-principali concorrenti che implementano queste tecnologie sono Sigfox\tm e
-Semtech\tm possessore di Lora\tm. L'implementazione proposta da Sigfox utilizza
-la Ultra Narrow Band tramite la quale è possibili inviare messaggi con payload
-lungo 12 \emph{byte} in 6 secondi usando una frequenza di 100[Hz]. Per via delle
-varie regolazioni, utilizzando la tecnologia Sigfox si ha un numero limitato di
-messaggi per giorno.
-Al contrario la tecnologia Lora, implementa \emph{spread spectrum Physical
-Layer} (PHY) il quale permette una maggiore ricezione andando ad influire sul
+base. Ideate per comunicazioni a lungo raggio , risultano  ideali per 
+per i vari \emph{use-case} del internet of things quali smart-city, agricoltura,
+assistenza sanitaria ecc... 
+I  principali concorrenti che implementano queste tecnologie sono
+NWave,NB-IoT, Sigfox\tm e Semtech\tm possessore di Lora\tm. 
+Tra i principali competitors, Sigfox e Lora sono le tecnologie maggiormente
+utilizzate.  L'implementazione proposta da Sigfox utilizza un tipo di
+comunicazione basata sulle frequenze ISM e modulatione Ultra Narrow Band.
+Questa tecnologia è capace di inviare messaggi con payload lungo 12 \emph{byte} 
+in 6 secondi usando una frequenza di 100[Hz]. Per via della modulazione scelta e le
+varie regolazioni delle frequenze ISM, utilizzando la tecnologia Sigfox si ha un
+numero limitato  di 140 messaggi per giorno.
+Al contrario la tecnologia Lora, implementa una modulazione basata su uno
+spettro diffuso il quale permette una maggiore ricezione andando ad influire sul
 data-rate possibile
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{spread_spectrum_temp}
+\caption{Comparazione tra UNB e SSP}
+\end{figure}
 
 \section{Lora}
 \emph{Lora} è una tecnologia semi-proprietaria, sviluppata da Semtech. Lora è
@@ -193,3 +197,5 @@ attuatori ecc..
 essere alimentati direttamente dalla rete elettrica, quindi possono mantenere il
 ricevitore costantemente in ascolto.
 \end{itemize}
+
+
