@@ -15,7 +15,7 @@ I  principali concorrenti che implementano queste tecnologie sono
 NWave,NB-IoT, Sigfox\tm e Semtech\tm possessore di Lora\tm. 
 Tra i principali competitors, Sigfox e Lora sono le tecnologie maggiormente
 utilizzate.  L'implementazione proposta da Sigfox utilizza un tipo di
-comunicazione basata sulle frequenze ISM e modulatione Ultra Narrow Band.
+comunicazione basata sulle frequenze ISM e modulazione Ultra Narrow Band.
 Questa tecnologia è capace di inviare messaggi con payload lungo 12 \emph{byte} 
 in 6 secondi usando una frequenza di 100[Hz]. Per via della modulazione scelta e le
 varie regolazioni delle frequenze ISM, utilizzando la tecnologia Sigfox si ha un
@@ -23,22 +23,32 @@ numero limitato  di 140 messaggi per giorno.
 Al contrario la tecnologia Lora, implementa una modulazione basata su uno
 spettro diffuso il quale permette una maggiore ricezione andando ad influire sul
 data-rate possibile
+
 \begin{figure}[h]
 \centering 
 \includegraphics[width=11cm]{spread_spectrum_temp}
 \caption{Comparazione tra UNB e SSP}
 \end{figure}
 
-\section{Lora}
-\emph{Lora} è una tecnologia semi-proprietaria, sviluppata da Semtech. Lora è
-composta da un parte proprietaria detta \emph{Lora}\cite{LoRaCss101} la quale definisce il layer
-fisico, e una parte libera chiamata LoRaWAN\cite{LoRaWAN101}.
+\section{LoRa}
+\emph{Lora} è una tecnologia di modulazione wirelless semi-proprietaria 
+sviluppata da Semtech. Lora è composta da un layer fisico ,proprietario, che
+prende il nome di \emph{Lora}\cite{LoRaCss101}  , e una parte libera chiamata 
+LoRaWAN\cite{LoRaWAN101}, la quale definisce un protocollo di communicazione, 
+il quale usa LoRa come layer fisico. 
+I punti chiave dei questa tecnologia, sono il grande raggio di copertura e il 
+basso consumo energetico per effettuare uno scambio dati. 
+Per le communicazioni , vengone utilizzata la banda ISM, grazie alle
+quale è possibili costrurire una rete ,che implementa questa tecnologia, senza
+possedere alcuna licenza.
 \improvement[inline]{Completare e riscrivere}
 
 
 \section{CSS}
-Alla base del layer fisico troviamo la modulazione (CSS), questo tipo di
-modulazione della frequenza, utilizzata anche in altre applicazioni radio, 
+Alla base del layer fisico troviamo la modulazione  Chirp Spread Spectrum (CSS), questo tipo di
+modulazione della frequenza, utilizzata anche in altre applicazioni radio.
+Il principio di funzionamento dei segnali \emph{CSS} si basa 
+ 
 esempio radar ecc..\improvement{Aggiungere qualche altro esempio}.
 Questo tipo di modulazione ha numerosi vantaggi quali 
 \begin{itemize}
