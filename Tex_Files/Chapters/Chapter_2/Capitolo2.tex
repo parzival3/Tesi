@@ -45,12 +45,12 @@ possedere alcuna licenza.
 
 
 \section{CSS}
-Alla base del layer fisico troviamo la modulazione  Chirp Spread Spectrum (CSS), questo tipo di
-modulazione della frequenza, utilizzata anche in altre applicazioni radio.
-Il principio di funzionamento dei segnali \emph{CSS} si basa 
- 
-esempio radar ecc..\improvement{Aggiungere qualche altro esempio}.
-Questo tipo di modulazione ha numerosi vantaggi quali 
+Alla base del layer fisico troviamo la modulazione  Chirp Spread Spectrum (CSS). Questo tipo di
+modulazione, ottenuta facendo variare in modo lineare, la frequenza di un segnale
+sinusoidale di durata finita, chiamato chirp. In questo modo è possibili
+distribuire l'informazione su di un spettro maggiore rispetto a quello
+normalmente utilizzato.
+In questo modo è possibile ottenere numerosi vantaggi quali
 \begin{itemize}
 \item Uno spettro idealmente rettangolare, il quale utilizza tutta la capacità
 del canale e fornisce un ottima densità spettrale di potenza rispetto agli atri
@@ -63,12 +63,13 @@ distanze considerevoli mantenendo un buon SNR .
 \item  \textbf{Ottima risoluzione nel asse del tempo}, quindi ottimi per coprire
 lunghe distanze.
 \item \textbf{Immuni al effetto Doppler} 
-\item \textbf{Immuni al degenerazioni per effetto di multipath} \info{Trovare
+\item \textbf{Immuni alle degenerazioni per effetto di multipath} \info{Trovare
 termine per multipath}
 \end{itemize}
 Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
 $B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decrescente
-compreso tra le due frequenze $f_0$ e $f_1$.
+compreso tra le due frequenze $f_0$ e $f_1$. Quindi possiamo parlare di
+\emph{Up-chirp} o di \emph{down-chirp}.
 
 \begin{figure}
 \begin{subfigure}[h]{\textwidth}
@@ -85,12 +86,21 @@ compreso tra le due frequenze $f_0$ e $f_1$.
 \end{figure}
 
 Uno degli aspetti principali del layer fisico, è la possibilità di adattare il
-numero di bit codificati in un simbolo in base alle varie esigenze. Questa
+numero di bit codificati in un simbolo in base alle varie esigenze. 
+Questo parametro che prende il nome di \emph{Spread Factor}, permette a parità
+di potenza impiegata nella trasmissione, di ottenere distanze maggiori andando
+ad aumentare il tempo totale di trasmissione secondo la seguente formula:
+In questo modo è possibile, inviare segnali a distanze maggiori, utilizzando la
+stessa potenza trasmissiva.
+\improvement{Modificare e riscrivere}
+----------------------------------------------------------------------------
+Questa
 possibilità\info{Riscrivere} di adattamento permette a parità di potenza di
 riuscire a raggiunger distanze maggiori andando a variare, quello che nella
 documentazione ufficiale è chiamato \emph{Spread Factor}. Tutto ciò significa
 che (SF) rappresenta $2^{\text{SF}}$ bits in un simbolo. Un differente SF
 implica anche un differente tempo di comunicazione secondo la formula
+
 \begin{equation}
         T_s=\frac{2^{\text{SF}}}{B}.
 \end{equation}
