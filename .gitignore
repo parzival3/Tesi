@@ -2,4 +2,7 @@
 
 *.aux
 *.out
+*.bbl
+*.blg
 
+Fonti/
