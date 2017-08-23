@@ -140,11 +140,23 @@ in modo semplice le varie parti che compongono il pachetto trasmesso.
 \caption{Struttura pacchetto Lora }
 \end{figure}
 
-Le varie parti del pacchetto  sono facilmente determinabili, infatti e facile
-vedere che il preambolo è codificato con una serie di \emph{Up-chirp}, il quale
-finito inizia una serie di \emph{down-chirp} i quali determinano il SFD o Header
-il quale contiene informazioni aggiuntive e possibilmente dei bit per il
-controllo e correzione degli errori\unsure{Controllare header pacchetto}.
+Osservando l'immagine precedente è facile notare come è strutturato un pacchetto.
+La prima parte della trasmissione, nonché il preambolo  stesso è codificato con una
+serie di \emph{up-chirp}. In questo modo il gateway riesce a sintonizzarsi sulla
+stessa frequenza del dispositivo trasmittente.
+Successivamente vengono inviati una serie di
+\emph{down-chirp} i quali rappresentano l'header codificato dal layer fisico, il
+quale può contenere o meno un bit di correzione e controllo degli errori.
+L'ultima parte rappresenta il payload codificato dal PHY, in questa parte,
+formata solo da \emph{up-chirp} sono presenti dei salti, i quali sono un chiaro
+segno della presenza di dati codificati.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=9cm]{PHY_packet}
+\caption{Pacchetto codificato dal layer fisico}
+\end{figure}
+
 \improvement[inline]{Aggiungere immagine e finire la spiegazione}
 
 Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte

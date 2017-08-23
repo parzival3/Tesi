@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="11cm"
+   height="1cm"
+   viewBox="0 -10.62992 389.76379 0"
+   id="svg5969"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="PHY_packet.svg">
+  <defs
+     id="defs5971" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="81.62705"
+     inkscape:cy="-6.7736028"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="cm"
+     inkscape:window-width="1676"
+     inkscape:window-height="1027"
+     inkscape:window-x="1920"
+     inkscape:window-y="19"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5974">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-2110.2367)">
+    <rect
+       style="opacity:1;fill:#ffeeaa;fill-opacity:1;stroke:#000000;stroke-width:0.63786763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6479"
+       width="68.534912"
+       height="17.630114"
+       x="245.24501"
+       y="2125.7017" />
+    <rect
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.63474166;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect6358"
+       width="343.49078"
+       height="16.795843"
+       x="39.173416"
+       y="2126.1187" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.63794792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.71528,2126.1073 0,16.7647"
+       id="path6372"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.63794792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 176.51663,2126.153 0,16.719"
+       id="path6374"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.63794792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 245.23515,2126.2486 0,16.7492"
+       id="path6376"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.63794792;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 313.82118,2126.2964 0,16.5102"
+       id="path6378"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="76.457878"
+       y="2055.2698"
+       id="text6432"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6434"
+         x="76.457878"
+         y="2055.2698"
+         style="font-size:9.71873856px;stroke:#000000;stroke-width:0.39871749px;fill:#000000;">Preamble</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="148.20708"
+       y="2055.5637"
+       id="text6436"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6438"
+         x="148.20708"
+         y="2055.5637"
+         style="font-size:9.71873856px;stroke:#000000;stroke-width:0.39871749px;fill:#000000;">PHDR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="219.66226"
+       y="2055.2698"
+       id="text6440"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6442"
+         x="219.66226"
+         y="2055.2698"
+         style="font-size:9.71873856px;stroke:#000000;stroke-width:0.39871749px;fill:#000000;">PHDR_CRC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="291.41144"
+       y="2054.9756"
+       id="text6444"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6446"
+         x="291.41144"
+         y="2054.9756"
+         style="font-size:9.71873856px;stroke:#000000;stroke-width:0.39871749px;fill:#000000;">PHYPayload</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="360.22012"
+       y="2054.9756"
+       id="text6448"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6450"
+         x="360.22012"
+         y="2054.9756"
+         style="font-size:9.71873856px;stroke:#000000;stroke-width:0.39871749px;fill:#000000;">CRC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:15.948699px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.39871749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="45.663769"
+       y="2040.7245"
+       id="text6475"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96120694,1.0403587)"><tspan
+         sodipodi:role="line"
+         id="tspan6477"
+         x="45.663769"
+         y="2040.7245"
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.96793747px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke:#000000;stroke-width:0.39871749px;fill:#000000;">Radio PHY layer :</tspan></text>
+  </g>
+</svg>
