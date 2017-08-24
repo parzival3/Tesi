@@ -205,23 +205,26 @@ La topologia di rete utilizzata, è una topologia a stella, nella quale molti
 dispositivi sono connessi e comunicano con uno o più base station. Le BS non
 sono altro che dei ponti per poter trasmettere i messaggi ricevuto dai vari
 devices all Network Server, tramite una connessione ethernet, 3G o 2G. 
-Per come è strutturata la rete, un messaggi inviato
+Per come è strutturata la rete, un messaggio inviato
 da un singolo device, può essere ricevuto e inoltrato da più BS all Network
 Server.
+
+Il NS ha il compito di interpretare e scartare i vari messaggi duplicati che
+arrivano, selezionare la BS più adatta per inviare il messaggio di downlink
+creando un database di tutti i vari devices presenti nella rete. Nella figura
+\ref{fig:stack_lora} è rappresentato lo stack del protocollo degli end-devices,
+gateway  e network-server. 
 
 \begin{figure}[h]
 \centering 
 \includegraphics[width=11cm]{Lora_WAN_Stack}
 \caption{Stack del protocollo della rete LoRaWAN}
+\label{fig:stack_lora}
 \end{figure}
-
-Il NS ha il compito di interpretare e scartare i vari messaggi duplicati che
-arrivano, selezionare la BS più adatta per inviare il messaggio di downlink
-creando un database di tutti i vari devices presenti nella rete 
-
 
 Esistono tre classi di devices, le quali specificano i vari use-case per
 possibili.
+
 \begin{itemize}
 \item \textbf{Class A} è la modalità di funzionamento predefinita. In questa
 modalità il device si occupa solo di trasmettere i vari messaggi in maniera
@@ -238,4 +241,25 @@ essere alimentati direttamente dalla rete elettrica, quindi possono mantenere il
 ricevitore costantemente in ascolto.
 \end{itemize}
 
-
+\section{Frequenze}
+A seconda della regione in qui operano i devices, lo standard LoRaWAN definisce
+ quali frequenze vengono occupate in base alle regolamentazione vigente in
+Europa Cina e Stati Uniti.  Per ognuna di queste regioni, vengono definite 
+la struttura del payload, la frequenza, lo spreading factor, e la massima
+lunghezza possibile del payload.
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c}
+                \toprule
+                Stato   & Frequenza [MHz] \\
+                \hline
+                Europa  & 868-870 \\
+                US      & 902-928 \\
+                China   & 779-787 \\
+                \bottomrule
+        \end{tabular}
+        \caption{Bande di frequenza per le varie regioni}
+\end{table}
+Inoltre tutte le frequenze sono comprese nelle bade ISM, e non sono
+particolarmente elevate, rendendole preferibili per le lunghe distanze rispetto
+a frequenze quali 2.4 [GHz] e 5[GHz]
