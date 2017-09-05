@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 744.09448819 1052.3622047"
+   width="16cm"
+   height="7.6999998cm"
+   viewBox="0 0 566.92879 272.83461"
    id="svg4775"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="50.324937"
-     inkscape:cy="22.428646"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="308.72556"
+     inkscape:cy="195.31739"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -37,7 +37,8 @@
      inkscape:window-height="1027"
      inkscape:window-x="1920"
      inkscape:window-y="19"
-     inkscape:window-maximized="0">
+     inkscape:window-maximized="0"
+     units="cm">
     <sodipodi:guide
        position="99.878834,587.15118"
        orientation="1,0"
@@ -94,10 +95,11 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-779.528)">
     <g
        id="g5766"
-       transform="translate(-87.515956,586.63887)">
+       transform="matrix(8.3428168,0,0,8.1240442,-744.48538,-2720.7915)">
       <g
          id="g7238">
         <g
@@ -174,7 +176,7 @@
     </g>
     <g
        id="g7198"
-       transform="translate(-85.642177,583.02218)">
+       transform="matrix(8.3428168,0,0,8.1240442,-728.85277,-2750.1736)">
       <g
          transform="matrix(0.00943398,0,0,0.00984067,117.25129,451.09099)"
          id="g9096">
@@ -297,7 +299,7 @@
     </g>
     <g
        id="g7259"
-       transform="translate(-95.197611,583.00481)">
+       transform="matrix(8.3428168,0,0,8.1240442,-808.57202,-2750.3147)">
       <g
          style="opacity:0.23999999;fill:none;stroke:#000000;stroke-width:22.44851303;stroke-miterlimit:4;stroke-dasharray:none"
          id="g6593-7"
@@ -327,39 +329,42 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="10.721526"
-       y="1050.3612"
+       style="font-style:normal;font-weight:normal;font-size:329.30813599px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="74.10083"
+       y="1060.5063"
        id="text7275"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="scale(1.0133751,0.98680145)"><tspan
          sodipodi:role="line"
          id="tspan7277"
-         x="10.721526"
-         y="1050.3612"
-         style="font-size:2.5px">Device Layer</tspan></text>
+         x="74.10083"
+         y="1060.5063"
+         style="font-size:20.5817585px">Device Layer</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="33.032551"
-       y="1050.3842"
+       style="font-style:normal;font-weight:normal;font-size:329.30813599px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="257.78091"
+       y="1060.6953"
        id="text7279"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="scale(1.0133751,0.98680145)"><tspan
          sodipodi:role="line"
          id="tspan7281"
-         x="33.032551"
-         y="1050.3842"
-         style="font-size:2.5px">Network Layer</tspan></text>
+         x="257.78091"
+         y="1060.6953"
+         style="font-size:20.5817585px">Network Layer</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="55.354961"
-       y="1050.3386"
+       style="font-style:normal;font-weight:normal;font-size:329.30813599px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="441.55469"
+       y="1060.3206"
        id="text7283"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       transform="scale(1.0133751,0.98680145)"><tspan
          sodipodi:role="line"
          id="tspan7285"
-         x="55.354961"
-         y="1050.3386"
-         style="font-size:2.5px">Application Layer</tspan></text>
+         x="441.55469"
+         y="1060.3206"
+         style="font-size:20.5817585px">Application Layer</tspan></text>
   </g>
 </svg>
