@@ -26,20 +26,36 @@ necessario accettare dei compromessi sul numero di dati trasmissibili e sulla
 banda utilizzata. 
 
 \begin{figure}[h]
-\centering 
-\includegraphics[width=16cm]{network_comp}
-\caption{Comparazione tipologia di reti}
+        \centering 
+                \includegraphics[width=16cm]{network_comp}
+        \caption{Comparazione tipologia di reti}
 \end{figure}
 
 In questo contesto, i maggiori competitor sono Lora, Sigfox, NB-IoT e LTE-M.
 Anche se ognuna di queste soluzioni punta a ottenere la più ampia fetta di
 mercato, esse implementano soluzioni tecniche molto diverse tra di loro.
 \subsection{NB-IoT e LTE-M}
-NB-IoT e LTE-M, sono due nuovi standard certificati da 3GPP, entrambe queste
-soluzioni sono un improvement della tecnologia 4G. La maggior parte delle
-compagnie telefoniche ha già dei piani per rendere disponibile queste due
+NB-IoT e LTE-M, sono due nuovi standard certificati da 3GPP, entrambe questi
+standard si basano su una versione modificata della rete 4G già esistente.
+Quindi funzionano in uno spettro proprietario, e forniscono prestazioni diverse
+per i diversi use-case. In particolare devices che utilizzano NB-IoT hanno una
+durata della batteria molto più prolungata di quelli che utilizzano la
+connessione LTE-M, la quale permette un maggiore band-with a discapito delle
+durata. Il vantaggio di questi standard e che non servono grandi cambiamenti
+alla rete telefonica, quindi sono facilmente implementabili dalle compagnie
+telefoniche. Inoltre, ogni devices sarà dotato di una sim-card per poter
+connettersi, in questo modo è possibile ottenere  una sicurezza simile a quella
+implementato nelle connessioni LTE.
+Altro punto a favore è il fatto che non è necessario utilizzare gateway, ogni
+devices e connesso direttamente alla rete. 
+La maggior parte delle compagnie telefoniche ha già dei piani per rendere disponibile queste due
 tecnologie.
 
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=11cm]{Comparsion_no_line}
+        \caption{Comparazione tipologia di reti}
+\end{figure}
 \subsection{Sigfox}
 Sigfox, azienda francese la quale offre una soluzione proprietaria per il mondo
 del IoT. Sigfox opera sulle frequenze ISM, e punta a creare una rete a copertura
