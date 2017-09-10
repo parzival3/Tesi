@@ -1,43 +1,4 @@
 \section{LPWAN}
-Il primo problema che si presenta nella ottica del IoT è avere una
-infrastruttura di rete capace di gestire il traffico di milioni di dispositivi
-contemporaneamente connessi.  Fino ad oggi la principale tecnologia wireless 
-usata nelle comunicazioni M2M è stata la rete cellulare, garantendo una
-copertura in quasi tutte le aree geografiche .
-La scelta della rete 2G, 3G, 4G è svantaggiosa poiché offre data-rate molto
-maggiore rispetto a quello normalmente utilizzato in applicazioni M2M, quindi i
-moduli cellulari sono sovradimensionati  per le varie applicazioni del  IoT. Inoltre i costi
-applicati dagli operatori sono conformi al quantitativo di dati scambiabili e
-non al effettivo uso. Oltre alla rete cellulare esistono gli standard IEE
-802.11, Bluetooth, ZigBee, i quali hanno un raggio di azione pari a poche decine
-di metri, i quali sono adatti per applicazioni in ambienti interni, ma non
-adatti all IoT.
-
-
-rete cellulare. Con i suoi standard 2G, 3G e 4G offre un ottima copertura su
-tutto il territorio nazionale. Il problema principale di questa tecnologia è
-l'elevato consumo energetico, in quanto la stima della durata massima di devices
-che usano questa tecnologia è di alcuni mesi. Inoltre, per il tipo di
-comunicazione, non è facilmente scalabile. 
-
-
-
-Fino ad oggi le principali tecnologie wireless
-usate, sono la rete cellulare e gli standard IEEE 802.11 , IEEE 802.15.
-Ognuna di queste soluzioni, non rispecchia i punti fondamentali richiesti
-dall'IoT. Per quanto riguarda la rete cellulare 2G, 3G e 4G, offrono 
-
-Le tecnologie usate fino ad oggi non rispecchiano
-le necessità del IoT. 
-
-
-
-
-
-
-
-
-
 Per riuscire a gestire in maniera adeguata il sempre maggior numero di device
 connessi, e le diverse problematiche che essi comportano, è necessario andare a
 ridisegnare la topologia di rete per fare in modo che rispecchi i punti necessari
@@ -97,18 +58,32 @@ tecnologie.
 \end{figure}
 
 \subsection{Sigfox}
-Sigfox, azienda francese la quale dal 2015 ha iniziato a sviluppare una rete
-privata in Francia Spagna e Regno unito, promettendo di coprire più di 60 stati
-entro il 2020. Sigfox opera sulle frequenze ISM, quindi i costi delle
-infrastrutture e i costi che l'utente finale è tenuto a supportare sono molto
-inferiori rispetto alle soluzioni che usano rete cellulare. Il principale,
-vantaggio di avere una rete unica mondiale, è la possibilità di un abbonamento unico e la
-continuità di funzionamento dei diversi devices in tutte le aree coperte.
-Utilizzando una modulazione \emph{Ultra narrow band}, Sigfox, permette di
-coprire distanze pari a un paio di chilometri nelle zone urbane, fino a alcune
-decine di chilometri in zone rurali. Essendo Sigfox una tecnologia
-open-hardware, è facile adattare moduli radio esistenti per renderli
-compatibili con questo tipo di rete, così facendo il prezzo all'unità risulta
-molto basso. Appoggiandosi a frequenze ISM, il numero di byte massimi del
-payload è ristretto a 12, con un numero massimo di messaggi per giorno pari a
-140.
+Sigfox, azienda francese la quale offre una soluzione proprietaria per il mondo
+del IoT. Sigfox opera sulle frequenze ISM, e punta a creare una rete a copertura
+mondiale. Quello che promette questa tecnologia è un basso consumo energetico
+per la comunicazioni andando a limitare di molto la banda utilizzabile per
+l'invio dei dati. Sigfox utilizza una connessione \emph{Ultra narrow Band} ,
+tramite la quale permette l'invio di un numero massimo di 140 messaggi per
+giorno, con una lunghezza pari a 12 byte. Creando una rete globale problemi
+quali compatibilità e roaming vengono superati andando ad offrire un piano unico
+mondiale. Essendo il protocollo aperto, i vari moduli possono essere prodotti da
+diverse compagnie andando a creare una concorrenza sul mercato e offrendo
+diversi tipi di implementazione. I vari moduli sono disegnati per funzionare con
+tecnologie già esistenti, andando a ridurre in maniera drastica il costo
+unitario. Inoltre per come è strutturata la rete, i vari device possono
+comunicare con le varie base station senza avere procedure di handshaking
+rendendo effettivi i 140 messaggi giornalieri. La comunicazione tra device layer
+e application layer è garantita da Sigfox stessa, lasciando al utente finale il
+solo fatto di scrivere una semplice applicazione. Quindi la duplicazione dei
+messaggi ricevuti e avviene in modo automatico , quando si ha un piano Sigfox.
+Il range di azione varia da un paio di chilometri in zone urbane fino a decine 
+di chilometri in zone rurali, dipende molto dalla topografia del terreno.
+Supporta sia il l'uplink che il downlink ma entrambe le comunicazioni devono
+essere inizializzate dal device. I messaggi non sono a lunghezza prestabilita,
+quindi ogni messaggi varia in base al payload, payload più corti tempi di
+comunicazione brevi. Il costo è basso perché l'approccio è open hardware, quindi
+tutte le case produttrici di chip possono integrare la comunicazione Sigfox.
+Ogni messaggio è firmato tramite una chiave unica proprietaria del device e il
+fatto che non ci sono handshake nella comunicazione garantisce che le chiavi di
+sicurezza non vengano intercettate da attacchi esterni. Ogni messaggio viene
+inviato 3 volte per garantire la sicura ricezione. 
