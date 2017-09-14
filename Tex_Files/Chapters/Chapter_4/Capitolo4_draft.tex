@@ -43,10 +43,65 @@ Everyware™ Software Framework (ESF), la versione commerciale del software Kura
 
 
 \subsection{Architettura del software}
+Lo scopo di questa tesi era riuscire ad implementare dei moduli osgi,
+installabili al interno del framework ESF, in grado di controllare il
+comportamento del devices SX1301. In particolare utilizzando l'utility messa a
+disposizione da Semtech per l'interfacciamento con il dispositivo denominata
+packet forwarder, e l'utility LoRa Gateway Bridge , sotto licenza MIT,
+sviluppata da brocaar \improvement{Aggiunger link}.
+
 \begin{figure}[h]
 \centering 
 \includegraphics[width=11cm]{Application_layer}
-\caption{Caratteristiche elettriche SX1301}
-\label{fig:ReliaGATE}
+\caption{Architettura del software}
+\label{fig:Software_stack}
 \end{figure}
 
+\subsection{Semtech packet forwarder}
+Il packet forwarder, è un software il quale riceve o invia pacchetti radio Lora ,
+tramite una connessione SPI con il device SX1301. Nel caso di ricezione di un
+pacchetto, l'applicativo incapsula i dati ricevuti in un formato IP/UDP, e li
+ritrasmette nella rete internet/intranet. Per la sua configurazione viene
+utilizzato un file Json nel quale trviamo tutte le varie opzioni di
+configurazione per i moduli radio presenti al interno del chip.
+\lstinputlisting[language=Json, firstline=1,
+lastline=23]{Code_Files/global_json.conf}
+\lstinputlisting[language=Json, firstline=173,
+lastline=184]{Code_Files/global_json.conf}
+
+\subsection{LoRa Gateway Bridge}
+LoRa Gateway Bridge, è l'applicativo il quale riceve i vari pachetti UDP inviati
+dal packet forwarder e li trasmette ad un Broker MQTT. Il software è scritto nel
+linguaggio GO. Per renderlo interfacciabile con ESF, sono state apportate delle 
+modifiche al codice, in particolare è stata aggiunta la possibilità di
+specificare il publish e il subscribed topic, i quali erano hard-coded.
+
+\subsection{ESF}
+Everyware software framework, è la versione commerciale del software Kura
+preinstallata nel ReliaGATE 10-11. ESF si pone l'obiettivo di offrire un
+container Java/OSGi per le applicazioni M2M. Gli applicativi installati in ESF
+sono sviluppati come OSGi Declarative Service, dando la possibilità di
+configurare i vari applicativi del gateway tramite una semplice interfaccia web.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=16cm]{ESF.png}
+\caption{Architettura del software}
+\label{fig:Software_stack}
+\end{figure}
+
+\subsection{Realizzazione}
+Per gestire i due software preinstallati si è optato per la creazione di due
+applicativi osgi distinti.
+Il primo applicativo chiamato Lora Config si pone il compito di leggere ed
+interpretare il file di configurazione utilizzato dal programma \emph{Packet
+Forwarder}, per poi andare ad esporre i punti principali al utente finale.
+La libreria utilizzate dal programma sono 
+\begin{lstlisting}[language=Java, frame=single]  % Start your code-block
+for i:=maxint to 0 do
+begin
+{ do nothing }
+end;
+Write('Case insensitive ');
+Write('Pascal keywords.');
+\end{lstlisting}
