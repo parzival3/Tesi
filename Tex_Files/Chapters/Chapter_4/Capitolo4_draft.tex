@@ -190,10 +190,27 @@ Tramite questo bundle l'utente finale ha la possibilità di decidere
 
 \subsection{Misurazioni}
 In via sperimentale, è stato scelto di installare in  il gateway
-ReliaGate 10-11 ad una altezza di 11m. 
+ReliaGate 10-11 ad una altezza di 11m. Configurato il gateway per l'utilizzo del
+broker open source  mosquitto.org. La prova di ricezione è stata condotta per
+tentativi, cercando di testare la massima distanza di trasmissione del
+dispositivo LoRa Mote . 
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=4cm]{LoRaMote_no_wave}
+\caption{Architettura del software}
+\label{fig:Software_stack}
+\end{figure}
+
+Per constatare l'avvenuta ricezione del
+messaggio è stata utilizzata l'applicazione Android gratuita MyMQTT, tramite la
+quale è  possibile iscriversi ad un topic predefinito ed rimanere in ascolto dei
+messaggi pubblicati in esso. 
+
 \begin{figure}[h]
 \centering 
 \includegraphics[width=16cm]{map}
 \caption{Architettura del software}
 \label{fig:Software_stack}
 \end{figure}
+
