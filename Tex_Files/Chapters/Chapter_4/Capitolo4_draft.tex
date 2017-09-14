@@ -117,9 +117,83 @@ framesep=2mm]{java}
         }
 \end{minted}
 
-\begin{lstlisting}[language=Java, frame=single]  % Start your code-block
+Per applicare le modifiche eseguite alla configurazione, è necessario che
+l'applicativo sia riavviato. Per eseguire questa operazione, si è scelto di
+utilizzare la libreria 
+\mint{Java}|import com.apache.commons.exec|
+la quale fornisce delle \emph{API} per chiamare processi esterni, in particolare
+si è scelto di utilizzare l'utility di sistema \emph{pkill} per terminare il
+processo del pkt forwarder.
+\begin{minted}[linenos=true, numbersep=5pt, gobble=2, frame=lines, %
+framesep=2mm]{java}
+          public void startPktForwarder() {
+                DefaultExecutor pktExecutor = new DefaultExecutor();
+                CommandLine pktCmdLine = new CommandLine(KEY_PKT_BIN);
+                pktCmdLine.addArgument("start");
+                pktExecutor.setExitValue(0);
+                try {
+
+                    pktExecutor.execute(pktCmdLine);
+                    s_logger.info("start PKT");
+                } catch (Exception e) {
+                    s_logger.warn("Coulden't start pkt forwarder");
+                }
+            }
+
+            public void stopPktForwarder() {
+                DefaultExecutor pktExecutor = new DefaultExecutor();
+                CommandLine pktCmdLine = new CommandLine("pkill");
+                pktCmdLine.addArgument("basic_pkt_fwd");
+                pktExecutor.setExitValue(0);
+                try {
+
+                    pktExecutor.execute(pktCmdLine);
+                    s_logger.info("Stop PKT");
+                } catch (Exception e) {
+                    s_logger.warn("Coulden't stop pkt forwarder");
+                }
+        }
+
+\end{minted}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=16cm]{Lora_Config}
+\caption{Architettura del software}
+\label{fig:Software_stack}
+\end{figure}
 
 
-import org.apache.commons.exec
 
-\end{lstlisting}
+\subsection{Mqtt Bridge Config}
+Il secondo bundle creato ha lo scopo di esporre all'utente un facile modo per
+configurare  \emph{Lora Gateway Bridge}.  Anche in questo caso è necessario il
+riavvio del applicativo per fare in modo che le modifiche abbiano effetto, anche
+in questo caso è stata usata la libreria
+\mint{Java}|import com.apache.commons.exec|
+Tramite questo bundle l'utente finale ha la possibilità di decidere 
+\begin{itemize}
+\item il topic sul quale pubblicare i messaggi ricevuti in formato UDP dal
+\emph{pkt forwarder}.
+\item il topic al quale rimanere in ascolto .
+\item su quale indirizzo e porta mandare/ricevere i pacchetti UDP.
+\item a quale broker Mqtt iscriversi.
+\item l'username e password per connettersi al broker.
+\end{itemize}
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=16cm]{Mqtt_Bridge_Config}
+\caption{Architettura del software}
+\label{fig:Software_stack}
+\end{figure}
+
+\subsection{Misurazioni}
+In via sperimentale, è stato scelto di installare in  il gateway
+ReliaGate 10-11 ad una altezza di 11m. 
+\begin{figure}[h]
+\centering 
+\includegraphics[width=16cm]{map}
+\caption{Architettura del software}
+\label{fig:Software_stack}
+\end{figure}
