@@ -64,10 +64,10 @@ pacchetto, l'applicativo incapsula i dati ricevuti in un formato IP/UDP, e li
 ritrasmette nella rete internet/intranet. Per la sua configurazione viene
 utilizzato un file Json nel quale trviamo tutte le varie opzioni di
 configurazione per i moduli radio presenti al interno del chip.
-\lstinputlisting[language=Json, firstline=1,
-lastline=23]{Code_Files/global_json.conf}
-\lstinputlisting[language=Json, firstline=173,
-lastline=184]{Code_Files/global_json.conf}
+\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/global_json.conf}
+\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+framesep=2mm, firstline=173,lastline=184]{json}{Code_Files/global_json.conf}
 
 \subsection{LoRa Gateway Bridge}
 LoRa Gateway Bridge, è l'applicativo il quale riceve i vari pachetti UDP inviati
@@ -96,12 +96,30 @@ applicativi osgi distinti.
 Il primo applicativo chiamato Lora Config si pone il compito di leggere ed
 interpretare il file di configurazione utilizzato dal programma \emph{Packet
 Forwarder}, per poi andare ad esporre i punti principali al utente finale.
-La libreria utilizzate dal programma sono 
+La libreria utilizzata per manipolare i file di tipo Json è 
+
+\mint{Java}|import com.eclipsesource.json|
+
+Tramite la quale vengono riempiti i campi della classe LoraSettings. Il file
+Json, come detto precedentemente è composto da due parti. Nella prima parte
+troviamo tutte le impostazioni per la configurazione del SX1301, nella seconda
+parte sono presenti le impostazioni per il forward dei pacchetti. Per questa
+ragione due classi diverse sono state create, SX1301Configuration e
+GatewayConfiguration, accessibili tramite la classe LoraSettings.
+
+\begin{minted}[linenos=true, numbersep=5pt, gobble=2, frame=lines, %
+framesep=2mm]{java}
+    public class LoraSettings {
+            public static final String KEY_GATEWAY_CONFIG = "gateway_conf";
+            public static final String KEY_SX1301 = "SX1301_conf";
+            private SX1301Configuration sx1301Conf;
+            private GatewayConfiguration gatewayConf;
+        }
+\end{minted}
+
 \begin{lstlisting}[language=Java, frame=single]  % Start your code-block
-for i:=maxint to 0 do
-begin
-{ do nothing }
-end;
-Write('Case insensitive ');
-Write('Pascal keywords.');
+
+
+import org.apache.commons.exec
+
 \end{lstlisting}
