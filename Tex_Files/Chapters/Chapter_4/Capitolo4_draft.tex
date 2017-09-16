@@ -1,4 +1,4 @@
-\section{Implementazione}
+\chapter{Implementazione}
 Utilizzando il modulo SX1301 in combinazione con il gateway prodotto da Eurotech
 ReliaGATE 10-11, si è andato a sviluppare un software in grado di ricevere i
 pacchetti inviati da dispositivi LoRa e inviarli ad un Broker Mqtt.
@@ -210,7 +210,32 @@ messaggi pubblicati in esso.
 \begin{figure}[h]
 \centering 
 \includegraphics[width=16cm]{map}
-\caption{Architettura del software}
-\label{fig:Software_stack}
+\caption{Copertura Lora}
+\label{fig:map}
 \end{figure}
+
+\subsection{Osservazioni}
+Come è facile ossevare dalla mappa in figura \ref{fig:map}, la distanza
+massima raggiunta varia molto a seconda della conformazione del territorio. In
+assenza di edifici in linea d'aria,  punto 8 nella figura \ref{fig:map}, è stato
+possibili inviare un pachetto lora ad una distanza di 8.2[km]. Nelle effettuare
+la prova è stato scelto di inviare al server Mqtt solo i pachetti ricevuti
+correttamente riga \ref{line:crc_valid}
+\begin{lstlisting}[
+    language=json,escapechar=|] %language and your escape char
+    "gateway_conf": {
+        "gateway_ID": "AA555A0000000000",
+        "server_address": "0.0.0.0",
+        "serv_port_up": 1703,
+        "serv_port_down": 1702,
+        "keepalive_interval": 10,
+        "stat_interval": 30,
+        "push_timeout_ms": 100,
+        "forward_crc_disabled": false,
+        "forward_crc_valid": true, 
+        "forward_crc_error": false |$\label{line:crc_valid}$|
+    }
+\end{lstlisting}
+
+
 

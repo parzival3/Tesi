@@ -1,109 +1,240 @@
-\section{LPWAN}
-Il principale problema che si presenta nella ottica del IoT è avere una
-infrastruttura di rete capace di gestire il traffico di milioni di dispositivi
-contemporaneamente connessi.  Fino ad oggi la principale tecnologia wireless 
-usata nelle comunicazioni M2M è stata la rete cellulare, la quale copre la quasi
-totalità di tutte le aree geografiche.
-La scelta della rete 2G, 3G, 4G è svantaggiosa poiché offre data-rate molto
-maggiore rispetto a quello normalmente utilizzato in applicazioni IoT,
-comportando l'uso di moduli sovradimensionati e andando ad aumentare di molto il
-prezzo per unità. Inoltre l'elevato consumo energetico e il prezzo svantaggioso
-degli abbonamenti offerti dagli operatori telefonici, ha portato alla ricerca di
-nuovi standard. 
-Per colmare il gap tra tecnologie esistenti e la necessita di connettere milioni
-di devices diversi sono nate le   LPWAN \emph{Low power wide area network}.
-Con questo termine, si identificano tutte quelle reti ideate appositamente per
-l'IoT, le quali garantiscono una ampio raggio di azione, andando a sacrificare
-il bit rate e la complessità dei moduli radio.
-
+\chapter{LoRa}
 \begin{figure}[h]
-        \centering 
-                \includegraphics[width=16cm]{network_comp}
-        \caption{Comparazione tipologia di reti}
+\centering 
+\includegraphics[width=11cm]{spread_spectrum_temp}
+\caption{Comparazione tra UNB e SSP}
 \end{figure}
 
-In questo contesto, i maggiori competitor sono Lora, Sigfox, NB-IoT e LTE-M.
-Anche se ognuna di queste soluzioni punta a ottenere la leadership del mercato,
-esse implementano soluzioni tecniche molto diverse tra di loro, ognuna delle
-quali ha vantaggi e svantaggi.
-\subsection{NB-IoT}
-NB-IoT, o LTE Cat NB1 è un nuovo standard proposto da Huawei, Ericsson, Qualcomm, e Vodafone.
-Utilizzando frequenze licenziate, NB-IoT è in grado di offrire tre diversi
-scenari di sviluppo, \emph{standalone}, \emph{guard band}, \emph{in band}
-\improvement{Aggiungere citazione}
+\section{LoRa}
+\emph{Lora} è una tecnologia di modulazione wirelless semi-proprietaria 
+sviluppata da Semtech. Lora è composta da un layer fisico ,proprietario, che
+prende il nome di \emph{Lora}\cite{LoRaCss101}  , e una parte libera chiamata 
+LoRaWAN\cite{LoRaWAN101}, la quale definisce un protocollo di communicazione, 
+il quale usa LoRa come layer fisico. 
+I punti chiave dei questa tecnologia, sono il grande raggio di copertura e il 
+basso consumo energetico per effettuare uno scambio dati. 
+Per le communicazioni , vengone utilizzata la banda ISM, grazie alle
+quale è possibili costrurire una rete ,che implementa questa tecnologia, senza
+possedere alcuna licenza.
+\improvement[inline]{Completare e riscrivere}
+
+
+\section{CSS}
+Alla base del layer fisico troviamo la modulazione  Chirp Spread Spectrum (CSS). Questo tipo di
+modulazione, ottenuta facendo variare in modo lineare, la frequenza di un segnale
+sinusoidale di durata finita, chiamato chirp. In questo modo è possibili
+distribuire l'informazione su di un spettro maggiore rispetto a quello
+normalmente utilizzato.
+In questo modo è possibile ottenere numerosi vantaggi quali
+\begin{itemize}
+\item Uno spettro idealmente rettangolare, il quale utilizza tutta la capacità
+del canale e fornisce un ottima densità spettrale di potenza rispetto agli atri
+tipi di trasmissione.
+\item \textbf{Segnali di tipo Chirp} possono essere sovrapposti in modo tale da
+poter variare il data-rate e l'energia per bit in modo adattativo per aumentare
+l'efficienza complessiva.
+\item \textbf{Hanno guadagno programmabile}, il quale permette di raggiungere
+distanze considerevoli mantenendo un buon SNR .
+\item  \textbf{Ottima risoluzione nel asse del tempo}, quindi ottimi per coprire
+lunghe distanze.
+\item \textbf{Immuni al effetto Doppler} 
+\item \textbf{Immuni alle degenerazioni per effetto di multipath} \info{Trovare
+termine per multipath}
+\end{itemize}
+Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
+$B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decrescente
+compreso tra le due frequenze $f_0$ e $f_1$. Quindi possiamo parlare di
+\emph{Up-chirp} o di \emph{down-chirp}.
+
+\begin{figure}
+\begin{subfigure}[h]{\textwidth}
+\centering
+\import{Images/Eps/}{Chirp.eps_tex}
+\caption{Segnale Chirp nel dominio della frequenza}
+\end{subfigure}
+
+\begin{subfigure}[h]{\textwidth}
+\centering
+\includegraphics[width=\textwidth]{Time_Chirp}
+\caption{Simbolo codificato col metodo Chirp nel dominio del tempo}
+\end{subfigure}
+\end{figure}
+
+Uno degli aspetti principali del layer fisico, è la possibilità di adattare il
+numero di bit codificati in un simbolo in base alle varie esigenze. 
+Questo parametro che prende il nome di \emph{Spread Factor}, permette a parità
+di potenza impiegata nella trasmissione, di ottenere distanze maggiori andando
+ad aumentare il tempo totale di trasmissione secondo la seguente formula:
+In questo modo è possibile, inviare segnali a distanze maggiori, utilizzando la
+stessa potenza trasmissiva.
+\improvement{Modificare e riscrivere}
+----------------------------------------------------------------------------
+Questa
+possibilità\info{Riscrivere} di adattamento permette a parità di potenza di
+riuscire a raggiunger distanze maggiori andando a variare, quello che nella
+documentazione ufficiale è chiamato \emph{Spread Factor}. Tutto ciò significa
+che (SF) rappresenta $2^{\text{SF}}$ bits in un simbolo. Un differente SF
+implica anche un differente tempo di comunicazione secondo la formula
+
+\begin{equation}
+        T_s=\frac{2^{\text{SF}}}{B}.
+\end{equation}
+
+Dalla quale si evince che andando ad aumentare lo spread factor di una unità,
+mantenendo una lunghezza di banda fissa $B$, otteniamo un raddoppio nel tempo di
+trasmissione. Il fatto di avere messaggi più lunghi, conferisce un robustezza
+superiore alle interferenze e al rumore. In discapito a tutto ciò, il fatto di
+dover codificare il messaggio con un maggiore numero di simboli, aumenta la
+possibilità di errore alla ricezione. 
 
 \begin{figure}[h]
-        \centering 
-                \includegraphics[width=16cm]{nb-iot}
-        \caption{Modalità di funzionamento NB-IoT}
+\centering 
+\import{Images/Eps/}{Chirp_SF.eps_tex}
+\caption{Comparazione simbolica dei vari SF}
 \end{figure}
-Così facendo operatori di rete i quali possiedono ancora l'infrastruttura gsm,
-possono andare a riutilizzarla , diversamente è possibili andare ad adattare le
-cellule 4G per renderle compatibili con questa tecnologia.
-Quello che si prefigge NB-IoT, e riuscire a garantire la sicurezza delle
-comunicazioni cellulari, offrendo un basso costo di sviluppo dal lato hardware,
-una lunga durata della batteria, limitando il thruput massimo dei devices.
 
+Questa nuovo modo di trasmettere i vari dati porta con se molti vantaggi.
+\begin{itemize}
+\item La modulazione Lora è semplice da implementare nei dispositivi, quindi i
+moduli radio al loro interno saranno economici.
+\item Resistente alle interferenze in banda e fuori banda.
+\item Resistente  all'effetto Doppler, in questo modo è possibili utilizzare
+cristalli non molto accurati al interno dei devices, in modo tale da abbattere i
+costi di produzione.
+\item Il modulo di ricezione è altrettanto semplice da costruire, quindi non
+molto costoso.
+\end{itemize}
+\improvement{Rivedere i vari punti e cambiare il linguaggio}
 
-\subsection{NB-IoT e LTE-M}
-Simile ad NB-IoT, LTE-M o LTE Cat-M1  è uno standard che opera su frequenze 
-licenziate , della rete 4G. Il vero punto di forza di questa tecnologia è il
-poter utilizzare le celle 4G senza dover apportare modifiche, andando ad
-offirere una maggiore thruput, a discapito dei consumi energetici. Per questo motivo
-LTE-M è in rapida espansione. 
-
-\ref{fig:comparazione_reti}, queste due tecnologie offrono prestazioni diverse,
-e si impongono due use-case diversi.
-Quindi funzionano in uno spettro proprietario, e forniscono prestazioni diverse
-per i diversi use-case. In particolare devices che utilizzano NB-IoT hanno una
-durata della batteria molto più prolungata di quelli che utilizzano la
-connessione LTE-M, la quale permette un maggiore band-with a discapito delle
-durata. Il vantaggio di questi standard e che non servono grandi cambiamenti
-alla rete telefonica, quindi sono facilmente implementabili dalle compagnie
-telefoniche. Inoltre, ogni devices sarà dotato di una sim-card per poter
-connettersi, in questo modo è possibile ottenere  una sicurezza simile a quella
-implementato nelle connessioni LTE.
-Altro punto a favore è il fatto che non è necessario utilizzare gateway, ogni
-devices e connesso direttamente alla rete. 
-La maggior parte delle compagnie telefoniche ha già dei piani per rendere disponibile queste due
-tecnologie.
+Analizzando lo spettrogramma di una comunicazione Lora è possibile distinguere
+in modo semplice le varie parti che compongono il pachetto trasmesso. 
 
 \begin{figure}[h]
-        \centering 
-                \includegraphics[width=11cm]{Comparsion_no_line}
-        \caption{Comparazione reti LPWAN}
-        \label{fig:comparazione_reti}
+\centering 
+\includegraphics[width=9cm]{Chirp_Message}
+\caption{Struttura pacchetto Lora }
 \end{figure}
 
-\subsection{Sigfox}
-Sigfox, azienda francese la quale dal 2015 ha iniziato a sviluppare una rete
-privata in Francia Spagna e Regno unito, promettendo di coprire più di 60 stati
-entro il 2020. Sigfox opera sulle frequenze ISM, quindi i costi delle
-infrastrutture e i costi che l'utente finale è tenuto a supportare sono molto
-inferiori rispetto alle soluzioni che si basano sulla rete cellulare. Il principale,
-vantaggio di avere una rete unica mondiale, è la possibilità di un abbonamento unico e la
-continuità di funzionamento dei diversi devices in tutte le aree coperte.
-Utilizzando una modulazione \emph{Ultra narrow band}, Sigfox, permette di
-coprire distanze pari a un paio di chilometri nelle zone urbane, fino a alcune
-decine di chilometri in zone rurali. Essendo Sigfox una tecnologia
-open hardware, è semplice per i produttori di moduli radio, adattare i loro
-componenti per renderli compatibili alla rete Sigfox. In questo modo il costo
-per unità diventa molto basso.
-Appoggiandosi a frequenze ISM, questa tecnologia è limita la dimensione massima
-del payload per messaggio pari a 12 byte, con 140 messaggi inviabili al giorno
-per devices.
+Osservando l'immagine precedente è facile notare come è strutturato un pacchetto.
+La prima parte della trasmissione, nonché il preambolo  stesso è codificato con una
+serie di \emph{up-chirp}. In questo modo il gateway riesce a sintonizzarsi sulla
+stessa frequenza del dispositivo trasmittente.
+Successivamente vengono inviati una serie di
+\emph{down-chirp} i quali rappresentano l'header codificato dal layer fisico,
+dove sono presenti dei bit di controloo e correzzione degli errori
+L'ultima parte rappresenta il payload codificato dal PHY, in questa parte,
+formata solo da \emph{up-chirp} sono presenti dei salti, i quali sono un chiaro
+segno della presenza di dati codificati.
 
-Per riuscire a gestire in maniera adeguata il sempre maggior numero di device
-connessi, e le diverse problematiche che essi comportano, è necessario andare a
-ridisegnare la topologia di rete per fare in modo che rispecchi i punti necessari
-per garantire il corretto funzionamento. Finora le principali tecnologie
-utilizzate erano la rete cellulare 2G, 3G, 4G, la quali hanno un ampia copertura
-su tutto il territorio, ma devices che alimentati tramite batteria hanno durate
-massime di mesi. Oltre alla rete cellulare abbiamo gli standard IEE 802.11, il
-comunemente chiamato wifi, il quale garantisce una copertura di poche decine di
-metri e favorisce una connessione veloce a discapito della durata della
-batteria. Oppure, Bluetooth e ZigBee i quali hanno offrono una connessione
-wireless con copertura di poche decine di metri. Oltre al fatto di una scarsa
-copertura e di un elevato consumo di energia per comunicazione, tutte queste
-tipologie di rete non sono scalabili cioè non sono ideate per supportare un
-carico di milioni di devices connessi contemporaneamente. 
+\begin{figure}[h]
+\centering 
+\includegraphics[width=9cm]{PHY_packet}
+\caption{Pacchetto codificato dal layer fisico}
+\end{figure}
+
+\improvement[inline]{Aggiungere immagine e finire la spiegazione}
+
+Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
+informazioni dato che la tecnologia è proprietaria di Semtech. Nella
+documentazione ufficiale è presente una rappresentazione grafica dei vari
+blocchi presenti al interno dei moduli radio.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{SX1301}
+\caption{Struttura interna ricevitore SX1301}
+\label{fig:sx1301}
+\end{figure}
+
+Dalla figura \ref{fig:sx1301} è evidendte che il gateway rimane in ascolto su 8 
+frequenze diverse, le quali permettono di coprire tutti i vari SF. 
+Tutto ciò è possibili anche grazie al fatto che i vari SF sono quasi ortogonali 
+fra di loro, perciò il ricevitore è in grado di ricevere pacchetti da SF diversi 
+contemporaneamente. Questo tipo di ricevitore può demodulare fino ad un massimo 
+di 8 pacchetti contemporaneamente. Inoltre questa topologia permette di avere 
+vari vantaggi
+\begin{itemize}
+\item I vari nodi della rete, possono cambiare frequenza in ogni trasmissione in
+modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
+interferenze.
+\item Non è necessario avere tabelle contenenti informazioni riguardanti il
+data-rate dei vari nodi. Ogni data-rate viene demodulato contemporaneamente.
+\item È possibilie utilizzare più antenne nel gateway per realizzare il
+cosidetto true antenna diversity, per aumentare la robustezza al multi-path
+\end{itemize}
+\unsure{Riguardare ultimo punto della documentazione pagina 14}
+
+\section{LoRaWAN}
+\info[inline]{Chiedere se il termine protocollo è appropriato}
+La parte non proprietaria del protocollo è chiamata \emph{LoRaWAN}, in essa
+viene descritta la topologia di rete, la struttura dei pacchetti e le varie
+classi di device possibili.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{LPWAN_Star_network}
+\caption{Struttura rete a stella LPWAN}
+\end{figure}
+
+La topologia di rete utilizzata, è una topologia a stella, nella quale molti
+dispositivi sono connessi e comunicano con uno o più base station. Le BS non
+sono altro che dei ponti per poter trasmettere i messaggi ricevuto dai vari
+devices all Network Server, tramite una connessione ethernet, 3G o 2G. 
+Per come è strutturata la rete, un messaggio inviato
+da un singolo device, può essere ricevuto e inoltrato da più BS all Network
+Server.
+
+Il NS ha il compito di interpretare e scartare i vari messaggi duplicati che
+arrivano, selezionare la BS più adatta per inviare il messaggio di downlink
+creando un database di tutti i vari devices presenti nella rete. Nella figura
+\ref{fig:stack_lora} è rappresentato lo stack del protocollo degli end-devices,
+gateway  e network-server. 
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{Lora_WAN_Stack}
+\caption{Stack del protocollo della rete LoRaWAN}
+\label{fig:stack_lora}
+\end{figure}
+
+Esistono tre classi di devices, le quali specificano i vari use-case per
+possibili.
+
+\begin{itemize}
+\item \textbf{Class A} è la modalità di funzionamento predefinita. In questa
+modalità il device si occupa solo di trasmettere i vari messaggi in maniera
+completamente asincrona. Eseguita la trasmissione, due finestre di ascolto
+vengono aperte nel end-device. La prima finestra rimane in ascolto nella stessa
+frequenza in cui il dato è stato comunicato, mentre la seconda rimane in ascolto
+su una frequenza nota a priori e comunicata tramite il MAC.
+\item \textbf{Class B} sono devices i quali sono sincronizzati con il NS tramite
+beacon packets. In questo modo hanno la possibilità di ricevere dati in un
+determinata finestra di tempo. In questa classe rientrano interruttori ,
+attuatori ecc..
+\item \textbf{Class C} è riservata ai devices che hanno la possibilità di e
+essere alimentati direttamente dalla rete elettrica, quindi possono mantenere il
+ricevitore costantemente in ascolto.
+\end{itemize}
+
+\section{Frequenze}
+A seconda della regione in qui operano i devices, lo standard LoRaWAN definisce
+ quali frequenze vengono occupate in base alle regolamentazione vigente in
+Europa Cina e Stati Uniti.  Per ognuna di queste regioni, vengono definite 
+la struttura del payload, la frequenza, lo spreading factor, e la massima
+lunghezza possibile del payload.
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c}
+                \toprule
+                Stato   & Frequenza [MHz] \\
+                \hline
+                Europa  & 868-870 \\
+                US      & 902-928 \\
+                China   & 779-787 \\
+                \bottomrule
+        \end{tabular}
+        \caption{Bande di frequenza per le varie regioni}
+\end{table}
+Inoltre tutte le frequenze sono comprese nelle bade ISM, e non sono
+particolarmente elevate, rendendole preferibili per le lunghe distanze rispetto
+a frequenze quali 2.4 [GHz] e 5[GHz]

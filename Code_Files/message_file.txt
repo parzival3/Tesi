@@ -1,0 +1,752 @@
+Messaggio numero 1
+----------------------------------
+b'On'
+##################################
+Messaggio numero 2
+----------------------------------
+b'Off'
+##################################
+Messaggio numero 3
+----------------------------------
+b'On'
+##################################
+Messaggio numero 4
+----------------------------------
+b'Off'
+##################################
+Messaggio numero 5
+----------------------------------
+b'oi'
+##################################
+Messaggio numero 6
+----------------------------------
+b'oi'
+##################################
+Messaggio numero 1
+----------------------------------
+b'A'
+##################################
+Messaggio numero 2
+----------------------------------
+b'B'
+##################################
+Messaggio numero 3
+----------------------------------
+b'C'
+##################################
+Messaggio numero 1
+----------------------------------
+b'Hello'
+##################################
+Messaggio numero 2
+----------------------------------
+b'Prova'
+##################################
+Messaggio numero 1
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:37:51.9772Z","timestamp":372579588,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-13.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAnQAGHL9i6D9pxul9VQ=="}'
+##################################
+Messaggio numero 2
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:37:51.9772Z","timestamp":372579588,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-14,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAnQAGHL9i6D9pxul9VQ=="}'
+##################################
+Messaggio numero 3
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:37:51.9772Z","timestamp":372579596,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-14,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAnQAGHL9i6D9pxul9VQ=="}'
+##################################
+Messaggio numero 4
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:39:08.022707Z","timestamp":448617124,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-63,"loRaSNR":8.2,"size":23,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QBQGAACAqQcBH1rHTIFMIn3QNPNQaKk="}'
+##################################
+Messaggio numero 5
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:39:08.022707Z","timestamp":448617132,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-67,"loRaSNR":8,"size":23,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QBQGAACAqQcBH1rHTIFMIn3QNPNQaKk="}'
+##################################
+Messaggio numero 6
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T15:39:08.022707Z","timestamp":448617132,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-67,"loRaSNR":6.8,"size":23,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QBQGAACAqQcBH1rHTIFMIn3QNPNQaKk="}'
+##################################
+Messaggio numero 7
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:06:39.354325Z","timestamp":2099931884,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-102,"loRaSNR":6,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oj1PBjg5XBFWxxLP2/LH2ylHo="}'
+##################################
+Messaggio numero 8
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:06:39.354325Z","timestamp":2099931892,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-102,"loRaSNR":6,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oj1PBjg5XBFWxxLP2/LH2ylHo="}'
+##################################
+Messaggio numero 9
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:06:39.354325Z","timestamp":2099931892,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-102,"loRaSNR":6.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oj1PBjg5XBFWxxLP2/LH2ylHo="}'
+##################################
+Messaggio numero 10
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:07:01.722909Z","timestamp":2122296980,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-106,"loRaSNR":6.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oh1JBkdqbBFWxxLP2/LAxgvkQ="}'
+##################################
+Messaggio numero 11
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:07:01.722909Z","timestamp":2122296980,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-106,"loRaSNR":6.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oh1JBkdqbBFWxxLP2/LAxgvkQ="}'
+##################################
+Messaggio numero 12
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:07:01.722909Z","timestamp":2122296980,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-106,"loRaSNR":6.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oh1JBkdqbBFWxxLP2/LAxgvkQ="}'
+##################################
+Messaggio numero 13
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:10:23.361856Z","timestamp":2323931412,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPVJVOK9H349N5sDkTnxuLxUoA="}'
+##################################
+Messaggio numero 14
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:10:23.361856Z","timestamp":2323931412,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-7,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPVJVOK9H349N5sDkTnxuLxUoA="}'
+##################################
+Messaggio numero 15
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:10:23.361856Z","timestamp":2323931420,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-7.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPVJVOK9H349N5sDkTnxuLxUoA="}'
+##################################
+Messaggio numero 16
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:11:01.339247Z","timestamp":2361911196,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-19,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABQACuJVoH0R65dyl3gJjdIxVlVhNe5c="}'
+##################################
+Messaggio numero 17
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:11:01.339247Z","timestamp":2361911204,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-17.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABQACuJVoH0R65dyl3gJjdIxVlVhNe5c="}'
+##################################
+Messaggio numero 18
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:11:10.071852Z","timestamp":2370640804,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABgACSsNDof7G41MgTLtm79CoDOss8Vk="}'
+##################################
+Messaggio numero 19
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:11:10.071852Z","timestamp":2370640804,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-17,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABgACSsNDof7G41MgTLtm79CoDOss8Vk="}'
+##################################
+Messaggio numero 20
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:11:10.071852Z","timestamp":2370640804,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-17,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABgACSsNDof7G41MgTLtm79CoDOss8Vk="}'
+##################################
+Messaggio numero 21
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:18:21.662708Z","timestamp":2802223124,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-17.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAoQAGwFuy20JS69C+xQ=="}'
+##################################
+Messaggio numero 22
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:18:21.662708Z","timestamp":2802223124,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-17,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAoQAGwFuy20JS69C+xQ=="}'
+##################################
+Messaggio numero 23
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:18:21.662708Z","timestamp":2802223132,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-17.5,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAoQAGwFuy20JS69C+xQ=="}'
+##################################
+Messaggio numero 24
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:30.372955Z","timestamp":2930937732,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-1.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0vFjg6HBFWxxLP2/LIntg+Q="}'
+##################################
+Messaggio numero 25
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:30.372955Z","timestamp":2930937732,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-117,"loRaSNR":-1.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0vFjg6HBFWxxLP2/LIntg+Q="}'
+##################################
+Messaggio numero 26
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:30.372955Z","timestamp":2930937732,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-1.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0vFjg6HBFWxxLP2/LIntg+Q="}'
+##################################
+Messaggio numero 27
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:50.213573Z","timestamp":2950770932,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-10,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0o1jgqrBFWxxLP2/LErXuec="}'
+##################################
+Messaggio numero 28
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:50.213573Z","timestamp":2950770932,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-10,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0o1jgqrBFWxxLP2/LErXuec="}'
+##################################
+Messaggio numero 29
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:50.213573Z","timestamp":2950770940,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-10.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Og0o1jgqrBFWxxLP2/LErXuec="}'
+##################################
+Messaggio numero 30
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:59.370989Z","timestamp":2959934876,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-6.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPJI9eNKTz49N5sDkTnxsZhcdo="}'
+##################################
+Messaggio numero 31
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:59.370989Z","timestamp":2959934876,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-6.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPJI9eNKTz49N5sDkTnxsZhcdo="}'
+##################################
+Messaggio numero 32
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:20:59.370989Z","timestamp":2959934884,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-6.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAgAC9jPJI9eNKTz49N5sDkTnxsZhcdo="}'
+##################################
+Messaggio numero 33
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:11.171863Z","timestamp":3211728716,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-3,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABAACCSvl0WjvpLWqHXV/E7ZW8G1Ifjk="}'
+##################################
+Messaggio numero 34
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:11.171863Z","timestamp":3211728716,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-3,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABAACCSvl0WjvpLWqHXV/E7ZW8G1Ifjk="}'
+##################################
+Messaggio numero 35
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:11.171863Z","timestamp":3211728716,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-3,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABAACCSvl0WjvpLWqHXV/E7ZW8G1Ifjk="}'
+##################################
+Messaggio numero 36
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:40.26574Z","timestamp":3240826148,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-4.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacAg26itNPsM2l/l7fS11xndgHk="}'
+##################################
+Messaggio numero 37
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:40.26574Z","timestamp":3240826148,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-4,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacAg26itNPsM2l/l7fS11xndgHk="}'
+##################################
+Messaggio numero 38
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:25:40.26574Z","timestamp":3240826148,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-4,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacAg26itNPsM2l/l7fS11xndgHk="}'
+##################################
+Messaggio numero 39
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:46:10.059198Z","timestamp":175605420,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-18.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oi0h1jktvBFWxxLP2/LFBJxyw="}'
+##################################
+Messaggio numero 40
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:46:10.059198Z","timestamp":175605420,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-18.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oi0h1jktvBFWxxLP2/LFBJxyw="}'
+##################################
+Messaggio numero 41
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:46:10.059198Z","timestamp":175605420,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-18.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAAQAC59Oi0h1jktvBFWxxLP2/LFBJxyw="}'
+##################################
+Messaggio numero 42
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:08.939597Z","timestamp":294484148,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-19.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABAACCSv40bDoQdaqHXV/E7ZW8B0+Tkc="}'
+##################################
+Messaggio numero 43
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:08.939597Z","timestamp":294484148,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-19.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABAACCSv40bDoQdaqHXV/E7ZW8B0+Tkc="}'
+##################################
+Messaggio numero 44
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:38.736927Z","timestamp":324282404,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-14.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacA822qq25QM2l/l7fS118AJ14c="}'
+##################################
+Messaggio numero 45
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:38.736927Z","timestamp":324282404,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-15,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacA822qq25QM2l/l7fS118AJ14c="}'
+##################################
+Messaggio numero 46
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:38.736927Z","timestamp":324282404,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-14.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroABwACacA822qq25QM2l/l7fS118AJ14c="}'
+##################################
+Messaggio numero 47
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.173971Z","timestamp":333707732,"frequency":867500000,"channel":5,"rfChain":0,"crcStatus":1,"codeRate":"4/5","rssi":-118,"loRaSNR":-16.5,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 48
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.173971Z","timestamp":333707740,"frequency":867500000,"channel":4,"rfChain":0,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 49
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.173971Z","timestamp":333707732,"frequency":867500000,"channel":3,"rfChain":0,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 50
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.173971Z","timestamp":333707732,"frequency":867500000,"channel":7,"rfChain":0,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 51
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.173971Z","timestamp":333707732,"frequency":867500000,"channel":6,"rfChain":0,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 52
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.590958Z","timestamp":334136788,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-15.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACAAC8BHK0Wp4XvFduNWpsDUU2G998LY="}'
+##################################
+Messaggio numero 53
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.590958Z","timestamp":334136788,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-16.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACAAC8BHK0Wp4XvFduNWpsDUU2G998LY="}'
+##################################
+Messaggio numero 54
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:48:48.590958Z","timestamp":334136788,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-16.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACAAC8BHK0Wp4XvFduNWpsDUU2G998LY="}'
+##################################
+Messaggio numero 55
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:49:07.619967Z","timestamp":353162324,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-121,"loRaSNR":-14.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACgACttuOlCrk65rbMFSSywkfvQE+SYo="}'
+##################################
+Messaggio numero 56
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:49:07.619967Z","timestamp":353162332,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-14.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACgACttuOlCrk65rbMFSSywkfvQE+SYo="}'
+##################################
+Messaggio numero 57
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:49:07.619967Z","timestamp":353162332,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-14.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroACgACttuOlCrk65rbMFSSywkfvQE+SYo="}'
+##################################
+Messaggio numero 58
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:52:48.733661Z","timestamp":574275068,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-121,"loRaSNR":-16.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAIgAC4BDohtrzdGTbsbA0VS5zVW7FN+c="}'
+##################################
+Messaggio numero 59
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:54:56.627303Z","timestamp":702174356,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-11.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAMAACbcfR2XLSEzhOfDDU8FKgCA0OBnk="}'
+##################################
+Messaggio numero 60
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:57:05.501717Z","timestamp":831036924,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-1.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAPgACq3mRI5Cn2v3f8V1/GpUmHRxyPx8="}'
+##################################
+Messaggio numero 61
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:57:51.707474Z","timestamp":877238788,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-104,"loRaSNR":4.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAQwACCBjvPTm7lVejEYigRQVLMc68OQ4="}'
+##################################
+Messaggio numero 62
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:57:51.707474Z","timestamp":877238788,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-104,"loRaSNR":4.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAQwACCBjvPTm7lVejEYigRQVLMc68OQ4="}'
+##################################
+Messaggio numero 63
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:57:51.707474Z","timestamp":877238788,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-104,"loRaSNR":4.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAQwACCBjvPTm7lVejEYigRQVLMc68OQ4="}'
+##################################
+Messaggio numero 64
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:58:00.178461Z","timestamp":885711580,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-109,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroARAACJQJ2gFQqv6EutCduVsxyEQFHi3k="}'
+##################################
+Messaggio numero 65
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:58:00.178461Z","timestamp":885711580,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-109,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroARAACJQJ2gFQqv6EutCduVsxyEQFHi3k="}'
+##################################
+Messaggio numero 66
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:58:00.178461Z","timestamp":885711580,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-109,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroARAACJQJ2gFQqv6EutCduVsxyEQFHi3k="}'
+##################################
+Messaggio numero 67
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:58:19.372442Z","timestamp":904907916,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-87,"loRaSNR":3.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroARgACWCZ46cFsaQjPWiTuasmCZP/tGug="}'
+##################################
+Messaggio numero 68
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:59:02.780415Z","timestamp":948321732,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-121,"loRaSNR":-16,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 69
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:59:02.780415Z","timestamp":948321732,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-15.8,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 70
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T16:59:02.780415Z","timestamp":948321732,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-16,"size":19,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"gANYRgOAowAGDRhXC9RmSuPpkg=="}'
+##################################
+Messaggio numero 71
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:03.305967Z","timestamp":1008849156,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-79,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAUQACTn52/2CVY7vLZKHhvkhcPVda6xI="}'
+##################################
+Messaggio numero 72
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:03.305967Z","timestamp":1008849156,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-80,"loRaSNR":6.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAUQACTn52/2CVY7vLZKHhvkhcPVda6xI="}'
+##################################
+Messaggio numero 73
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:11.966989Z","timestamp":1017502620,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-72,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAUgACDDO1BFJgPdR/KspVLqUgnhTsbT4="}'
+##################################
+Messaggio numero 74
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:11.966989Z","timestamp":1017502620,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-70,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAUgACDDO1BFJgPdR/KspVLqUgnhTsbT4="}'
+##################################
+Messaggio numero 75
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:11.966989Z","timestamp":1017502620,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-70,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAUgACDDO1BFJgPdR/KspVLqUgnhTsbT4="}'
+##################################
+Messaggio numero 76
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:32.228952Z","timestamp":1037764620,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVAACD3+zSrFd/TUVMwwes2LkW6EOPq4="}'
+##################################
+Messaggio numero 77
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:32.228952Z","timestamp":1037764620,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVAACD3+zSrFd/TUVMwwes2LkW6EOPq4="}'
+##################################
+Messaggio numero 78
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:32.228952Z","timestamp":1037764628,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-72,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVAACD3+zSrFd/TUVMwwes2LkW6EOPq4="}'
+##################################
+Messaggio numero 79
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:59.745376Z","timestamp":1065276516,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-70,"loRaSNR":7.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVwACHEc8JqnmvMq6b9Gm3ZK/axhZC/4="}'
+##################################
+Messaggio numero 80
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:59.745376Z","timestamp":1065276516,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-70,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVwACHEc8JqnmvMq6b9Gm3ZK/axhZC/4="}'
+##################################
+Messaggio numero 81
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:00:59.745376Z","timestamp":1065276516,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-70,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAVwACHEc8JqnmvMq6b9Gm3ZK/axhZC/4="}'
+##################################
+Messaggio numero 82
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:18.794343Z","timestamp":1084325996,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-72,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAWQACWDVNwu0t7D6iYwSYy0ymiIya3pU="}'
+##################################
+Messaggio numero 83
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:18.794343Z","timestamp":1084325996,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":9,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAWQACWDVNwu0t7D6iYwSYy0ymiIya3pU="}'
+##################################
+Messaggio numero 84
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:18.794343Z","timestamp":1084325996,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-72,"loRaSNR":8.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAWQACWDVNwu0t7D6iYwSYy0ymiIya3pU="}'
+##################################
+Messaggio numero 85
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:56.870329Z","timestamp":1122401132,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAXQACF8XVkpmBTIoBHzV0iNtTa0cbkCo="}'
+##################################
+Messaggio numero 86
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:56.870329Z","timestamp":1122401132,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAXQACF8XVkpmBTIoBHzV0iNtTa0cbkCo="}'
+##################################
+Messaggio numero 87
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:01:56.870329Z","timestamp":1122401132,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAXQACF8XVkpmBTIoBHzV0iNtTa0cbkCo="}'
+##################################
+Messaggio numero 88
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:02:25.51533Z","timestamp":1151045684,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-121,"loRaSNR":-13,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QCg7imOANBMGJwVQ6moqvu5d7JnWiONYxvmeSVE="}'
+##################################
+Messaggio numero 89
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:02:25.51533Z","timestamp":1151045684,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-119,"loRaSNR":-12.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QCg7imOANBMGJwVQ6moqvu5d7JnWiONYxvmeSVE="}'
+##################################
+Messaggio numero 90
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:02:25.51533Z","timestamp":1151045692,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-120,"loRaSNR":-13,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QCg7imOANBMGJwVQ6moqvu5d7JnWiONYxvmeSVE="}'
+##################################
+Messaggio numero 91
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:02:33.215887Z","timestamp":1158753116,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":5.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAYQACpaU9NfxSPC24LLigTXbJkFWRk04="}'
+##################################
+Messaggio numero 92
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:02:33.215887Z","timestamp":1158753124,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":6.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAYQACpaU9NfxSPC24LLigTXbJkFWRk04="}'
+##################################
+Messaggio numero 93
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:02.30927Z","timestamp":1187844476,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZAACyIu4w7sc3Ze58LsshbAohllB9hc="}'
+##################################
+Messaggio numero 94
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:02.30927Z","timestamp":1187844476,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZAACyIu4w7sc3Ze58LsshbAohllB9hc="}'
+##################################
+Messaggio numero 95
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:02.30927Z","timestamp":1187844476,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZAACyIu4w7sc3Ze58LsshbAohllB9hc="}'
+##################################
+Messaggio numero 96
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:30.711283Z","timestamp":1216239780,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZwACLsIK0o6xyGQsgxKkCOWyOKa9z48="}'
+##################################
+Messaggio numero 97
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:30.711283Z","timestamp":1216239780,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZwACLsIK0o6xyGQsgxKkCOWyOKa9z48="}'
+##################################
+Messaggio numero 98
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:03:30.711283Z","timestamp":1216239780,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAZwACLsIK0o6xyGQsgxKkCOWyOKa9z48="}'
+##################################
+Messaggio numero 99
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:04:46.407877Z","timestamp":1291942412,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAbwACypjcTOuS+izCaYuWy+HSYsPiB7M="}'
+##################################
+Messaggio numero 100
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:04:46.407877Z","timestamp":1291942412,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAbwACypjcTOuS+izCaYuWy+HSYsPiB7M="}'
+##################################
+Messaggio numero 101
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:04:46.407877Z","timestamp":1291942412,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAbwACypjcTOuS+izCaYuWy+HSYsPiB7M="}'
+##################################
+Messaggio numero 102
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:05.173272Z","timestamp":1310711724,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAcQAC+zJitIrLAJVsV2cOr/ZeMmateuY="}'
+##################################
+Messaggio numero 103
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:05.173272Z","timestamp":1310711724,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAcQAC+zJitIrLAJVsV2cOr/ZeMmateuY="}'
+##################################
+Messaggio numero 104
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:15.507268Z","timestamp":1321033884,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAcgAClgKfAIludjqFk+JD7gQAhl/qFdk="}'
+##################################
+Messaggio numero 105
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:15.507268Z","timestamp":1321033876,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAcgAClgKfAIludjqFk+JD7gQAhl/qFdk="}'
+##################################
+Messaggio numero 106
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:15.507268Z","timestamp":1321033884,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAcgAClgKfAIludjqFk+JD7gQAhl/qFdk="}'
+##################################
+Messaggio numero 107
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:34.071278Z","timestamp":1339600068,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdAAC6kYKG/mmAg7VTlNdBVvEV3xhHxc="}'
+##################################
+Messaggio numero 108
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:34.071278Z","timestamp":1339600068,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdAAC6kYKG/mmAg7VTlNdBVvEV3xhHxc="}'
+##################################
+Messaggio numero 109
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:34.071278Z","timestamp":1339600068,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-77,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdAAC6kYKG/mmAg7VTlNdBVvEV3xhHxc="}'
+##################################
+Messaggio numero 110
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:52.263251Z","timestamp":1357796868,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdgACoR/thdBuN7SItl59ENEFeRnj6ZI="}'
+##################################
+Messaggio numero 111
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:52.263251Z","timestamp":1357796868,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdgACoR/thdBuN7SItl59ENEFeRnj6ZI="}'
+##################################
+Messaggio numero 112
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:05:52.263251Z","timestamp":1357796868,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAdgACoR/thdBuN7SItl59ENEFeRnj6ZI="}'
+##################################
+Messaggio numero 113
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:04.150272Z","timestamp":1489680812,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhAACCDvkn40H0bAnBAZTg+sG53yZXCA="}'
+##################################
+Messaggio numero 114
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:04.150272Z","timestamp":1489680812,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhAACCDvkn40H0bAnBAZTg+sG53yZXCA="}'
+##################################
+Messaggio numero 115
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:04.150272Z","timestamp":1489680812,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhAACCDvkn40H0bAnBAZTg+sG53yZXCA="}'
+##################################
+Messaggio numero 116
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:33.192899Z","timestamp":1518724292,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhwACoX4ewkFgvZa/MUTCY1KMjBNgLnI="}'
+##################################
+Messaggio numero 117
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:33.192899Z","timestamp":1518724292,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhwACoX4ewkFgvZa/MUTCY1KMjBNgLnI="}'
+##################################
+Messaggio numero 118
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:08:33.192899Z","timestamp":1518724300,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAhwACoX4ewkFgvZa/MUTCY1KMjBNgLnI="}'
+##################################
+Messaggio numero 119
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:41.502816Z","timestamp":1587027948,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjgACra3y9Sc7p8fzsVc19Z+wwusv4y8="}'
+##################################
+Messaggio numero 120
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:41.502816Z","timestamp":1587027956,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjgACra3y9Sc7p8fzsVc19Z+wwusv4y8="}'
+##################################
+Messaggio numero 121
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:41.502816Z","timestamp":1587027948,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjgACra3y9Sc7p8fzsVc19Z+wwusv4y8="}'
+##################################
+Messaggio numero 122
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:51.458282Z","timestamp":1596986820,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjwACfVhlW6VRoiVGG5Ua9R+ZiqSM/uY="}'
+##################################
+Messaggio numero 123
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:51.458282Z","timestamp":1596986820,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjwACfVhlW6VRoiVGG5Ua9R+ZiqSM/uY="}'
+##################################
+Messaggio numero 124
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:09:51.458282Z","timestamp":1596986820,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAjwACfVhlW6VRoiVGG5Ua9R+ZiqSM/uY="}'
+##################################
+Messaggio numero 125
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:11:33.412269Z","timestamp":1698935996,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAmgACQ7u06SOsjZ6w2054sXM5j17qAF4="}'
+##################################
+Messaggio numero 126
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:11:33.412269Z","timestamp":1698935996,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":9,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAmgACQ7u06SOsjZ6w2054sXM5j17qAF4="}'
+##################################
+Messaggio numero 127
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:11:33.412269Z","timestamp":1698936004,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAmgACQ7u06SOsjZ6w2054sXM5j17qAF4="}'
+##################################
+Messaggio numero 128
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:12:01.026264Z","timestamp":1726556380,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAnQAC0rOl2y/quCdvPNHkWOg4JoWajfk="}'
+##################################
+Messaggio numero 129
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:12:01.026264Z","timestamp":1726556380,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAnQAC0rOl2y/quCdvPNHkWOg4JoWajfk="}'
+##################################
+Messaggio numero 130
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:12:37.980305Z","timestamp":1763500740,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":9,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAoQAC5E1BoIVtph5/gTfXzdv5LkAWz5c="}'
+##################################
+Messaggio numero 131
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:12:37.980305Z","timestamp":1763500740,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAoQAC5E1BoIVtph5/gTfXzdv5LkAWz5c="}'
+##################################
+Messaggio numero 132
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:12:37.980305Z","timestamp":1763500740,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAoQAC5E1BoIVtph5/gTfXzdv5LkAWz5c="}'
+##################################
+Messaggio numero 133
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:14:16.472337Z","timestamp":1861997020,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAqwAC/awUJfl0Y2AkgptSXI4xZgOmFSA="}'
+##################################
+Messaggio numero 134
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:14:16.472337Z","timestamp":1861997020,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAqwAC/awUJfl0Y2AkgptSXI4xZgOmFSA="}'
+##################################
+Messaggio numero 135
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:14:16.472337Z","timestamp":1861997020,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAqwAC/awUJfl0Y2AkgptSXI4xZgOmFSA="}'
+##################################
+Messaggio numero 136
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:15:09.216368Z","timestamp":1914741524,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAsQAC0tyRdmrC/QdLSHCL9VrGbrbvITc="}'
+##################################
+Messaggio numero 137
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:15:09.216368Z","timestamp":1914741532,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAsQAC0tyRdmrC/QdLSHCL9VrGbrbvITc="}'
+##################################
+Messaggio numero 138
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:16:19.007393Z","timestamp":1984524060,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAuAACtP9hhqS6LgR9UgZis5arOIhTDcY="}'
+##################################
+Messaggio numero 139
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:16:19.007393Z","timestamp":1984524060,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAuAACtP9hhqS6LgR9UgZis5arOIhTDcY="}'
+##################################
+Messaggio numero 140
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:16:19.007393Z","timestamp":1984524060,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAuAACtP9hhqS6LgR9UgZis5arOIhTDcY="}'
+##################################
+Messaggio numero 141
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:33.946125Z","timestamp":2059461220,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwAACO6UV9jK9GVMJXt66LSEbSH431nE="}'
+##################################
+Messaggio numero 142
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:33.946125Z","timestamp":2059461220,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwAACO6UV9jK9GVMJXt66LSEbSH431nE="}'
+##################################
+Messaggio numero 143
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:33.946125Z","timestamp":2059461228,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwAACO6UV9jK9GVMJXt66LSEbSH431nE="}'
+##################################
+Messaggio numero 144
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:53.667538Z","timestamp":2079181444,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwgACjXxnShs3rqmIpmX6uTCY8EyKm0E="}'
+##################################
+Messaggio numero 145
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:53.667538Z","timestamp":2079181444,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwgACjXxnShs3rqmIpmX6uTCY8EyKm0E="}'
+##################################
+Messaggio numero 146
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:17:53.667538Z","timestamp":2079181452,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAwgACjXxnShs3rqmIpmX6uTCY8EyKm0E="}'
+##################################
+Messaggio numero 147
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:21.057148Z","timestamp":2106579892,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxQAC3ZI/I5L5PvNgUL4uuPEzekJ4riM="}'
+##################################
+Messaggio numero 148
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:21.057148Z","timestamp":2106579892,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxQAC3ZI/I5L5PvNgUL4uuPEzekJ4riM="}'
+##################################
+Messaggio numero 149
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:21.057148Z","timestamp":2106579900,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxQAC3ZI/I5L5PvNgUL4uuPEzekJ4riM="}'
+##################################
+Messaggio numero 150
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:38.711532Z","timestamp":2124227604,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxwACyWjO03ig9Klg28UWCnlEhtnqKsQ="}'
+##################################
+Messaggio numero 151
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:38.711532Z","timestamp":2124227612,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxwACyWjO03ig9Klg28UWCnlEhtnqKsQ="}'
+##################################
+Messaggio numero 152
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:18:38.711532Z","timestamp":2124227604,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAxwACyWjO03ig9Klg28UWCnlEhtnqKsQ="}'
+##################################
+Messaggio numero 153
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:19:15.984148Z","timestamp":2161506068,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAywACSqeMY98sjvIIZYYo1bTDAVYDoME="}'
+##################################
+Messaggio numero 154
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:19:15.984148Z","timestamp":2161506068,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAywACSqeMY98sjvIIZYYo1bTDAVYDoME="}'
+##################################
+Messaggio numero 155
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:19:15.984148Z","timestamp":2161506068,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":10,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAywACSqeMY98sjvIIZYYo1bTDAVYDoME="}'
+##################################
+Messaggio numero 156
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:21.594657Z","timestamp":2227115828,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA0gAC5ff8MPtLEnobJLFuL7PAwPo2IPk="}'
+##################################
+Messaggio numero 157
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:21.594657Z","timestamp":2227115828,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA0gAC5ff8MPtLEnobJLFuL7PAwPo2IPk="}'
+##################################
+Messaggio numero 158
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:21.594657Z","timestamp":2227115828,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-76,"loRaSNR":8.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA0gAC5ff8MPtLEnobJLFuL7PAwPo2IPk="}'
+##################################
+Messaggio numero 159
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:50.221689Z","timestamp":2255740228,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":7.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA1QACMYqs642Zvu/dYwlmR1LF+lAkKy4="}'
+##################################
+Messaggio numero 160
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:50.221689Z","timestamp":2255740228,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA1QACMYqs642Zvu/dYwlmR1LF+lAkKy4="}'
+##################################
+Messaggio numero 161
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:20:50.221689Z","timestamp":2255740220,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA1QACMYqs642Zvu/dYwlmR1LF+lAkKy4="}'
+##################################
+Messaggio numero 162
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:21:35.378308Z","timestamp":2300891116,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA2gACzEAZGReMNJPt+uRE/yruEF82G1M="}'
+##################################
+Messaggio numero 163
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:21:35.378308Z","timestamp":2300891124,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":7.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA2gACzEAZGReMNJPt+uRE/yruEF82G1M="}'
+##################################
+Messaggio numero 164
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:21:35.378308Z","timestamp":2300891124,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-75,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA2gACzEAZGReMNJPt+uRE/yruEF82G1M="}'
+##################################
+Messaggio numero 165
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:03.97674Z","timestamp":2329490124,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA3QACqldgjLzThiWsXbfAS9bUpUwu8uQ="}'
+##################################
+Messaggio numero 166
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:03.97674Z","timestamp":2329490124,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA3QACqldgjLzThiWsXbfAS9bUpUwu8uQ="}'
+##################################
+Messaggio numero 167
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:03.97674Z","timestamp":2329490132,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":8.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA3QACqldgjLzThiWsXbfAS9bUpUwu8uQ="}'
+##################################
+Messaggio numero 168
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:41.99582Z","timestamp":2367509668,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.2,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA4QACqSQbQElWWOCoKzhePEyGLFy+174="}'
+##################################
+Messaggio numero 169
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:41.99582Z","timestamp":2367509668,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-73,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA4QACqSQbQElWWOCoKzhePEyGLFy+174="}'
+##################################
+Messaggio numero 170
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:22:41.99582Z","timestamp":2367509668,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA4QACqSQbQElWWOCoKzhePEyGLFy+174="}'
+##################################
+Messaggio numero 171
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:23:38.670846Z","timestamp":2424181436,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA5wACQPfTccGktQqkmIVMwydeEtZPw88="}'
+##################################
+Messaggio numero 172
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:23:38.670846Z","timestamp":2424181436,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA5wACQPfTccGktQqkmIVMwydeEtZPw88="}'
+##################################
+Messaggio numero 173
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-08-26T17:23:38.670846Z","timestamp":2424181436,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-74,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroA5wACQPfTccGktQqkmIVMwydeEtZPw88="}'
+##################################
+Messaggio numero 1
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-09-15T13:18:44.168296Z","timestamp":10035124,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-37,"loRaSNR":7.8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAFgAC32M/fmS4gMa1+fJVwBW5LeGU+mw="}'
+##################################
+Messaggio numero 2
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-09-15T13:18:44.168296Z","timestamp":10035132,"frequency":868500000,"channel":1,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-39,"loRaSNR":7.5,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAFgAC32M/fmS4gMa1+fJVwBW5LeGU+mw="}'
+##################################
+Messaggio numero 3
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-09-15T13:18:44.168296Z","timestamp":10035132,"frequency":868500000,"channel":0,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-39,"loRaSNR":7,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAFgAC32M/fmS4gMa1+fJVwBW5LeGU+mw="}'
+##################################
+Messaggio numero 4
+----------------------------------
+b'{"rxInfo":{"mac":"aa555a0000000101","time":"2017-09-15T13:18:52.855544Z","timestamp":18732028,"frequency":868500000,"channel":2,"rfChain":1,"crcStatus":1,"codeRate":"4/5","rssi":-37,"loRaSNR":8,"size":29,"dataRate":{"modulation":"LORA","spreadFactor":12,"bandwidth":125}},"phyPayload":"QKMbMroAFwAC1yBLXnQCw0F6sF9+Q+Dp4Zoaasc="}'
+##################################
