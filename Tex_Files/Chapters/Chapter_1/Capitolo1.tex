@@ -1,61 +1,43 @@
 \chapter{IoT}
-Sempre più spesso si parla di Internet delle cose, o IOT, con questo termine si 
+Sempre più spesso si parla di Internet delle cose, o IOT, con questo termine si
 intende un evoluzione delle applicazioni legate al settore mobile, al settore
-della home automation e al settore embedded. 
-In questo scenario ogni oggetto il
-quale contiene un sensore sarà connesso ad Internet. Avvalendosi di questa
-connessione , i vari dati raccolti potranno essere inviati nel cloud, dove
-verranno elaborati e resi disponibili alle varie applicazioni. 
-Per fare in modo che ciò  avvenga, è necessario riuscire a creare una
-rete di devices in grado di  
-\textit{parlare un linguaggio comune}. \improvement{Scrivi qualcosa di decente qui}
+della home automation e al settore embedded.  In questo scenario ogni oggetto il
+quale contiene un sensore sarà connesso ad Internet. 
+Avvalendosi di questa
+connessione , i vari dati raccolti vengono inviati ad un server il quale ha il
+compito di analizzarli e renderli disponibili al utente finale.  Avendo la
+possibilità di processare il dato nel cloud ogni end devices sarà composto da
+una parte  hardware di ridotta complessità riuscendo a mantenere contenuto il
+prezzo finale. 
+Sebbene il numero di dispositivi "smart" è in rapida crescita, i servizi che
+l'IoT offre saranno il vero valore aggiunto. Aziende e enti pubblici stanno
+investendo e mettendo a disposizione all'utente finale, sempre più servi in
+grado di adattarsi a seconda dei dati provenienti da questi devices.  Gartner
+stima  20 miliardi di dispositivi IoT per il 2020, e un investimento annuo pari
+a circa 5\$ trilioni di dollari \cite{gartner2016}. 
 
-\begin{tcolorbox}
-Il vero valore aggiunto dell'IoT è la possibilità di processare i dati raccolti
-direttamente nel cloud utilizzando tecniche di data analytics, per giunta
-ogni devices sarà composto da un hardware semplice e conseguentemente il costo
-unitario sarà molto basso.
-\end{tcolorbox}
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c|c|c|c}
+                Categoria  & 2016 & 2017 & 2018 & 2019 \\
+                \hline
+                Consumer  & 3963 & 5244,3 & 7063,3 & 12863 \\
+                Business  & 1418 & 2135.4 & 4152,7 & 3171  \\
+                Totale    & 6381 & 8380   & 11196  & 20415 \\
+        \end{tabular}
+        \caption{Stima di dispositivi IoT (Milioni di unità) Gartner\cite{gartner2016}}
+\end{table}
 
-Come già succede per le applicazioni embedded, da un decennio a questa parte,
-anche nel IoT è il software il vero valore aggiunto, nel caso specifico i dati
-che i vari sensori raccolgono. Riuscendo ad inviare il dato raccolto
-direttamente ad un server, si ha la possibilità di implementare hardware
-semplice al interno dei vari dispositivi, lasciando l'elaborazione del dato
-direttamente al server tramite tecniche di data analytics.
-
-\begin{tcolorbox}
-Avendo la possibilità di processare i dati raccolti
-direttamente nel cloud utilizzando tecniche di data analytics, il dato in se
-diventa il valore aggiunto del IoT. Spostando la concentrazione da hardware a
-software,  ogni devices sarà composto da un hardware semplice e conseguentemente il costo
-unitario sarà molto basso.
-Spostando il vero valore dal hardware al \emph{dato}, è necessario disporre di
-tecniche buone per il data analytics
-
-Come successo agli albori di Internet, anche nel IoT, siamo in presenza di
-diversi standard per il tipo di comunicazione da adottare.
-Il punto principale di questo
-upgrade sta nel riuscire a creare una rete di devices connessi ad internet. Per
-supportare e utilizzare una potenza di calcolo maggiore andando a combinare
-tecniche di data analytics per estrarre le informazioni più significative. 
-\end{tcolorbox}
-
-In questa visione, milioni di devices saranno connessi a Internet e molto presto
-milioni di milioni di devices. 
-
-Il mercato di questi \emph{smart devices } è
-in rapida crescita con una stima di 8,3 miliardi di dispositivi connessi nel
-anno 2017, e di circa 20 miliardi per l'anno 2020 \cite{gartner2016}. Andando ad
-creare un impatto economico compreso tra i 2.7 e i 14 trilioni di dollari. I
-mercati principali saranno quelli del healt care con un introito compreso tra i
-$1.1$ e i $2.5$ trilioni di dollari e il settore industriale con $2.3$ a $11.6$
-trilioni di dollari.
+In contrasto a tutto ciò, la capacità delle aziende di applicare tecniche di
+data analytics per far fruttare la grande quantità di dati ricevuti, deve ancora
+maturare. Secondo un articolo pubblicato da Verizon, si stima che solo il 92\% delle
+aziende usa meno del 25\% dei dati raccolti e che circa il 50\% ha in previsione
+di utilizzare più del 25\% di dati nei prossimi due anni \cite{VerizionIoT}
 
 \begin{figure}[h]
-\centering 
-\includegraphics[width=10cm]{iot_devices}
-\caption{Numero di dispositivi per anno}
+        \centering 
+                \includegraphics[width=10cm]{iot_devices}
+        \caption{Numero di dispositivi per anno}
 \end{figure}
 
 Questa rapida crescita ha portato alla ricerca è sviluppo di nuove soluzioni 
@@ -66,25 +48,25 @@ software dovranno essere rivisti insieme alla topologia di rete utilizzata. Alla
 base di queste nuove tipologie di rete troviamo :
 
 \begin{itemize}
-\item \textbf{Scalabilità}: Dato l'elevato numero di devices connessi, scenari
-urbani ed industriali, la network tecnologi alla base dovrà essere estremamente
-adattabile, in maniera dinamica, al carico di dispositivi connessi.
-\item \textbf{Costo unitario}: Il costo del singolo modulo, dovrà essere basso
+\item \textbf{Scalabilità}: Dato l'elevato numero di devices previsti nei scenari
+urbani ed industriali, la network technology alla base della rete dovrà essere 
+adattabile, in modo dinamico, al carico di dispositivi connessi.
+\item \textbf{Costo unitario}: Il costo del end device, dovrà essere conveniente
 per garantire la più ampia fetta di mercato.
 \item \textbf{Durata della batteria}: La maggior parte dei dispositivi sarà
-alimentata tramite batteria, e la durata minima cercata e pari a una decina d'anni. 
+alimentata tramite batteria. Inoltre la maggior parte dei dispositivi verranno
+utilizzati in applicazioni nelle quali è prevista una durata minima della
+batteria di circa una decina d'anni. 
 \item \textbf{Costo computazionale}: La modulazione alla base di queste nuove
 tipologie di rete, dovrà essere concepita in modo da non avere un costo
-computazionale elevato .
-\item \textbf{Distanza}: La necessità di utilizzare questi devices in abmbienti
-rurali, necessita devices in grado di inviare il messaggio per distanze di
-alcuni chilometri.
-\item \textbf{Sicurezza}: La comunicazione con il devices dovrà essere sicura e
-ogni devices necessita la possibilità di aggiornamenti software
-\item \textbf{Menagment}: I vari dispositivi dovranno essere facilmente
-controllabili da remoto.
-\item \textbf{Fail-safe}: Il mal  funzionamento di un  device non dovrà
-compromettere l'intera infrastruttura a lui connessa. 
+computazionale elevato in modo tale da contenere il costo dell'hardware .
+\item \textbf{Distanza}: La necessità di utilizzare questi devices in ambienti
+difficili o rurali, rende necessario il poter instaurare comunicazioni a
+chilometri di distanza.\improvement{riscrivere}
+\item \textbf{Sicurezza}: Lo scambio dei dati dovrà avvenire in maniera sicura,
+implementando lo scambio di diti in forma criptata.
+\item \textbf{Tolleranza ai guasti}: Il mal  funzionamento di un nodo  non dovrà
+compromettere il funzionamento dell'intera rete  a lui connessa. 
 \end{itemize}
 
 \begin{figure}[h]

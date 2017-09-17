@@ -1,42 +1,36 @@
 \chapter{LPWAN}
 Il principale problema che si presenta nella ottica del IoT è avere una
 infrastruttura di rete capace di gestire il traffico di milioni di dispositivi
-contemporaneamente connessi. Fino ad oggi la principale tecnologia wireless 
-usata nelle comunicazioni M2M è stata la rete cellulare, la quale copre la quasi
-totalità di tutte le aree geografiche.
-La scelta della rete 2G, 3G, 4G è svantaggiosa poiché offre data-rate molto
-maggiore rispetto a quello normalmente utilizzato in applicazioni IoT,
-comportando l'uso di moduli sovradimensionati e andando ad aumentare di molto il
-prezzo per unità. Inoltre l'elevato consumo energetico e il prezzo svantaggioso
-degli abbonamenti offerti dagli operatori telefonici, ha portato alla ricerca di
-nuovi standard. 
-In questo capitolo verranno illustrati le principali tecnologie presenti nel
-mercato.
+contemporaneamente connessi. Fino ad oggi la principale tecnologia wireless
+usata nelle comunicazioni M2M è stata la rete cellulare, la quale è disponibile
+nella quasi totalità di tutte le aree geografiche.  La scelta della rete 2G, 3G,
+4G è svantaggiosa nel ambito del IoT poiché offre data-rate molto maggiore
+rispetto a quello normalmente utilizzato dai devices, comportando l'uso
+di moduli sovradimensionati e andando ad aumentare di molto il prezzo per unità.
+Inoltre l'elevato consumo energetico e il prezzo svantaggioso degli abbonamenti
+offerti dagli operatori telefonici, ha portato alla ricerca di nuovi standard.
+In questo capitolo verranno elencate le principali tecnologie presenti nel
+mercato mettendone in evidenza le differenze.
 
 \section{LPWAN}
 Per colmare il gap tra tecnologie esistenti e la necessita di connettere milioni
-di devices diversi sono nate le  LPWAN \emph{Low power wide area network}.
+di devices diversi, sono nate le  LPWAN \emph{Low power wide area network}.
 Con questo termine, si identificano tutte quelle reti ideate appositamente per
 l'IoT, le quali garantiscono una ampio raggio di azione, andando a sacrificare
 il bit rate e la complessità dei moduli radio.
 
 \begin{figure}[h]
     \centering 
-        \includegraphics[width=16cm]{network_comp}
+        \includegraphics[width=16cm]{network-com}
     \caption{Comparazione tipologia di reti}
 \end{figure}
 
-In questo contesto, i maggiori competitor sono Lora, Sigfox, NB-IoT e LTE-M.
-Anche se ognuna di queste reti punta a ottenere la leadership del mercato,
-esse implementano soluzioni tecniche molto diverse tra di loro, ognuna delle
-quali ha vantaggi e svantaggi a seconda del contesto nel quale viene utilizzata.
+In questo contesto, i maggiori competitor sono Lora, Sigfox, NB-IoT, EC-GSM-IoT
+e LTE-M.  Anche se ognuna di queste reti punta a ottenere la leadership del
+mercato, esse implementano soluzioni tecniche molto diverse tra di loro, ognuna
+delle quali ha vantaggi e svantaggi a seconda del contesto nel quale viene
+utilizzata.
 
-\begin{figure}[h]
-    \centering 
-        \includegraphics[width=11cm]{Comparsion_no_line}
-    \caption{Comparazione reti LPWAN}
-    \label{fig:comparazione_reti}
-\end{figure}
 
 \section{NB-IoT}
 Narrowband IoT (NB-IoT) o LTE Cat NB1 è uno standard certificato nella release 13 del 3GPP, la
@@ -130,17 +124,42 @@ possibilità di avere una comunicazione bidirezionale, limitando il numero di
 byte trasmissibili da gateway a devices a 4-8 bytes per giorno.
 
 \section{LoRa}
-\emph{Lora} è una tecnologia di modulazione wirelless semi-proprietaria 
+\emph{Lora} è una tecnologia di modulazione wireless semi-proprietaria 
 sviluppata da Semtech. Lora è composta da un layer fisico ,proprietario, che
 prende il nome di \emph{Lora}\cite{LoRaCss101} , e una parte libera chiamata 
-LoRaWAN\cite{LoRaWAN101}, nella quale viene definito un protocollo di communicazione, 
+LoRaWAN\cite{LoRaWAN101}, nella quale viene definito un protocollo di comunicazione, 
 il quale usa LoRa come layer fisico. 
 Basandosi su una tecnica di comunicazione a \emph{spread spectrum}, LoRa è in
 grado di instaurare una comunicazione bidirezionale tra device e gateway.
 I punti chiave dei questa tecnologia, sono il grande raggio di copertura e il 
 basso consumo energetico. 
 Basata sulla banda ISM , Lora permette di costruire una rete pubblica o privata,
-senza l'utlizzo di alcuna licenza.
+senza l'utilizzo di alcuna licenza.
 
+\section{Osservazioni}
+In questo mercato frammentato, non è semplice capire quale tecnologia sia adatta
+a ricoprire una data applicazione. Essendo questi standard molto giovani, è
+difficile capire le reali potenzialità di ognuna di queste soluzioni.
+Quello che è possibile prevedere, sarà un incremento esponenziale di device che
+stanno alla base della piramide in figura \ref{fig:pyramid}, devices i quali
+potranno essere utilizzati in innumerevoli settori non ancora esplorati dalle
+tecnologie attuali come per esempio i contatori della luce o dell'acqua. 
+\begin{figure}[h]
+    \centering 
+                \includegraphics[width=11cm]{pyramid}
+    \caption{Capacità delle reti LPWA}
+    \label{fig:pyramid} 
+\end{figure}
+Per le aziende, che si apprestano ad investire sul mondo dell'IoT, la scelta
+della corretta tecnologia su cui andare a sviluppare i loro servizi non risulta
+semplice, in quanto, fattori quali sicurezza, aggiornamenti software,
+affidabilità devono essere ancora testate a pieno. Con la figura
+\ref{fig:feature_comp}
+\begin{figure}[h]
+    \centering 
+                \includegraphics[width=11cm]{Comparsion_no_line}
+    \caption{Comparazione feature reti LPWAN}
+    \label{fig:feature_comp} 
+\end{figure}
 Nel prossimo capitolo si analizzerà in dettaglio la modulazione che \emph{Lora}
 adotta ed il suo layer fisico
