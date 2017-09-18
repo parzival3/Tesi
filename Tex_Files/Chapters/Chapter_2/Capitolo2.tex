@@ -2,15 +2,16 @@
 Il principale problema che si presenta nella ottica del IoT è avere una
 infrastruttura di rete capace di gestire il traffico di milioni di dispositivi
 contemporaneamente connessi. Fino ad oggi la principale tecnologia wireless
-usata nelle comunicazioni M2M è stata la rete cellulare, la quale è disponibile
-nella quasi totalità di tutte le aree geografiche.  La scelta della rete 2G, 3G,
-4G è svantaggiosa nel ambito del IoT poiché offre data-rate molto maggiore
-rispetto a quello normalmente utilizzato dai devices, comportando l'uso
-di moduli sovradimensionati e andando ad aumentare di molto il prezzo per unità.
-Inoltre l'elevato consumo energetico e il prezzo svantaggioso degli abbonamenti
-offerti dagli operatori telefonici, ha portato alla ricerca di nuovi standard.
-In questo capitolo verranno elencate le principali tecnologie presenti nel
-mercato mettendone in evidenza le differenze.
+usata nelle comunicazioni M2M \emph{Machine to Machine} è stata la rete
+cellulare.   La scelta della rete 2G, 3G, 4G è svantaggiosa nel ambito del IoT
+poiché offre data-rate molto maggiore rispetto a quello normalmente utilizzato
+dalle applicazioni M2M, comportando l'uso di moduli radio sovradimensionati e
+andando ad aumentare di molto il prezzo per unità.  Inoltre, l'elevato consumo
+energetico e il prezzo svantaggioso degli abbonamenti offerti dagli operatori
+telefonici, ha portato alla ricerca di nuove soluzioni basate su frequenze ISM o
+licenziate.  In questo capitolo verranno elencate le principali tecnologie
+presenti nel mercato, mettendone in evidenza le differenze che le
+contraddistinguono.
 
 \section{LPWAN}
 Per colmare il gap tra tecnologie esistenti e la necessita di connettere milioni
@@ -37,13 +38,13 @@ Narrowband IoT (NB-IoT) o LTE Cat NB1 è uno standard certificato nella release 
 quale riutilizza le infrastrutture già presenti, quali 2G, 3G, 4G per la rapida
 realizzazione di una rete LPWA per l'IoT.
 Focalizzandosi sulla durata della batteria, i moduli NB-IoT risultano avere un
-costo al unità minore del 75\% rispetto ad un normale modulo LTE.
+costo all'unità minore del 75\% rispetto ad un normale modulo LTE.
 Basato frequenze licenziate, NB-IoT è in grado di
 offrire tre diversi scenari di sviluppo \cite{NB-white_paper}
 \begin{itemize}
 \item \emph{standalone}, utilizzando qualsiasi spettro disponibile del
 operatore.
-\item \emph{guad band}, utilizzando lo spettro libero presente tra due bande
+\item \emph{guard band}, utilizzando lo spettro libero presente tra due bande
 radio, per prevenire interferenze.
 \item \emph{in band}, utilizzando lo stesso spettro della banda LTE.
 \end{itemize}
@@ -55,7 +56,7 @@ radio, per prevenire interferenze.
 L'obbiettivo che NB-IoT si prefigge è quello di mettere a disposizione una
 tecnologia con una elevata copertura ed un basso data-rate. La possibilità di
 riutilizzare strutture già esistenti, ed il basso costo per device , rendo
-NB-IoT, una delle tecnologie che sta riscuotendo successo nel abito IoT.
+NB-IoT, una delle tecnologie che sta riscuotendo maggiore successo nel abito IoT.
 
 
 
@@ -63,12 +64,15 @@ NB-IoT, una delle tecnologie che sta riscuotendo successo nel abito IoT.
 Dalla realise 8 del 3GPP, diverse nuove tipologie di rete LTE sono disponibili.
 La categoria che offre le migliori performance batteria/data-rate è la categoria
 LTE Cat-M1 o LTE-M.
-LTE-M a differenza del NB-IoT, rispecchia LTE in pieno, quindi implementa due RF
-receiver chains, è full duplex supportando la Frequency Division Multiplexing
+LTE-M a differenza del NB-IoT, rispecchia LTE in pieno, quindi implementa due
+moduli di ricezione, è full duplex supportando la Frequency Division Multiplexing
 (FDM) e Time Division Multiplexing (TDM). Risultando adatto per applicazioni con
 esigenze diverse da quelle del NB-IoT, è in grado di raggiunger i 5Mbps in
-uplink e 10[Mbps] in downlink. Questa tecnologia è già disponibile negli Stati
-Uniti tramite la rete Verizon.
+uplink e 10[Mbps] in downlink teorici.  Questo tipo di connessione sarà utile
+per tutte quelle applicazioni in cui è richiesta una elevata sicurezza del dato
+da trasmettere, come ad esempio applicazioni di video-sorveglianza o automotive
+.Questa tecnologia ,già disponibile negli Stati Uniti tramite la rete Verizon, è
+in fase di roll out per molti operatori europei.
 
 \section{EC-GSM-IoT}
 EC-GSM-IoT si basa su funzionalità aggiuntive a partire da EGPRS che consentono
@@ -78,15 +82,14 @@ dove una rete LTE non è ancora disponibile. L’occupazione spettrale di ogni
 canale corrisponde a  200 kHz.  Tuttavia, al fine di dispiegare EC-GSM-IoT, si
 richiede una banda utile di 2.4 MHz per permettere il frequency hopping , che,
 con l’aggiunta di 2 canali di guardia di 200 kHz ciascuno agli estremi della
-banda, porta l’occupazione di banda complessiva a 2.8 MHz. Nel caso in cui
-EC-GSM-IoT sia l’unico servizio dispiegato  insieme  all’EGPRS con cui condivide
-le risorse radio, ma in assenza del servizio voce GSM, sono sufficienti 600 kHz,
-riconducibili ad 1 MHz di banda necessaria con i suddetti canali di guardia. La
+banda, porta l’occupazione di banda complessiva a 2.8 MHz.  La
 potenza di trasmissione del Il data rate di picco raggiungibile sia in DL sia in
 UL è di 491 kbps, mentre il valore mediato nominale è di 98 kbps sia in DL sia
 in UL. Al fine di soddisfare i requisiti di capacità (più di 50.000 terminali in
-ogni singolo settore di una cella trisettoriale). La figura
-\ref{tab:IoT_cell_comp}
+ogni singolo settore di una cella trisettoriale). 
+
+La figura \ref{tab:IoT_cell_comp} riassume in breve le varie caratteristiche
+delle reti cellulari facenti parte della categoria LPWA
 \begin{table}[h]
     \centering 
                 \includegraphics[width=16cm]{tim_iot}
@@ -110,56 +113,65 @@ illustrato nella figura \ref{fig:Sig_covereg}.
 \end{figure}
 
 Gli end-devices comunicano con le varie base stations usando una modulazione (BPSK)
-\emph{Binary Phase Shift Keying} con una banda di soli 100[Hz]. Utilizzando una
-banda molto ristretta, SigFox, permette di avere comunicazioni con livello di
-rumore molto basso permettendo un elevata sensibilità da parte del
-ricevitore. \improvement{Riscrivere meglio}
+\emph{Binary Phase Shift Keying} con una banda di soli 100[Hz]. 
 Per via delle regolazioni vigenti nello spettro ISM, è per garantire una durata
 della batteria pari ad una decina di anni, il numero massimo di messaggi
 inviabili in un giorno è 140, con lunghezza del payload pari a 12[byte] e un
 throughput pari a 100[bps]. SigFox si colloca come rete LPWAN con il minore
-throughput, limitando il numero di use-case possibili. Inizialmente SigFox non
+throughput, limitando il numero di use-case possibili. Inizialmente SigFox
 supportava solo comunicazioni unidirezionali, successivamente, ha introdotto la
 possibilità di avere una comunicazione bidirezionale, limitando il numero di
 byte trasmissibili da gateway a devices a 4-8 bytes per giorno.
 
-\section{LoRa}
-\emph{Lora} è una tecnologia di modulazione wireless semi-proprietaria 
-sviluppata da Semtech. Lora è composta da un layer fisico ,proprietario, che
+\section{LoRaWAN}
+\emph{LoraWAN} è una tecnologia di modulazione wireless semi-proprietaria 
+sviluppata da Semtech. Essa è composta da un layer fisico ,proprietario, che
 prende il nome di \emph{Lora}\cite{LoRaCss101} , e una parte libera chiamata 
-LoRaWAN\cite{LoRaWAN101}, nella quale viene definito un protocollo di comunicazione, 
+LoRaWAN\cite{LoRaWAN101} nella quale viene definito un protocollo di comunicazione, 
 il quale usa LoRa come layer fisico. 
 Basandosi su una tecnica di comunicazione a \emph{spread spectrum}, LoRa è in
 grado di instaurare una comunicazione bidirezionale tra device e gateway.
-I punti chiave dei questa tecnologia, sono il grande raggio di copertura e il 
-basso consumo energetico. 
-Basata sulla banda ISM , Lora permette di costruire una rete pubblica o privata,
-senza l'utilizzo di alcuna licenza.
-
+I punti chiave dei questa tecnologia, sono il grande raggio di copertura , il 
+basso consumo energetico e la capacità di adattare in maniera dinamica il
+data rate, il quale può variare dai 0.3 ai 50[Kbps] a seconda dell'utilizzo. 
+Come per SigFox, la tecnologia sviluppata da Semtech, si basa sulle bande ISM,
+inoltre Essendo il protocollo LoRaWAN open source, si ha la possibilità di
+creare delle reti pubbliche o private senza disporre di alcuna licenza, 
+riducendo così il time to market di questa tecnologia.  
+Progetti come \href{https://www.thethingsnetwork.org/}{The Things Network}
+mirano a creare una rete LoRa ,pubblica è privata,  a livello globale.
 \section{Osservazioni}
 In questo mercato frammentato, non è semplice capire quale tecnologia sia adatta
 a ricoprire una data applicazione. Essendo questi standard molto giovani, è
-difficile capire le reali potenzialità di ognuna di queste soluzioni.
+difficile comprendere le reali potenzialità di ognuna di queste soluzioni.
 Quello che è possibile prevedere, sarà un incremento esponenziale di device che
 stanno alla base della piramide in figura \ref{fig:pyramid}, devices i quali
-potranno essere utilizzati in innumerevoli settori non ancora esplorati dalle
-tecnologie attuali come per esempio i contatori della luce o dell'acqua. 
+potranno essere utilizzati in innumerevoli settori, non ancora esplorati dalle
+tecnologie attuali, come per esempio i contatori della dell'acqua, applicazioni
+per l'agricoltura di precisione ecc. 
+
 \begin{figure}[h]
     \centering 
                 \includegraphics[width=11cm]{pyramid}
     \caption{Capacità delle reti LPWA}
     \label{fig:pyramid} 
 \end{figure}
+
+\pagebreak
 Per le aziende, che si apprestano ad investire sul mondo dell'IoT, la scelta
 della corretta tecnologia su cui andare a sviluppare i loro servizi non risulta
 semplice, in quanto, fattori quali sicurezza, aggiornamenti software,
 affidabilità devono essere ancora testate a pieno. Con la figura
-\ref{fig:feature_comp}
+\ref{fig:feature_comp} si vuole riassumere in breve i punti chiave delle
+tecnologie appena trattate.
+
 \begin{figure}[h]
     \centering 
                 \includegraphics[width=11cm]{Comparsion_no_line}
     \caption{Comparazione feature reti LPWAN}
     \label{fig:feature_comp} 
 \end{figure}
-Nel prossimo capitolo si analizzerà in dettaglio la modulazione che \emph{Lora}
-adotta ed il suo layer fisico
+
+Nel prossimo capitolo verrà analizzata in dettaglio la soluzione che Semtech
+propone, approfondendo il layer fisico \emph{Lora} e la struttura del protocollo
+LoRaWAN.
