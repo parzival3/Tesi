@@ -1,40 +1,139 @@
 \chapter{IoT}
 Internet delle cose (Internet of Things, IoT) è un paradigma riferito
-all’estensione di internet al mondo degli oggetti. Questo concetto è stato
-introdotto nel 1999 da Kevin Ashton, ricercatore britannico del Mit
-(Massachusetts Institute of Technology), che teorizzò per primo un mondo nel
-quale oggetti dotati di sensori, interagiscono utilizzando la rete.  La continua
-evoluzione delle tecnologie wireless e satellitari ha permesso l'ideazione di
-oggetti sempre più connessi, in grado di generare una mole di informazioni e
-dati.  Non sono dunque, come tradizionalmente si potrebbe pensare, solo computer
-o tablet ad essere connessi alla rete, ma anche gli oggetti che usiamo
-quotidianamente , che divenendo “smart” riescono a fornire al utente
-applicazioni facili da usare.  Ad esempio gli smart watch o smart band che
-monitorano il jogging quotidiano, il quale  fornisce informazioni riguardanti il
-numero di chilometri percorsi, la velocità media ecc sfruttando il Gps (Global
-Positioning System) in maniera autonoma senza doversi appoggiare a un computer.
-La presenza negli oggetti di sensori connessi alla rete (e agli altri oggetti
-smart) permette un trasferimento di dati bidirezionale tra l'oggetto stesso ed
-il server al quale questi dati vengono inviati.  L'oggetto infatti dopo aver
-trasformato in dati gli input ricevuti dall'ambiente esterno, invia queste
-informazioni ad un serve il quale, dopo un'elaborazione degli stessi, formula
-dei comandi da inviare all'oggetto.  Nel mondo dell’IoT i dati condivisi sono in
+all’estensione di internet al mondo degli oggetti. Nel 1999 il ricercatore
+britannico Kevin Ashton durante una presentazione teorizzò  per primo un mondo
+nel quale oggetti dotati di sensori, interagiscono utilizzando la rete.  La
+continua evoluzione delle tecnologie wireless e satellitari ha permesso
+l'ideazione di oggetti sempre più connessi, in grado di generare una grande mole
+di informazioni e dati. Oltre ai computer smartphone e tablet, sempre più
+oggetti di uso quotidiano dispongono di una connessione ad internet. Smartwatch
+e smart band , lampadine e prese elettriche "intelligenti" ,  sono già da tempo
+reperibili nel mercato con un prezzo accessibile a tutti .  Data la bassa
+complessità del hardware implementato in questi devices, essi necessitano di
+appoggiarsi ad un server esterno per l'elaborazione dei dati.  Sfruttando la
+connessione ad internet, gli oggetti riescono ad instaurare uno scambio di dati
+bidirezionale tra loro ed il server; infatti l'oggetto dopo aver trasformato gli
+input ricevuti dal mondo esterno in dati, invia l'informazione al server il
+quale, dopo un'elaborazione degli stessi, formula dei comandi da inviare
+all'oggetto.
+\\
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{Orignal/IoT-c1.jpg}
+        \caption{Numero di dispositivi per anno}
+\end{figure}
+Nel mondo dell’IoT i dati condivisi sono in
 continuo aumento, innescando una serie di progressi importanti anche da un punto
 di vista economico, andando ad incidere  significativamente sulla “catena del
-valore” (value chain). Attraverso lo studio delle informazioni presenti si
-potranno andare a creare applicazioni in grado di aumentare l’efficienza di un
-servizio, migliorare la user experience di una applicazione ecc.  Muovendoci
+valore” (value chain). Attraverso lo studio delle informazioni presenti ,si
+potrà  aumentare l’efficienza di un servizio oppure  migliorare la user experience di una applicazione ecc.  
+Muovendoci
 verso un modo sempre più connesso, nove problematiche riguardanti la privacy e
 la sicurezza emergo.  Molto spesso per ridurre i costi di produzione e di
-sviluppo di questi oggetti smart, Numerosi attacchi hacker si sono già verificati andando a
-sfruttare le falle di sicurezza di questi oggetti "smart" 
+sviluppo di questi oggetti smart, le aziende tendo a ridurre gli investimenti
+nell'R\&D (Ricerca e Sviluppo), andando a produrre dispositivi con un software no
+aggiornato o con componenti hardware di bassa qualità.
+Sono già numerosi i casi di attacchi hacker i quali, avvalendosi delle falle
+presenti nei dispositivi, riescono ad entrare in possesso della rete ai cui il
+dispositivo è collegato .
+
+\section{La diffusione dell'Internet delle cose}
+Nel 2008 il numero di oggetti quali personal-computer, server, telefoni cellulari,
+connessi ad internet ha superato il numero di persone presenti nell'intero
+pianeta. Il continuo sviluppo tecnologico, la sempre maggior facilità d'uso e
+l'abbattimento dei costi, ha reso disponibile al mondo consumer tecnologie che
+fino a poco tempo fa erano destinate ad aziende ed università. 
+Con l'avvento dell'IoT si prevede una crescita esponenziale di devices connessi
+ad Internet;  secondo  una stima da parte di Gartner, il numero di smart
+device presenti nell'anno 2020, sarà superiore a 20 miliardi \cite{gartner2016}
+Inoltre è proprio il lato consumer che ne fa da padrone con ben \$5.2 miliardi
+di dollari investi in prodotti quali smart TV, set-top box e smart cars.
+\\
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c|c|c|c}
+                \textbf{Categoria}  & 2016 & 2017 & 2018 & 2019 \\
+                \hline
+                \emph{Consumer}  & 3963 & 5244,3 & 7063,3 & 12863 \\
+                \emph{Business}  & 1418 & 2135.4 & 4152,7 & 6171  \\
+                \emph{Totale }   & 6381 & 8380   & 11196  & 20415 \\
+        \end{tabular}
+        \caption{Stima di dispositivi IoT (Milioni di unità)
+        Gartner\cite{gartner2016}}
+\end{table}
+\\
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{iot_devices}
+        \caption{Numero di dispositivi per anno}
+\end{figure}
+\section{Business}
+Considerando le statistiche precedenti immediato notare come l'IoT sia un
+business che agisce in maniera tutti i settori in maniera trasversale.
+Se da molto tempo si parla di domotica e smart city, tramite l'abbattimento dei
+costi dei vari dispositivi nuovi mercati e nuove possibilità di investimento
+sono nate. Prendiamo come esempio l'agricoltura di precisione, che grazie a
+sensori in grado di estrapolare dati come l'umidità del suolo, l'indice di
+piovosità e l'umidità delle foglie, 
+permettono all'agricoltore, tramite l'analisi dei dati raccolti, di capire
+quando è il momento di intervenire per il trattamento delle colture; permettendo
+l'incanalazione delle risorse impiegate, aumentando la produttività . 
+Questo voleva essere solo un esempio della vastità delle opportunità  offerte
+dall'IoT. Gartner, si stima che entro il 2020 la cifra
+investita nell'idustria del IoT sarà pari a circa \$3,000,000 milioni di dollari
+con un investimento annuo di circa \$500,000 milioni di dollari
+\cite{gartner2016}. 
+
+\section{Big Data}
+Oltre all'innumerevole quantità di dati che verrà prodotta da questi milioni di
+devices intelligenti, noi stessi,  navigando il web produciamo una grande
+quantità di dati. Con il  termine Big Data si vuole rappresentare l'insieme di
+tutti i dati eterogenei che ogni giorno vengono prodotti e scambiati nella rete.
+Con il progredire della tecnologia il dataset (aggregazione di dati) a
+disposizione delle aziende è in continuo aumento.
+Secondo un articolo pubblicato da Verizon, si stima che il 92\% delle aziende
+usa meno del 25\% dei dati raccolti e che solo la metà  di esse prevede di
+riuscire a fare fruttare più del 25\% di dati nei prossimi due anni
+\cite{Verizon}.  Con “Data mining” o "Data analytics"  si identificano tutte le
+tecniche e le metodologie finalizzate all’estrazione di sapere e conoscenza
+partendo da una vasta mole di dati.
+L’enorme disponibilit`a di ogni sorta di informazione `e una prospettiva al-
+apre innumerevoli scenari di ricerca; ad esempio, predire con largo anticipo la
+diffusione di una malattia epidemica permette di prioritizzare gli interventi
+sanitari preventivi nelle aree pi`u bisognose.  Pur avendo benefici
+incontestabili, per`o, si presenta la possibilit`a, seppur remota, di risalire
+alle fonti di questa conoscenza e ai dati  personali di singoli, specifici
+individui.  Con “dato personale” si intende qualsiasi informazione che
+identifica o rende identificabile una persona fisica.  Generalmente si distingue
+tra dati  identi- ficativi (dati anagrafici, fotografie, ...)  e dati sensibili
+, che possono rivelare “l’origine  razziale  ed  etnica,  le  convinzioni
+religiose,  filosofiche  o  di  altro Oggigiorno, gran parte delle aziende sono
+impegnate nell'attuazione del data mining, considerandolo un investimento a
+lungo termine. 
+E molto comune che un dataset includa, nella sua forma originale, infor-
+mazioni che sono riconducibili a specifici individui - un nome, una data di
+nascita, un indirizzo IP. Ci`o diventa potenzialmente pericoloso nel momento
+in  cui  si  dispone  di  una  chiave  per  collegare  dati  su  uno  stesso  individuo
+provenienti  da  fonti  diverse  -  informazioni  sanitarie,  preferenze  e  opinioni
+espresse sui social network, dati collegati alle spese online e ai metodi di pa-
+gamento.
+
+
 \section{La tecnologia alla base dell'IoT} 
-Come detto in precedenza, nel mondo industriale il concetto di poter connettere
-oggetti per ricevere informazioni utili non è nuovo. Nel corso degli anni le
-tecnologie alla base di questo paradigma si sono evolute, rendendo sempre più
-autonomi e "smart" gli oggetti a esse collegati. Tag RFID , codici QR, ZigBee,
-sono gli "arti" del sistema IoT. La spina dorsale di questo mondo è composta da
+Nell'industria il concetto di M2M (Machine to Machine) non è un concetto nuovo,
+già Kevin Ashton, durante la presentazione in cui introdusse il termine IoT,
+comprese le potenzialità della tecnologia RFID applicate alla supply chain. Dal
+1999 ad oggi molte cose sono cambiate, ma molte domande non hanno ancora trovato
+una risposta. Come accadde agli albori di Internet, quello che manca al modo
+dell'IoT è una standardizzazione dei protocolli e del linguaggio con cui questi
+oggetti devono comunicare. Una possibile archittettura 
+l'IoT necessita anche di uno
 una architettura bottom up suddivisa in tre livelli.
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{three-layer}
+        \caption{Layer del IoT}
+\end{figure}
 \begin{itemize}
 \item \textbf{Device layer} o sensor layer, è il layer più basso. Esso raggruppa
 tutti i gli oggetti "smart". Questo layer è quello che mette in comunicazione il
@@ -52,67 +151,20 @@ immagazzinata ed elaborata. Questo layer è il più importante, e qui dove il da
 viene trasformato da una semplice misurazione fisica ad una possibile revenue
 per l'azienda che lo gestisce.\improvement{Riscrivere}
 \end{itemize}
-\section{La diffusione dell'Internet delle cose}
-Nel 2008 il numero di oggetti quali computer, telefoni cellulari, table,
-connessi ad internet ha superato il numero di persone presenti nell'intero
-pianeta. Il continuo sviluppo tecnologico ha portato all'abbassamento del costo
-del hardware stesso. Secondo  una stima da parte di Gartner, il numero di smart device sarà
-superiore a 20 miliardi \ref{gartner2016}
-\begin{figure}[h]
-        \centering 
-                \includegraphics[width=10cm]{iot_devices}
-        \caption{Numero di dispositivi per anno}
-\end{figure}
 
-\section{Big Data}
-Oltre all'innumerevole quantità di dati che verrà prodotta da questi milioni di
-devices intelligenti, noi stessi, facendo ricerche su siti internet e navigando
-nel web produciamo una grande quantità di dati. Il termine Big Data è nato per
-rappresentare l'insieme di tutti i dati eterogenei che ogni giorno vengono
-prodotti e scambiati nella rete.
-In questo contesto riuscire ad estrapolare l'informazione utile diventa sempre
-più difficile. Con il progredire della tecnologia il dataset (aggregazione di
-dati) a disposizione delle aziende è in continuo aumento. Aziende ed enti
-pubblici stanno investendo e mettendo a disposizione sempre più servizi in grado
-di usufruire in maniera efficace dei dati raccolti. Secondo un articolo
-pubblicato da Verizon, si stima che il 92\% delle aziende usa meno del 25\% dei
-dati raccolti e che solo il 50\% di esse prevede di riuscire a fare fruttare più
-del 25\% di dati nei prossimi due anni \cite{Verizon}.
-Il "carburante" dell'IoT sono i dati raccolti, sono loro a il valore
-valore aggiunto. Per le aziende pubbliche e private, l'informazione ha
-sempre rappresentato una risorsa economica su cui investire. Riuscire a
-prevedere i nuovi trend del mercato e a stimare con precisione le vendite dei
-mesi futuri in maniera esatta è sempre stato l'obbiettivo preposto dall'analista
-di mercato.
-Grazie all'innumerevole quantità di dati che noi produciamo semplicemente
-navigando il web 
-Al giorno d'oggi sempre più spesso sentiamo parlare di industria 4.0, ovvero il
-riuscire ad elaborare la grande quantità di dati che vengono creati, per andare
-a riutilizzarli nel ambito aziendale, migliorando la qualità dei prodotti ed
-aumentare la produttività dell'azienda stessa .
- 
-Un termine spesso è presente quando si parla di IoT è il
-termine Big Data. Con Big Data si intende tutte 
-Come un’automobile necessita di benzina per funzionare, così l’IoT necessita di
-dati per alimentarsi e migliorarsi. Due ambiti diversi ma connessi che combinati
-producono una sorta di “superpotere” nelle mani di soggetti pubblici e aziende.
-Soprattutto per queste ultime, l’informazione da sempre ha rappresentato una
-risorsa economica e saper analizzare i dati raccolti dagli oggetti smart appare
-essere una vera e propria sfida da cogliere senza esitazione alle porte dell’economia
-2.0. Il data mining si afferma come uno dei settori più strategici per le aziende che
-operano nel contesto contemporaneo, le quali, autonomamente o grazie all’aiuto di
-esperti, possono incrociare dati avendo l’utente come unità di analisi per scoprire
-opportunità di investimenti economici enormi. Ma cosa sono i dati e come si arriva
-ai megadati (big data) è argomento tutt’ora dibattuto.
-Un problema trasversale che interessa gli esperti di diritto e non solo, è quanto
-concerne la definizione di “dato” e di “dato personale”. Infatti, oggigiorno, ci sono
-norme che si applicano per i “dati” e norme che si applicano per i “dati personali”
-e più specificatamente per i “dati sensibili”. Altro problema che fa discutere è se
-rientrino nei “dati” anche i cosiddetti “metadati”, ovvero quelle informazioni che
-associate ad una pagina web, o anche ad una parte di essa, riescono a descriverne
-il contenuto e il contesto di riferimento 13 .
-Seguendo le linee guida Ocse del 1980, rivedute nel 2013 14 , sono da definirsi come
-“dati personali” tutte quelle informazioni relative ad un determinato individuo 15 e
-che possono fornire dettagli sulle sue caratteristiche, le sue abitudini, il suo stile
-di vita, il suo stato di salute, ecc. A questa definizione, ripresa anche dalla Direttiva
-95/46/CE del 1995 16 , segue quella di “dato sensibile” riportata anche dal Codice in
+
+Già alcune aziende del calibro di Samsung con la
+piattaforma \href{https://www.artik.io}{artik}  , Zigbee con
+\href{https://www.speakdotdot.com/dotdot/}{DotDot} e Google con
+\href{https://developers.nest.com/weave/}{Weave}, stanno cercando di imporsi per
+creare un .
+Ognuna di queste soluzioni punta a creare un linguaggio comune per i vari
+oggetti smart, in questo modo il sviluppo e l'integrazione risulterà più
+semplice, velocizzando il time to market dei prodotti.
+Oltre alla mancanza di un linguaggio comune , Con questa tesi si vuole approfondire lo stato dell'arte del network layer
+andando a esporre le principali tecnologie ad oggi presenti sul mercato. In
+particolare verrà posta l'attenzione sulla tecnologia LoRaWAN e l'integrazione
+con il framework Kura/ESF sviluppato da Eurotech.
+
+
+
