@@ -10,26 +10,26 @@ Con questo capitolo si vogliono aproffondire le problematiche riguardanti il
 network layer, andando a trattare le problematiche presenti e come diverse
 tecnologie stanno cercando di superarle.
 
-\section{Alla base delle reti LPWAN}  
-Le tecnologie wireless com ZigBee, WiFi, non sono ideate per connettere devices
-alimentati a batteria distribuiti in una vasta area geografica.
-Il range di queste tecnologie è limitato a poche centinaia di metri al massimo.
-Tutto ciò implica che i devices, non possono essere implementati in tutti gli
-ambienti, ma solo in uno spazio ristretto alla portata del segnale del gateway.
-Quindi scenari quali la sicurezza sanitaria, agricoltura di precisione, logistica ecc. Non
-permetto l'utilizzo di questa tecnologia.
-La grande copertura offerta dalle tecnologia cellulare è la ragione per la quale
-è ad oggi la tecnologia più utilizzata nelle comunicazioni M2M.
-Tuttavia, il continuo progresso tecnologico, sta portando l'abbandono della rete
-GSM da parte degli operatori telefonici, per poter riutilizzare le bande da essa
-occupata con tecnologie nuove. In generale, la tecnologia cellulare non
-garantisce una durata della batteria molto prolungata ed inoltre il costo
-complessivo dei moduli cellulari è molto elevato, data la complessità delle 
-forme d'onda .\improvement{Completare}
+\section{Alla base delle reti LPWAN}
+Fino ad oggi la scelta limitata di tecnologie wireless capaci di avere un ampia
+area di operabilità, ha forzato le case produttrici ad utilizzare la rete
+celluare per le comunicazioni M2M. Molto spesso questa scelta risulta
+svantaggiosa poiché ,data la difficoltà di modulazione e
+demodulazione delle complesse forme d'onda, è necessario implementare hardware
+sovradimensionato all'interno dei dispositivi. 
 
-Dovendo ingegnerizzare il network layer, è importante capire quali sono le
-principali problematiche che le tecnologie attuali non sono in grado di colmare.
+È necessario quindi ridisegnare da zero
+Essendoci la necessità di sviluppare il network layer partendo da zero è
+importante capire quali sono le principali problematiche che le tecnologie
+wireless attuali non riescono a superare.
 
+Questa rapida di dispositivi connessi porta con se nuove problematiche. È
+impensabile riuscire a gestire un questo elevato numero di devices con le
+tecnologie tutt'ora utilizzate. Se il problema dell'indirizzamento è stato
+risolto con l'introduzione dell'IPv6, è necessario ridisegnare 
+l'architettura in modo tale da garantire il servizio anche in presenza di
+milioni di dispositivi connessi contemporaneamente. 
+I principali problemi che devono essere ancora risolti sono:
 \begin{itemize}
 \item \textit{Indirizzabilità}: a causa dell’elevato numero di oggetti che entrano in
 gioco in IoT, la capacità di indirizzamento di IPv4 non è più suffi-
