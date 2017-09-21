@@ -1,31 +1,114 @@
 \chapter{LoRa}
+\section{LoRa}
+Tra tutte le tecnologie che cercano di predominare il network layer, LoRaWAN, è
+quella che si presta di più alla sperimentazione.
+Grazie al protocollo di natura open e la facile reperibilità dei moduli radio e  
+sono necessari solo un gateway e dei sensori per creare le prime applicazioni.
+
+\section{Narrow Band e Spread Spectrum}
+Il successo delle tecnologie LPWAN risiede nella loro abilità di offrire una
+connessione a bassa potenza per un grande numero di devices distribuiti in una
+vasta area geografica. Per capire il principio di funzionamento alla base del
+layer fisico LoRa, e necessario comprendere il tipo di modulazione utilizzata e
+i vantaggi che ne derivano.
+Le principali tecniche di modulazione utilizzate dalle reti LPWA sono in grado
+di offrire un bilanci di collegamento (link budget ) pari a 150$\pm$ 10[dB], il quale
+garantisce un range di operatività pari ad una decina di chilometri.
+Andando a ridurre il data rate è possibile concentrare più energia in ogni
+simbolo trasmesso. In questo modo il gateway è in grado di decodificare segnali
+molto attenuati. In generale le tecnologie LPWAN sono in grado di decodificare
+segnali attenuati fino a -130[dBm]. Per ottenere questi risultati due tipi di
+modulazione sono stati utilizzati da LPWAN diverse.
+
+\subsection{Narrow Band}
+La modulazione narrowband codifica il segnale in una banda molto ristretta (
+ $\approx$25[KHz] ), in questo modo è in grado di ottenere alte prestazioni nel
+bilancio di collegamento. Assegnando ad ogni frequenza una banda molto
+ristretta, la NB è in grado di utilizzare l'intero spettro in maniera efficace.
+Il livello di rumore all'interno di ogni canale \improvement{Trovare un termine più
+adatto } è molto basso, rendendo semplice la demodulazione da parte del gateway.
+Per aumentare la capacità del singolo nodo e diminuire la complessità dei moduli
+radio SigFox e altre tecnologie  estremizzano il concetto di narrowband andando a assegnare ad
+ogni portante una banda di appena 100[Hz]. Inequivocabilmente il data rate
+diminuisce di molto e il tempo il quale il ricevitore deve rimanere acceso
+aumenta. 
+
+\subsection{Spread spectrum} 
+Come dice il nome, la tecnica spread spectrum è in grado di distribuire un
+segnale narrowband in un campo di frequenze più vasto del necessario, mantenendo
+però la stessa densità di potenza.
+Come risultato otteniamo una trasmissione che incorpora più rumore di una
+trasmissione NB, riuscendo però ad essere molto più resistente alle interferenze
+ed agli attacchi basati sul jamming.
+Per la natura rumorosa del segnale, il ricevitore dovrà compiere uno sforzo
+maggiore per la ricezione del segnale, il quale molto spesso sarà ricevuto sotto
+il noise floor \improvement{Noise floor in italiano?}
+Per ottimizzare l'uso dello spettro, è possibile inviare segnali codificati con
+frequenze ortogonali , in questo modo è possibili decodificare in maniera
+concorrente segnali diversi, andando ad aumentare la capacità della rete.
+
 \begin{figure}[h]
 \centering 
 \includegraphics[width=11cm]{spread_spectrum_temp}
 \caption{Comparazione tra UNB e SSP}
 \end{figure}
 
-\section{LoRa}
-\emph{Lora} è una tecnologia di modulazione wirelless semi-proprietaria 
-sviluppata da Semtech. Lora è composta da un layer fisico ,proprietario, che
-prende il nome di \emph{Lora}\cite{LoRaCss101}  , e una parte libera chiamata 
-LoRaWAN\cite{LoRaWAN101}, la quale definisce un protocollo di communicazione, 
-il quale usa LoRa come layer fisico. 
-I punti chiave dei questa tecnologia, sono il grande raggio di copertura e il 
-basso consumo energetico per effettuare uno scambio dati. 
-Per le communicazioni , vengone utilizzata la banda ISM, grazie alle
-quale è possibili costrurire una rete ,che implementa questa tecnologia, senza
-possedere alcuna licenza.
-\improvement[inline]{Completare e riscrivere}
-
-
 \section{CSS}
-Alla base del layer fisico troviamo la modulazione  Chirp Spread Spectrum (CSS). Questo tipo di
-modulazione, ottenuta facendo variare in modo lineare, la frequenza di un segnale
-sinusoidale di durata finita, chiamato chirp. In questo modo è possibili
-distribuire l'informazione su di un spettro maggiore rispetto a quello
-normalmente utilizzato.
-In questo modo è possibile ottenere numerosi vantaggi quali
+CSS o Chirp Spread Spectrum è la modulazione alla base del layer fisico LoRa. 
+Con Chirp (Compressed High Intensity Radar Pulse) si intende un segnale di
+ampiezza costante, il quale incrementa o decrementa la sua frequenza nel tempo.
+Parliamo quindi di \emph{UpChirp} nel caso di un aumento di frequenza e di
+\emph{DownChirp} nel caso di un decremento.
+I l'utilizzo di segnali di tipo Chirp non è nuovo nel campo delle
+telecomunicazioni; infatti, questa tecnica di compressione del segnale, 
+è molto utilizzata in applicazioni radar o  sonar  poiché tramite essa è possibile aumentare il range
+di risoluzione spaziale e il rapporto segnale rumore.
+Per aumentare l'efficienza delle sue trasmissioni, LoRa utilizza i segnali Chirp in combinazione ad una
+modulazione Spread Spectrum. 
+Il più generico segnale chirp è dato dalla equazione \ref{eq:1}
+\begin{equation}\label{eq:1}
+        s(t) = A\cos(\theta (t))
+\end{equation}
+possiamo ora definire la frequenza istantanea $f(t)$ \ref{eq:2} ed il parametro
+chiamato chirpizzazione istantanea $c(t)$ \ref{eq:3}.
+\begin{equation}\label{eq:2}
+        \gamma(t) = \frac{1}{2\pi} \frac{d\theta(t)}{dt}
+\end{equation}
+\begin{equation}\label{eq:3}
+        c(t) = \frac{1}{2\pi} \frac{d^2\theta(t)}{dt^2} = \frac{d\gamma(t)}{dt}
+\end{equation}
+A seconda di come il segnale 
+\begin{equation}
+        \gamma(t) = \frac{k}{2}t+f_i
+\end{equation}
+Dove $f_i$ rappresenta la frequenza iniziale del segnale e $k$ la
+chirpizzazione.
+\begin{equation}
+        k = \frac{f_e - f_i}{T}
+\end{equation}
+con $f_e$ la frequenza finale.
+Data una banda $B = [f_0, f_1]$, un segnale di tipo Chirp ha una struttura tale
+che, partendo da frequenza iniziale $f_i$, essa verrà incrementa o decrementata
+linearmente in modo monotono. Nel caso in cui il segnale raggiunga le frequenze
+limite $f_0$ o $f_1$, è necessario far ripartire il segnale dall'estremo opposto
+della frequenza raggiunta, in modo da non eccedere la banda di trasmissione e
+mantenere la monotonicità.
+
+Con CSS si intende una modulazione che utilizza tutta la banda per l'invio dei
+dati.
+\begin{figure}[h]
+        \centering
+                \includegraphics[width=10cm]{Time_Chirp}
+        \caption{Esempio di segnale Chirp nel dominio del tempo}
+\end{figure}
+
+Come detto in precedenza, il layer fisico LoRa utilizza una modulazione che
+prende il nome di Chirp Spread Spectrum. Chirp acronimo di Compressed High
+Intensity Radar Pulse, è un segnale  . Questa tipo di modulazione e modulazione è ottenibile facendo
+variare in modo lineare la frequenza di un segnale sinusoidale di durata finita
+chiamato "Chirp". 
+Distribuendo il segnale in un più ampio spettro di quello normalmente richiesto,
+e possibile ottenere numerosi vantaggi 
 \begin{itemize}
 \item Uno spettro idealmente rettangolare, il quale utilizza tutta la capacità
 del canale e fornisce un ottima densità spettrale di potenza rispetto agli atri
@@ -41,40 +124,23 @@ lunghe distanze.
 \item \textbf{Immuni alle degenerazioni per effetto di multipath} \info{Trovare
 termine per multipath}
 \end{itemize}
-Un segnale di tipo \emph{Chirp} assume valori compresi nella banda di frequenza
-$B = [f_0,f_1]$, il suo andamento è di tipo monotono , crescente o decrescente
-compreso tra le due frequenze $f_0$ e $f_1$. Quindi possiamo parlare di
-\emph{Up-chirp} o di \emph{down-chirp}.
+A seconda della scelta di incrementare o decrementare la frequenza, questi
+segnali prendono il rispettivo nome di \emph{Up-chirp} o di \emph{down-chirp}.
 
-\begin{figure}
-\begin{subfigure}[h]{\textwidth}
-\centering
-\import{Images/Eps/}{Chirp.eps_tex}
-\caption{Segnale Chirp nel dominio della frequenza}
-\end{subfigure}
-
-\begin{subfigure}[h]{\textwidth}
-\centering
-\includegraphics[width=\textwidth]{Time_Chirp}
-\caption{Simbolo codificato col metodo Chirp nel dominio del tempo}
-\end{subfigure}
+\begin{figure}[h]
+        \centering
+                \import{Images/Eps/}{Chirp.eps_tex}
+        \caption{Segnale Chirp nel dominio della frequenza}
 \end{figure}
 
-Uno degli aspetti principali del layer fisico, è la possibilità di adattare il
-numero di bit codificati in un simbolo in base alle varie esigenze. 
-Questo parametro che prende il nome di \emph{Spread Factor}, permette a parità
-di potenza impiegata nella trasmissione, di ottenere distanze maggiori andando
-ad aumentare il tempo totale di trasmissione secondo la seguente formula:
-In questo modo è possibile, inviare segnali a distanze maggiori, utilizzando la
-stessa potenza trasmissiva.
-\improvement{Modificare e riscrivere}
-----------------------------------------------------------------------------
-Questa
-possibilità\info{Riscrivere} di adattamento permette a parità di potenza di
-riuscire a raggiunger distanze maggiori andando a variare, quello che nella
-documentazione ufficiale è chiamato \emph{Spread Factor}. Tutto ciò significa
-che (SF) rappresenta $2^{\text{SF}}$ bits in un simbolo. Un differente SF
-implica anche un differente tempo di comunicazione secondo la formula
+Uno degli aspetti peculiari del layer fisico, è la possibilità di andare a
+modificare un parametro che prende il nome di SF in modo dinamico per
+massimizzare l'efficenza della comunicazione.
+
+do
+invariata la potenza impiegata nella trasmissione, di diminuire il bit rate in
+modo da aumentare la distanza di trasmissione raggiungibile.
+Andando a variare il Spread Factor $SF$ si avranno variazioni sia su
 
 \begin{equation}
         T_s=\frac{2^{\text{SF}}}{B}.

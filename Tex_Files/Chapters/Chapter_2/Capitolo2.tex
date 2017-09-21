@@ -1,15 +1,12 @@
 \chapter{LPWAN}
-La grande diversità degli scenari applicativi che l'IoT porta con se, rende
-difficile creare uno standard alla base del network layer.
-Applicazioni quali smart-meter(contatori intelligenti) o centraline meteo  ad
-esempio, richiedono uno scambio di dati esiguo rispetto ad applicazioni di
-video-sorveglianza o votate al trattamento di dati sensibili.
-Le tecnologie wireless tradizionali non sono in grado di soddisfare tutti i vari
-use-case dell'IoT. 
-Con questo capitolo si vogliono aproffondire le problematiche riguardanti il
-network layer, andando a trattare le problematiche presenti e come diverse
-tecnologie stanno cercando di superarle.
-
+Data la grande varietà dei possibili scenari applicativi dell'IoT , trovare uno standard
+capace di adattarsi, in modo dinamico, ad ognuno di essi, non è un compito
+facile. Le tecnologie wireless tradizionali, non sono in grado di soddisfare
+la dinamicità  dell'IoT.
+Già diverse soluzioni sono nate per cercare di fronteggiare questi
+problemi, optando per metodi risolutivi  anche molto distanti l'uno dall'altro.
+Con questo capitolo si approfondiranno le problematiche, che i nuovi standard, riguardanti il
+network layer, dovranno essere in grado di risolvere.
 \section{Alla base delle reti LPWAN}  
 Le tecnologie wireless com ZigBee, WiFi, non sono ideate per connettere devices
 alimentati a batteria distribuiti in una vasta area geografica.
@@ -34,12 +31,8 @@ principali problematiche che le tecnologie attuali non sono in grado di colmare.
 \item \textit{Indirizzabilità}: a causa dell’elevato numero di oggetti che entrano in
 gioco in IoT, la capacità di indirizzamento di IPv4 non è più suffi-
 ciente. IPv4 usa 32 bit per gli indirizzi, quindi ce ne possono essere
-massimo 2 32 diversi. Gli ultimi indirizzi IPv4 sono stati assegnati nel
-Febbraio 2010. Il passaggio a IPv6 (nel frattempo si stanno adottando
-situazioni temporanee) risolverà il problema, in quanto si passerà da
-32 bit a 128 bit per gli indirizzi. IPv6 inoltre porterà miglioramenti
-in termini di sicurezza e semplificazioni nella gestione delle reti grazie
-a funzionalità di autoconfigurazione.
+massimo $2^{32}$ diversi. Il passaggio a IPv6 risolverà il problema, in quanto si passerà da
+32 bit a 128 bit per gli indirizzi. 
 \item \textit{Scalabilità}: Dato l'elevato numero di devices previsti nei scenari
 urbani ed industriali, la network technology alla base della rete dovrà essere 
 adattabile, in modo dinamico, al carico di dispositivi connessi.
@@ -49,25 +42,22 @@ configurazione, ma devono essere in grado di stabilire connessioni
 autonomamente con gli altri oggetti già presenti.
 \item \textit{Costo unitario}: Il costo del end device, dovrà essere conveniente
 per garantire la più ampia fetta di mercato.
-\item \textit{Fonti di energia}: probabilmente una delle maggiore problematiche.
+\item \textit{Fonti di energia}: 
 Gli oggetti nella maggior parte dei casi sono mobili, quindi non han-
 no sempre la possibilità di essere collegati a una fonte di energia. Le
-batterie inoltre sono pesanti e grandi. Servono sistemi per produr-
-re energia dall’ambiente circostante, in modo da rendere i dispositivi
-autosufficienti (ad esempio sfruttando la luce, il vento), che sfortunatamente,
-seppure ci siano progressi, non sono ancora in grado di
-risolvere il problema. E’ necessario quindi anche ridurre la quantità
-di energia richiesta dagli oggetti.
-\item \textit{Interoperabilità}: gli oggetti sono di natura diversa (per esempio pos-
-sono avere requisiti di larghezza di banda diversi, o hardware diverso).
+batterie inoltre sono pesanti e grandi.È necessario quindi andare a ridurre la quantità 
+di energia richiesta dagli oggetti, andando ad aumentare il tempo di deep-sleep
+.
+\item \textit{Interoperabilità}: gli oggetti sono di natura diversa (per esempio
+possono avere requisiti di larghezza di banda diversi, o hardware diverso).
 Questo implica la necessità di standard, in modo che oggetti di tipo
 diverso possano comunicare tra loro
 \item \textit{Costo computazionale}: La modulazione, alla base di queste nuove
 tipologie di rete, dovrà essere concepita in modo da non richiedere un costo
 computazionale elevato .
 \item \textit{Raggio d'azione}: La necessità di utilizzare questi devices in ambienti
-difficili o rurali, rende necessario poter instaurare una comunicazione con
-devices che si trovano a chilometri di distanza.
+difficili o rurali, rende necessario l'utilizzo di tecnologie wireless con un
+raggio di azione dell'ordine di una decina di chilometri.
 \item \textit{Sicurezza}: Lo scambio dei dati dovrà avvenire in maniera sicura,
 implementando algoritmi di cifratura dei dati o procedure di handshaking.
 \item \textit{Tolleranza ai guasti}: Il mal funzionamento  o il guasto di un
@@ -80,11 +70,10 @@ necessita di connettere milioni di devices diversi, sono nate le  LPWAN
 \emph{Low power wide area network}.
 Le reti LPWAN rappresentano un modello  di comunicazione
 innovativo, che integra le tecnologie cellulari tradizionali e quelle a corto
-raggio per affrontare diverse esigenze delle applicazioni IoT. Le tecnologie
-LPWA offrono un insieme di funzionalità uniche, risultando capaci di
-connettere un gran numero di devices con bassa capacità di elaborazione e a basso
-consumo energetico, altrimenti impossibile per le tecnologie presenti al giorno
-d'oggi.
+raggio per affrontare diverse esigenze delle applicazioni IoT. 
+Le reti LPWA, andando a sacrificare il massimo throughput dei devices, ne sono in
+grado di gestire un gran numero contemporaneamente, cosa che con le tecnologie
+wireless tradizionali non è possibile realizzare.\improvement{Riscrivere}
 
 \begin{figure}[h]
     \centering 
@@ -98,12 +87,19 @@ cellulari 2G,3G e 4G. Operando su bande di frequenza licenziate, e necessario
 che ognuna di queste tecnologie sia approvata dalla 3GPP ( 3rd Generation
 Partnership Project), la quale si occupa della standardizzazione dei sistemi di
 telecomunicazione a livello internazionale.
-All'opposto, Sigfox e Lora sono due tecnologie che operano sulle frequenze ISM
+All'opposto, Sigfox e Lora sono due tecnologie che operano nulle frequenze ISM
 (Industrial, Scientific and Medical). Le frequenze ISM sono uno spettro radio
 riservato alle applicazioni di radiocomunicazione non commerciali.
-esse variano da stato a stato. In particolare entrambe le tecnologie operano
-alle nella banda degli 868[MHz] la quale permette una potenza del segnale
-inviato massima pari a 14[dbm] ed un duty cycle inferiore al 1\%.
+
+\begin{figure}[h]
+    \centering 
+        \includegraphics[width=10cm]{Orignal/freq}
+    \caption{Comparazione tipologia di reti}
+\end{figure}
+
+In particolare entrambe le tecnologie operano  nella banda degli 868[MHz]
+la quale permette una potenza del segnale inviato massima pari a 14[dbm] ed un
+duty cycle inferiore al 1\%.\improvement{Completare}
  
 \section{NB-IoT}
 Narrowband IoT (NB-IoT) o LTE Cat NB1 è uno standard certificato nella release 13 del 3GPP, la
