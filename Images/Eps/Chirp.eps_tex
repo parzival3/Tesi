@@ -51,10 +51,11 @@
   \begin{picture}(1,0.46875)%
     \put(0,0){\includegraphics[width=\unitlength]{Chirp.eps}}%
     \put(0.30149222,0.72723397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.48030952,0.01080666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
     \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
     \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
+    \put(0.48030952,0.01080666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
     \put(0.04754423,0.22276038){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
     \put(0.29643417,0.4311829){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Simbolo}}}%
+    \put(0.79608311,0.40663413){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\hypertarget{label_in_fig_1}{}}}}%
   \end{picture}%
 \endgroup%

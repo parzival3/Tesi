@@ -18,6 +18,24 @@
    sodipodi:docname="Chirp.svg">
   <defs
      id="defs5523">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4848"
+       is_visible="true" />
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4608"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
     <marker
        inkscape:stockid="Arrow2Mend"
        orient="auto"
@@ -171,9 +189,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="389.79092"
-     inkscape:cy="136.45212"
+     inkscape:zoom="1.4"
+     inkscape:cx="348.77322"
+     inkscape:cy="174.68723"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -346,7 +364,7 @@
          y="868.56622"
          style="font-size:10.22023106px">$f_1$</tspan></text>
     <path
-       style="opacity:0.97000002;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.75802648;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker4703);marker-end:url(#Arrow2Mend)"
+       style="opacity:0.97000002;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.75802648;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow2Mstart);marker-end:url(#Arrow2Mend)"
        d="m 37.410145,793.52473 0,225.68957 508.016385,0"
        id="path4296"
        inkscape:connector-curvature="0" />
@@ -426,5 +444,43 @@
        d="m 158.65877,832.69559 0,13.96094"
        id="path5459"
        inkscape:connector-curvature="0" />
+    <ellipse
+       style="opacity:0.98999999;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:2.25106219;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.23921569"
+       id="path4578"
+       cx="568.77997"
+       cy="856.78253"
+       rx="15.035984"
+       ry="88.913895"
+       transform="matrix(0.98993946,0.14149156,-0.13112258,0.99136616,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.25px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="451.32275"
+       y="821.82996"
+       id="text4842"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4844"
+         x="451.32275"
+         y="821.82996"
+         style="font-size:12.50000286px">\hypertarget{label_in_fig_1}{}</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.4000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.23921569"
+       id="path5088"
+       sodipodi:sides="5"
+       sodipodi:cx="464.6701"
+       sodipodi:cy="814.15607"
+       sodipodi:r1="7.8408923"
+       sodipodi:r2="3.9204462"
+       sodipodi:arg1="-0.26060239"
+       sodipodi:arg2="0.36771614"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 472.24625,812.13576 -3.91778,3.42965 0.60422,5.17169 -4.47245,-2.66621 -4.73186,2.17278 1.15365,-5.07745 -3.52866,-3.82884 5.18544,-0.47183 2.55103,-4.53913 2.05113,4.78584 z"
+       inkscape:transform-center-x="-0.091709051"
+       inkscape:transform-center-y="-0.46276149"
+       transform="matrix(0.70764568,0,0,0.74123387,141.56385,228.95818)" />
   </g>
 </svg>

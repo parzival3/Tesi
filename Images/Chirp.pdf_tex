@@ -52,13 +52,15 @@
     \put(0.30149222,0.72723397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
     \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Chirp.pdf}}%
     \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{Chirp.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Chirp.pdf}}%
     \put(0.48030952,0.01080666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
     \put(0.04754423,0.22276038){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Chirp.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Chirp.pdf}}%
     \put(0.29643417,0.4311829){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Simbolo}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{Chirp.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Chirp.pdf}}%
+    \put(0.82942624,0.42050408){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\label{fig:3}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Chirp.pdf}}%
   \end{picture}%
 \endgroup%

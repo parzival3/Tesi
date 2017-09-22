@@ -63,52 +63,59 @@ I l'utilizzo di segnali di tipo Chirp non è nuovo nel campo delle
 telecomunicazioni; infatti, questa tecnica di compressione del segnale, 
 è molto utilizzata in applicazioni radar o  sonar  poiché tramite essa è possibile aumentare il range
 di risoluzione spaziale e il rapporto segnale rumore.
-Per aumentare l'efficienza delle sue trasmissioni, LoRa utilizza i segnali Chirp in combinazione ad una
-modulazione Spread Spectrum. 
-Il più generico segnale chirp è dato dalla equazione \ref{eq:1}
+Il più generico segnale chirp può essere rappresentato da una sinusoide che come
+argomento ha una funzione $\theta(t)$ che varia in funzione del tempo.
 \begin{equation}\label{eq:1}
         s(t) = A\cos(\theta (t))
 \end{equation}
-possiamo ora definire la frequenza istantanea $f(t)$ \ref{eq:2} ed il parametro
-chiamato chirpizzazione istantanea $c(t)$ \ref{eq:3}.
+Derivando ora l'argomento di $s(t)$ nel tempo, possiamo andare a definire due
+nuovi paramentri, la frequenza istantanea $\gamma(t)$ \ref{eq:2} ed un parametro che
+chiameremo chirpizzazione istantanea $c(t)$ \ref{eq:3}.
 \begin{equation}\label{eq:2}
         \gamma(t) = \frac{1}{2\pi} \frac{d\theta(t)}{dt}
 \end{equation}
 \begin{equation}\label{eq:3}
         c(t) = \frac{1}{2\pi} \frac{d^2\theta(t)}{dt^2} = \frac{d\gamma(t)}{dt}
 \end{equation}
-A seconda di come il segnale 
+A seconda di come vine scelta la funzione $\theta(t)$ il segnale avvrà
+andamenti diversi nel dominio del tempo, per semplificare la modulazione e
+demodulazione del segnale LoRa utilizza una variazione lineare dell'argomento
+$\theta(t)$.
+Volendo ottenere quest variazione, possiamo andare a costruire la nostra
+funzione arbitraria $\theta(t)$ partendo dalla frequenza istantanea. 
+Una possibile scelta di $\gamma$ è 
 \begin{equation}
         \gamma(t) = \frac{k}{2}t+f_i
 \end{equation}
-Dove $f_i$ rappresenta la frequenza iniziale del segnale e $k$ la
-chirpizzazione.
+Dove $f_i$ rappresenta la frequenza iniziale del segnale e $k$ è la 
+chirpizzazione "discreta". 
+Definiamo $k$ come il rapporto tra la variazione di
+frequenza finale $f_e$ ed iniziale $f_i$ nel periodo $T$, il quale rappresenta il
+tempo impiegato per passare dalla frequenza $f_i$ alla frequenza $f_i$.
 \begin{equation}
         k = \frac{f_e - f_i}{T}
 \end{equation}
-con $f_e$ la frequenza finale.
-Data una banda $B = [f_0, f_1]$, un segnale di tipo Chirp ha una struttura tale
-che, partendo da frequenza iniziale $f_i$, essa verrà incrementa o decrementata
-linearmente in modo monotono. Nel caso in cui il segnale raggiunga le frequenze
-limite $f_0$ o $f_1$, è necessario far ripartire il segnale dall'estremo opposto
-della frequenza raggiunta, in modo da non eccedere la banda di trasmissione e
-mantenere la monotonicità.
 
-Con CSS si intende una modulazione che utilizza tutta la banda per l'invio dei
-dati.
 \begin{figure}[h]
         \centering
                 \includegraphics[width=10cm]{Time_Chirp}
         \caption{Esempio di segnale Chirp nel dominio del tempo}
 \end{figure}
-
-Come detto in precedenza, il layer fisico LoRa utilizza una modulazione che
-prende il nome di Chirp Spread Spectrum. Chirp acronimo di Compressed High
-Intensity Radar Pulse, è un segnale  . Questa tipo di modulazione e modulazione è ottenibile facendo
-variare in modo lineare la frequenza di un segnale sinusoidale di durata finita
-chiamato "Chirp". 
-Distribuendo il segnale in un più ampio spettro di quello normalmente richiesto,
-e possibile ottenere numerosi vantaggi 
+Per aumentare l'efficienza delle sue trasmissioni, LoRa utilizza i segnali Chirp in combinazione ad una
+modulazione Spread Spectrum. Questo vuol dire che data una banda $B = [f_0,f_1]$
+il segnale Chirp inviato dai dispositivi LoRa sarà distribuito in tutta la banda
+$B$. Nel caso in cui il segnale,  aumentando linearmente la sua frequenza, arrivi
+ad uno degli estremi della bada $f_0,f_1$  all istante $t_c$ e non potendo uscire 
+dalla stessa, è costretto all'istante $t_{c+1}$ a ripartire dalla frequenza opposta a quella
+dell'estremo raggiunto è possibile osservare questo fenomeno in
+\hyperlink{label_in_fig_1}{$\star$}.
+Utilizzando una modulazione Spread Spectrum in combinazione con i segnali di tipo
+chirp, e possibile ottenere numerosi vantaggi.
+\begin{figure}[h]
+        \centering
+                \import{Images/Eps/}{Chirp.eps_tex}
+        \caption{Segnale Chirp nel dominio della frequenza}
+\end{figure}
 \begin{itemize}
 \item Uno spettro idealmente rettangolare, il quale utilizza tutta la capacità
 del canale e fornisce un ottima densità spettrale di potenza rispetto agli atri
@@ -124,39 +131,78 @@ lunghe distanze.
 \item \textbf{Immuni alle degenerazioni per effetto di multipath} \info{Trovare
 termine per multipath}
 \end{itemize}
-A seconda della scelta di incrementare o decrementare la frequenza, questi
-segnali prendono il rispettivo nome di \emph{Up-chirp} o di \emph{down-chirp}.
-
-\begin{figure}[h]
-        \centering
-                \import{Images/Eps/}{Chirp.eps_tex}
-        \caption{Segnale Chirp nel dominio della frequenza}
-\end{figure}
 
 Uno degli aspetti peculiari del layer fisico, è la possibilità di andare a
-modificare un parametro che prende il nome di SF in modo dinamico per
+modificare un parametro che prende il nome di Spread Factor in modo dinamico per
 massimizzare l'efficenza della comunicazione.
-
-do
-invariata la potenza impiegata nella trasmissione, di diminuire il bit rate in
-modo da aumentare la distanza di trasmissione raggiungibile.
-Andando a variare il Spread Factor $SF$ si avranno variazioni sia su
-
-\begin{equation}
-        T_s=\frac{2^{\text{SF}}}{B}.
+Lo Spread Factor è il parametro che indica quanti bit sono utilizzati in un segnale Chirp
+per rappresentare un simbolo, questo vuol dire che, preso uno 
+SF pari a $X$, il segnale  utilizzerà $2^X$ bit per rappresentare il simbolo a lui
+associato. Variando il SF variano anche le possibili frequenze iniziali del
+segnale; infatti, ogni segnale avrà $M=2^X$ frequenze iniziali possibili.
+Nella documentazione tecnica fornita da Semtech troviamo 7 possibili Spread
+Factor partendo dal 6SF fino ad arrivare al 12SF, ad ognuno di essi è associato un
+rapporto segnale che sarà più elevato per SF maggiori \ref{tab:SNR}. 
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c}
+                \textbf{SF}  & SNR \\
+                \hline
+                \emph{7}  & -7.5[dB] \\
+                \emph{8}  & -10[dB]  \\
+                \emph{9}   & -12.5[dB]  \\
+                \emph{10} & -15[dB] \\
+                \emph{11} & -17.5[dB] \\
+                \emph{12} & -20[dB] \\
+        \end{tabular}
+        \caption{Rapporto segnale rumore dei diversi Spreading Factors}
+        \label{tab:SNR}
+\end{table}
+\\
+In combinazione allo Spreading Factor LoRa utilizza differenti lunghezze di 
+banda per codificare; queste lunghezze di banda variano in base al modello di
+trasmettitore utilizzato. Nel modello SX1272 tre lunghe di banda 125[KHz],
+250[KHz] e 500[KHz] ed è ottimizzato per lavorare nelle frequenze che vanno
+dagli  850[MHz] fino a  1[GHz]. Il modello SX1276 ha la possibilità di variare
+la banda partendo da 7.8[KHz] fino a 500[KHz], offre una maggiore sensitività in
+ricezione rispetto al suo predecessore ed è ottimizzato per funzionare nelle
+bande degli 150[MHz] 433[MHz] e 850[MHz]-1[GHz].
+Ponendoci ora nel caso in cui la banda utilizzata
+nella comunicazione sia fissata a priori, una variazione dello Spread Spectrum
+comporterà la necessità utilizzare il doppio del tempo per inviare il simbolo.
+Nella formula \ref{eq:time_chirp} $T_s$ rappresenta il tempo necessario per
+l'invio del simbolo, $X$ lo Spreading Factor usato e $B$ la banda.
+Analogamente è possibile andare un incremento della banda $B$ comporterà un
+incremento della velocità con cui i segnali chirp vengono trasmessi ottenendo
+quindi un aumento del bit rate .
+\begin{equation}\label{eq:time_chirp}
+        T_s=\frac{2^{\text{X}}}{B}.
 \end{equation}
-
-Dalla quale si evince che andando ad aumentare lo spread factor di una unità,
-mantenendo una lunghezza di banda fissa $B$, otteniamo un raddoppio nel tempo di
-trasmissione. Il fatto di avere messaggi più lunghi, conferisce un robustezza
-superiore alle interferenze e al rumore. In discapito a tutto ciò, il fatto di
-dover codificare il messaggio con un maggiore numero di simboli, aumenta la
-possibilità di errore alla ricezione. 
 
 \begin{figure}[h]
 \centering 
 \import{Images/Eps/}{Chirp_SF.eps_tex}
 \caption{Comparazione simbolica dei vari SF}
+\end{figure}
+Un aumento del tempo impiegato per la trasmissione di un simbolo permette al
+messaggio di essere più robusto alle interferenze e al rumore, è importante però
+ricordare che aumentando il Spread Factor anche il numero di simboli codificabili nel
+segnale  aumenterà rendendo critica la decodifica del segnale quando si è in
+presenza di bassi data rate. Per questo motivo è necessario scegliere il SF in
+maniera efficace, è possibile determinare in modo empirico la sensitività del
+ricevitore in base al SF utilizzato secondo la formula  \improvement{Inserire Link} 
+\begin{equation}
+        S = -174+10\log_{10}BW + NF + SNR
+\end{equation}
+Dove il primo termine è dovuto al rumore termico nel ricevitore in una banda di
+1[Hz] alla temperatura ambiente, $NF$ è il rumore intrinseco del ricevitore, il
+quale è fissato in base all'hardware utilizzato e $SNR$ è il valore del rapporto
+segnale rumore utilizzato in base alla tabella \ref{tab:SNR}
+
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{strong_SF}
+        \caption{Lora bandwidth }
 \end{figure}
 
 Questa nuovo modo di trasmettere i vari dati porta con se molti vantaggi.
@@ -171,35 +217,87 @@ costi di produzione.
 molto costoso.
 \end{itemize}
 \improvement{Rivedere i vari punti e cambiare il linguaggio}
-
-Analizzando lo spettrogramma di una comunicazione Lora è possibile distinguere
-in modo semplice le varie parti che compongono il pachetto trasmesso. 
-
+\subsection{LoRa packet}
+Per ottimizzare la durata della batteria dei dispositivi, è necessario che il
+devices rimanga in deep-sleep per la maggior parte del tempo. Inoltre per
+utilizzare le risorse in maniera più efficace, una comunicazione LoRa è priva di
+handshake e ACK. Queste scelte hanno portato all'implementazione di quello che
+può essere chiamato pacchetto del layer fisico \ref{fig:phis_pack}.
+Ogni pacchetto inviato è composto da:
+\begin{itemize}
+        \item \emph{Preambolo} data la scelta del non utilizzo di tecniche di
+        handshaking e ACK, è necessario che il ricevitore sia in grado di
+        sincronizzarsi con il messaggio inviato dal dispositivo. Per questo
+        motivo la parte iniziale di ogni messaggio è composta da una serie di
+        simboli byte utili alla sincronizzazione. La lunghezza prestabilita è di
+        12 simboli.
+        \item \emph{Header e CRC} l'header contiene le informazioni riguardanti
+        il payload quali , la sua lunghezza , il code rate utilizzato nel
+        payload e la presenza o meno del CRC. Da specifica, l'header ha sempre
+        un code-rate pari a 4/8 che rappresenta la massima rindondanza con
+        correlato CRC. 
+        \item \emph{Payload} il quale può essere di lunghezza variabile fino ad
+        un massimo di 255[byte].
+        \item \emph{Payload CRC}
+\end{itemize}
 \begin{figure}[h]
-\centering 
-\includegraphics[width=9cm]{Chirp_Message}
-\caption{Struttura pacchetto Lora }
+        \centering 
+                \includegraphics[width=9cm]{Chirp_Message}
+        \caption{Struttura pacchetto Lora }
+        \label{fig:phis_pack}
 \end{figure}
-
-Osservando l'immagine precedente è facile notare come è strutturato un pacchetto.
+In caso di specifiche stringenti, è possibile far operare i moduli LoRa in
+modalità \emph{implicita}. In questa modalità, il pacchetto non utilizza
+l'header; per garantire il corretto funzionamento e dunque necessario che il
+payload sia di lunghezza fissata e nota al gateway al quale il messaggio è
+indirizzato.
+Osservando l'immagine \ref{fig:freq_lora_chirp}  è facile notare come è
+strutturato un pacchetto "fisico".
 La prima parte della trasmissione, nonché il preambolo  stesso è codificato con una
 serie di \emph{up-chirp}. In questo modo il gateway riesce a sintonizzarsi sulla
 stessa frequenza del dispositivo trasmittente.
 Successivamente vengono inviati una serie di
 \emph{down-chirp} i quali rappresentano l'header codificato dal layer fisico,
 dove sono presenti dei bit di controloo e correzzione degli errori
-L'ultima parte rappresenta il payload codificato dal PHY, in questa parte,
-formata solo da \emph{up-chirp} sono presenti dei salti, i quali sono un chiaro
-segno della presenza di dati codificati.
-
+L'ultima parte rappresenta il payload , in questa parte, formata solo da
+\emph{UpChirp} i dati vengono codificati tramite un cambiamento istantaneo della
+frequenza.
 \begin{figure}[h]
-\centering 
-\includegraphics[width=9cm]{PHY_packet}
-\caption{Pacchetto codificato dal layer fisico}
+        \centering 
+                \includegraphics[width=9cm]{PHY_packet}
+        \caption{Pacchetto codificato dal layer fisico}
+        \label{fig:freq_lora_chirp}
 \end{figure}
+Oltre alla modulazione, LoRa specifica delle operazioni di codifica che vengono
+fatte prima che il segnale venga modulato.
+\begin{itemize}
+        \item \textbf{Data whitening} è una tecnica utilizzata per ridurre la
+        probabilità di avere lunghe sequenze di 1 e 0. Oltre a semplificare la
+        decodifica, il data whitening aiuta a distribuire l'informazione in tutta la
+        banda.
+        \item \textbf{Forward Error Correction} è implementata tramite
+        l'utilizzo dei codici di Hamming, la lunghezza della parola del codice è
+        fissata e pari a 4, mentre la code-word è un parametro che può variare
+        da 5 a 8.
+        \item \textbf{Codice Gray} utilizzato per m \improvement{Completare}
+        \item \textbf{Interliving}
+\end{itemize}
+La lunghezza del payload come detto prima è un numero variabile il quale dipende
+da molti fattori 
+\begin{equation}
+        L_{payload} = 8+
+        \text{max}\left(\left[\frac{8\text{PL}-4\text{SF}+44-20\text{H}}{4(\text{SF}-2\text{DE})}
+        \right]+(CR+4)\, , \, 0 \right)
+\end{equation}
+Dove $\text{PL}$ è il numero di byte del payload iniziale, $\text{H}$ può essere
+1 o 0 a seconda se il device opera in modalità "implicita" oppure no,
+$\text{CR}$ è il numero di bits di parità e \text{DE} può essere 0 o 1 a seconda
+dell'abilitazione o meno della funzione di \emph{low data rate}.
+L'opzione di low data rate è attivabile in caso di trasmissioni lunghe e lente,
+attivandola si forzerà il dispositivo trasmittente ad aumentare la stabilità
+della frequenza scelta per la comunicazione .
 
-\improvement[inline]{Aggiungere immagine e finire la spiegazione}
-
+\subsection{Chip interno}
 Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
 informazioni dato che la tecnologia è proprietaria di Semtech. Nella
 documentazione ufficiale è presente una rappresentazione grafica dei vari
@@ -215,10 +313,15 @@ blocchi presenti al interno dei moduli radio.
 Dalla figura \ref{fig:sx1301} è evidendte che il gateway rimane in ascolto su 8 
 frequenze diverse, le quali permettono di coprire tutti i vari SF. 
 Tutto ciò è possibili anche grazie al fatto che i vari SF sono quasi ortogonali 
-fra di loro, perciò il ricevitore è in grado di ricevere pacchetti da SF diversi 
-contemporaneamente. Questo tipo di ricevitore può demodulare fino ad un massimo 
-di 8 pacchetti contemporaneamente. Inoltre questa topologia permette di avere 
-vari vantaggi
+fra di loro, in questo modo il ricevitore è in grado di ricevere un pacchetto
+con uno Spreading Factor $i$ anche nel caso in cui si sovrapponga ad un altro
+pacchetto con Spreading Factor pari a $j$, fintanto che $i\neq j$. Questa
+pseudo-ortogonalità utilizzata in LoRa, permette di utilizzare differenti SF per
+ottenere un maggiore throughput rispetto a schemi di modulazione tradizionale.
+Il ricevitore  SX1301 può demodulare fino ad un massimo di 8 pacchetti
+contemporaneamente, questo non vuol dire che ricevitori futuri non possano
+demodulare contemporaneamente un numero di pacchetti maggiore.
+Oltre a ciò grazie alla modulazione utilizzata abbiamo vantaggi quali:
 \begin{itemize}
 \item I vari nodi della rete, possono cambiare frequenza in ogni trasmissione in
 modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
@@ -232,14 +335,102 @@ cosidetto true antenna diversity, per aumentare la robustezza al multi-path
 
 \section{LoRaWAN}
 \info[inline]{Chiedere se il termine protocollo è appropriato}
-La parte non proprietaria del protocollo è chiamata \emph{LoRaWAN}, in essa
-viene descritta la topologia di rete, la struttura dei pacchetti e le varie
-classi di device possibili.
+Se la scelta di utilizzare un layer fisico proprietario comporta l'utilizzo di
+chip prodotti esclusivamente da Semtech, 
+LoRaWAN è un protocollo MAC o \emph{media access control} utilizzabile nelle
+comunicazioni che richiedono una vasta copertura di rete. Sviluppato in modo da
+poter essere utilizzato per devices a basso consumo energetico, permette a
+quest'ultimi la possibilità di interagire con applicazioni internet attraverso
+una rete wireless a lungo raggio.
+Riprendendo il modello OSI LoRaWAN può essere collocato tra il secondo e terzo
+layer del sudetto modello.
 
 \begin{figure}[h]
 \centering 
-\includegraphics[width=11cm]{LPWAN_Star_network}
-\caption{Struttura rete a stella LPWAN}
+\includegraphics[width=11cm]{OSI_vs_lora}
+\caption{Comparazione del modello OSI con la struttura definita in LoRaWAN}
+\label{}
+\end{figure}
+
+Il protocollo LoRaWAN è sviluppato dalla LoRa Alliance e formalizzato tramite la
+documentazione LoRaWAN \improvement{inserire link}
+\subsection{Tipi di devices}
+Nella documentazione LoRaWAN sono definite tre classi di devices possibili per
+diversi tipi di utilizzo. La classe basilare è la classe \emph{A}, questo vuol
+dire che in ogni dispositivo implementa questa classe. Le classi \emph{B}, e
+\emph{C} sono una estensione della classe \emph{A}, questo tipo di classi sono
+riservate a devices i quali hanno la possibilità di essere alimentati tramite la
+rete elettrica oppure tramite fonti di energia esterne.
+\begin{itemize}
+        \item   \textbf{Class A} è la modalità di funzionamento predefinita. 
+                In questa
+                modalità il device è in grado di iniziare la comunicazione in qualsiasi istante
+                di tempo. Questa classe implementa due finestre di ascolto da parte del devices
+                dopo 1[s] e 2[s] dalla fine della trasmissione. Se il gateway non risponde al
+                messaggio ricevuto durante uno di questi intervalli, è necessario aspettare che
+                il device torni ad aprire le sue finestre di ascolto, quindi è necessario
+                aspettare l'invio di un nuovo messaggio .
+        \item   \textbf{Class B} sono devices che estendono le funzionalità della classe
+                \emph{A}. Questi devices sono sincronizzati con la Base Station attraverso
+                messaggi \emph{bacon} inviati dal gateway. Essendo sincronizzato con il gateway,
+                il device è in grado di aprire finestre di ascolto nei tempo prestabilito
+                potendo così essere contatto dal server.\improvement{Riscrivere}
+        \item   \textbf{Class C} è anch'essa una estensione della classe \emph{A}. 
+                Questa classe permette il funzionamento quasi complementare del device; infatti
+                il device che opera in questa classe rimarrà continuamente in ascolto finché non
+                necessità di comunicare con altri devices. Questa classe è adatta per
+                comunicazioni che richiedono una bassa latenza. Ovviamente, rimanendo per la
+                maggior parte del tempo in ascolto, i devices che operano con questa classe
+                dovranno essere connessi ad una fonte di energia esterna 
+\end{itemize}
+
+
+\subsection{Frequenze}
+La tecnologia LoRa opera nelle bande non licenziate dello spettro radio.  Come
+accade per le più comuni tecnologie wireless WiFi, Bluetooth, ZigBee, anche LoRa
+può essere utilizzata dal consumatore senza la necessità di possedere una
+licenza o pagare un abbonamento.  Nonostante la diversità delle frequenze ISM
+che si trovano in paese LoRaWAN supporta sia le frequenze che vanno dagli
+863-868[MHz] sia la banda dei 433[MHz]. Per le frequenze centrate nella fascia
+degli 860[MHz], LoRaWAN specifica tre diversi canali (868.10, 868.30 and 868.50
+MHz), con una bandwidth di 125[KHz] ciascuno i quali, dovranno essere supportati
+da ogni device. Inoltre ogni gateway che opera in queste frequenze dovrà
+rimanere in ascolto su tutti e tre questi canali, in particolare, questi canali
+formano un set comune nel quale un possibile nuovo devices che entra nella rete
+comunicherà in questi canali durante la \emph{Procedura di inserimento}. Per
+quanto riguarda la banda dei 433[MHz], si hanno a disposizione sempre tre tipi
+diversi di canali usabili per la \emph{join procedure} i quali sono 433.175, 
+433.375  433.575 MHz. Terminata la procedura, il gateway potrà dare istruzione
+di utilizzare altri canali oltre ad i 3 principali.
+La regolamentazione Europea impone un duty-cycle molto ristretto per l'utilizzo
+delle frequenze ISM, in particolare nella banda degli 868 si è imposto
+l'utilizzo di duty cycle inferiori al 1\% e per i 433 duty cycle inferiori al
+0,1\%.
+\begin{table}[h]
+        \centering
+        \begin{tabular}{l|c}
+                \toprule
+                Stato   & Frequenza [MHz] \\
+                \hline
+                Europa  & 868-870 \\
+                US      & 902-928 \\
+                China   & 779-787 \\
+                \bottomrule
+        \end{tabular}
+        \caption{Bande di frequenza per le varie regioni}
+\end{table}
+
+\subsection{Sicurezza e LoRaWAN packets}
+Data la necessità 
+All'interno del frame \emph{PHYPayload} del pacchetto LoRa,  è il pacchetto
+LoRaWAN. Questo pacchetto è strutturato nel seguente modo:
+Per garantire la sicurezza nelle comunicazioni, LoRa utilizza tre diverse chiavi
+di sicurezza lunghe ognuna 128[bits].
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{LoRaWAN_packet}
+\caption{Stack del protocollo della rete LoRaWAN}
+\label{fig:stack_lora}
 \end{figure}
 
 La topologia di rete utilizzata, è una topologia a stella, nella quale molti
@@ -263,44 +454,9 @@ gateway  e network-server.
 \label{fig:stack_lora}
 \end{figure}
 
-Esistono tre classi di devices, le quali specificano i vari use-case per
-possibili.
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{LPWAN_Star_network}
+\caption{Struttura rete a stella LPWAN}
+\end{figure}
 
-\begin{itemize}
-\item \textbf{Class A} è la modalità di funzionamento predefinita. In questa
-modalità il device si occupa solo di trasmettere i vari messaggi in maniera
-completamente asincrona. Eseguita la trasmissione, due finestre di ascolto
-vengono aperte nel end-device. La prima finestra rimane in ascolto nella stessa
-frequenza in cui il dato è stato comunicato, mentre la seconda rimane in ascolto
-su una frequenza nota a priori e comunicata tramite il MAC.
-\item \textbf{Class B} sono devices i quali sono sincronizzati con il NS tramite
-beacon packets. In questo modo hanno la possibilità di ricevere dati in un
-determinata finestra di tempo. In questa classe rientrano interruttori ,
-attuatori ecc..
-\item \textbf{Class C} è riservata ai devices che hanno la possibilità di e
-essere alimentati direttamente dalla rete elettrica, quindi possono mantenere il
-ricevitore costantemente in ascolto.
-\end{itemize}
-
-\section{Frequenze}
-A seconda della regione in qui operano i devices, lo standard LoRaWAN definisce
- quali frequenze vengono occupate in base alle regolamentazione vigente in
-Europa Cina e Stati Uniti.  Per ognuna di queste regioni, vengono definite 
-la struttura del payload, la frequenza, lo spreading factor, e la massima
-lunghezza possibile del payload.
-\begin{table}[h]
-        \centering
-        \begin{tabular}{l|c}
-                \toprule
-                Stato   & Frequenza [MHz] \\
-                \hline
-                Europa  & 868-870 \\
-                US      & 902-928 \\
-                China   & 779-787 \\
-                \bottomrule
-        \end{tabular}
-        \caption{Bande di frequenza per le varie regioni}
-\end{table}
-Inoltre tutte le frequenze sono comprese nelle bade ISM, e non sono
-particolarmente elevate, rendendole preferibili per le lunghe distanze rispetto
-a frequenze quali 2.4 [GHz] e 5[GHz]
