@@ -44,13 +44,13 @@
      inkscape:guide-bbox="true"
      inkscape:document-units="cm"
      units="cm"
-     inkscape:zoom="0.99867345"
-     inkscape:cx="362.56205"
-     inkscape:cy="163.26753"
+     inkscape:zoom="1.9973469"
+     inkscape:cx="232.95379"
+     inkscape:cy="94.060795"
      inkscape:window-x="0"
      inkscape:window-y="19"
      inkscape:window-maximized="0"
-     inkscape:current-layer="surface41287">
+     inkscape:current-layer="g16260">
     <sodipodi:guide
        position="479.03547,270.75918"
        orientation="1,0"
@@ -67,9 +67,61 @@
        position="1085.4399,441.38553"
        orientation="0,1"
        id="guide22731" />
+    <sodipodi:guide
+       position="-57.275979,153.40349"
+       orientation="1,0"
+       id="guide8231" />
   </sodipodi:namedview>
   <defs
      id="defs13105">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8279"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8275"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8271"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8267"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8263"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8259"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8255"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8251"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8247"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8243"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8239"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect8235"
+       is_visible="true" />
     <g
        id="g13107">
       <symbol
@@ -3740,220 +3792,223 @@
     </g>
     <g
        id="g22770"
-       transform="matrix(0.41012268,0,0,0.41012268,0,431.93452)">
-      <path
-         inkscape:connector-curvature="0"
-         id="path15842"
-         d="m 0,684.65149 306.57422,0 0,-48.1875 -306.57422,0 z m 0,0"
-         style="fill:#78f57f;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+       transform="matrix(0.36666721,0,0,0.36666721,0.19038908,471.48867)">
       <g
-         transform="translate(-90.183594,370.37024)"
-         id="g15844"
-         style="fill:#000000;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use15846"
-           y="285.39655"
-           x="200.61012"
-           xlink:href="#glyph7-1" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15848"
-           y="285.39655"
-           x="211.42563"
-           xlink:href="#glyph7-2" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15850"
-           y="285.39655"
-           x="221.23242"
-           xlink:href="#glyph7-2" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15852"
-           y="285.39655"
-           x="231.03922"
-           xlink:href="#glyph7-3" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15854"
-           y="285.39655"
-           x="235.33553"
-           xlink:href="#glyph7-4" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15856"
-           y="285.39655"
-           x="239.63184"
-           xlink:href="#glyph7-5" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15858"
-           y="285.39655"
-           x="247.53331"
-           xlink:href="#glyph7-6" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g15860"
-         style="fill:#000000;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use15862"
-           y="285.39655"
-           x="256.33142"
-           xlink:href="#glyph7-7" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15864"
-           y="285.39655"
-           x="262.58908"
-           xlink:href="#glyph7-4" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g15866"
-         style="fill:#000000;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use15868"
-           y="285.39655"
-           x="266.92276"
-           xlink:href="#glyph7-8" />
-        <use
-           height="100%"
-           width="100%"
-           id="use15870"
-           y="285.39655"
-           x="276.76691"
-           xlink:href="#glyph7-9" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16140"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16142"
-           y="292.58997"
-           x="412.02954"
-           xlink:href="#glyph11-1" />
-        <use
-           height="100%"
-           width="100%"
-           id="use16144"
-           y="292.58997"
-           x="419.97968"
-           xlink:href="#glyph11-2" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16146"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16148"
-           y="292.58997"
-           x="426.95901"
-           xlink:href="#glyph11-2" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16150"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16152"
-           y="292.58997"
-           x="433.93835"
-           xlink:href="#glyph11-3" />
-        <use
-           height="100%"
-           width="100%"
-           id="use16154"
-           y="292.58997"
-           x="437.16565"
-           xlink:href="#glyph11-4" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16156"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16158"
-           y="292.58997"
-           x="440.41919"
-           xlink:href="#glyph11-5" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16160"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16162"
-           y="292.58997"
-           x="445.83734"
-           xlink:href="#glyph11-6" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16164"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16166"
-           y="292.58997"
-           x="452.2132"
-           xlink:href="#glyph11-7" />
-        <use
-           height="100%"
-           width="100%"
-           id="use16168"
-           y="292.58997"
-           x="456.76553"
-           xlink:href="#glyph11-4" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16170"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16172"
-           y="292.58997"
-           x="460.01904"
-           xlink:href="#glyph11-8" />
-      </g>
-      <g
-         transform="translate(-90.183594,370.37024)"
-         id="g16174"
-         style="fill:#5999d4;fill-opacity:1">
-        <use
-           height="100%"
-           width="100%"
-           id="use16176"
-           y="292.58997"
-           x="467.10333"
-           xlink:href="#glyph11-9" />
+         id="g8195">
+        <path
+           style="fill:#78f57f;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           d="m 0,684.65149 306.57422,0 0,-48.1875 -306.57422,0 z m 0,0"
+           id="path15842"
+           inkscape:connector-curvature="0" />
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g15844"
+           transform="translate(-90.183594,370.37024)">
+          <use
+             xlink:href="#glyph7-1"
+             x="200.61012"
+             y="285.39655"
+             id="use15846"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-2"
+             x="211.42563"
+             y="285.39655"
+             id="use15848"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-2"
+             x="221.23242"
+             y="285.39655"
+             id="use15850"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-3"
+             x="231.03922"
+             y="285.39655"
+             id="use15852"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-4"
+             x="235.33553"
+             y="285.39655"
+             id="use15854"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-5"
+             x="239.63184"
+             y="285.39655"
+             id="use15856"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-6"
+             x="247.53331"
+             y="285.39655"
+             id="use15858"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g15860"
+           transform="translate(-90.183594,370.37024)">
+          <use
+             xlink:href="#glyph7-7"
+             x="256.33142"
+             y="285.39655"
+             id="use15862"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-4"
+             x="262.58908"
+             y="285.39655"
+             id="use15864"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="g15866"
+           transform="translate(-90.183594,370.37024)">
+          <use
+             xlink:href="#glyph7-8"
+             x="266.92276"
+             y="285.39655"
+             id="use15868"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph7-9"
+             x="276.76691"
+             y="285.39655"
+             id="use15870"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16140"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-1"
+             x="412.02954"
+             y="292.58997"
+             id="use16142"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph11-2"
+             x="419.97968"
+             y="292.58997"
+             id="use16144"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16146"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-2"
+             x="426.95901"
+             y="292.58997"
+             id="use16148"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16150"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-3"
+             x="433.93835"
+             y="292.58997"
+             id="use16152"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph11-4"
+             x="437.16565"
+             y="292.58997"
+             id="use16154"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16156"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-5"
+             x="440.41919"
+             y="292.58997"
+             id="use16158"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16160"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-6"
+             x="445.83734"
+             y="292.58997"
+             id="use16162"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16164"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-7"
+             x="452.2132"
+             y="292.58997"
+             id="use16166"
+             width="100%"
+             height="100%" />
+          <use
+             xlink:href="#glyph11-4"
+             x="456.76553"
+             y="292.58997"
+             id="use16168"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16170"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-8"
+             x="460.01904"
+             y="292.58997"
+             id="use16172"
+             width="100%"
+             height="100%" />
+        </g>
+        <g
+           style="fill:#5999d4;fill-opacity:1"
+           id="g16174"
+           transform="translate(-175.14899,412.46673)">
+          <use
+             xlink:href="#glyph11-9"
+             x="467.10333"
+             y="292.58997"
+             id="use16176"
+             width="100%"
+             height="100%" />
+        </g>
       </g>
     </g>
     <g
@@ -3969,7 +4024,7 @@
     </g>
     <g
        id="g22932"
-       transform="matrix(0.41012268,0,0,0.41012268,27.596853,488.11383)">
+       transform="matrix(0.36666721,0,0,0.36666721,0,514.34807)">
       <path
          inkscape:connector-curvature="0"
          id="path15894"
@@ -4099,7 +4154,7 @@
            xlink:href="#glyph8-11" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16228"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4125,7 +4180,7 @@
            xlink:href="#glyph11-14" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16236"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4137,7 +4192,7 @@
            xlink:href="#glyph11-15" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16240"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4156,7 +4211,7 @@
            xlink:href="#glyph11-6" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16246"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4175,7 +4230,7 @@
            xlink:href="#glyph11-4" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16252"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4187,7 +4242,7 @@
            xlink:href="#glyph11-8" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-169.7421,405.90123)"
          id="g16256"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4201,14 +4256,14 @@
     </g>
     <g
        id="g22970"
-       transform="matrix(0.41012268,0,0,0.41012268,31.210725,494.02744)">
+       transform="matrix(0.36666721,0,0,0.36666721,-0.02522899,529.42553)">
       <path
          inkscape:connector-curvature="0"
          id="path15934"
-         d="m 0.183594,841.3468 58.308593,0 0,-48.1875 -58.308593,0 z m 0,0"
+         d="m 0.183594,833.34131 58.308593,0 0,-48.1875 -58.308593,0 z m 0,0"
          style="fill:#d1d1ab;fill-opacity:1;fill-rule:evenodd;stroke:none" />
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15936"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4227,7 +4282,7 @@
            xlink:href="#glyph8-13" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15942"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4255,10 +4310,10 @@
       <path
          inkscape:connector-curvature="0"
          id="path15950"
-         d="m 61.933594,841.88977 58.308596,0 0,-48.1875 -58.308596,0 z m 0,0"
+         d="m 61.933594,833.88428 58.308596,0 0,-48.1875 -58.308596,0 z m 0,0"
          style="fill:#d1d1ab;fill-opacity:1;fill-rule:evenodd;stroke:none" />
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15952"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4277,7 +4332,7 @@
            xlink:href="#glyph7-17" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15958"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4305,10 +4360,10 @@
       <path
          inkscape:connector-curvature="0"
          id="path15966"
-         d="m 124.04688,841.3468 58.30859,0 0,-48.1875 -58.30859,0 z m 0,0"
+         d="m 124.04688,833.34131 58.30859,0 0,-48.1875 -58.30859,0 z m 0,0"
          style="fill:#d1d1ab;fill-opacity:1;fill-rule:evenodd;stroke:none" />
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15968"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4327,7 +4382,7 @@
            xlink:href="#glyph8-16" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15974"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4355,10 +4410,10 @@
       <path
          inkscape:connector-curvature="0"
          id="path15982"
-         d="m 185.78906,841.88977 58.3086,0 0,-48.1875 -58.3086,0 z m 0,0"
+         d="m 185.78906,833.88428 58.3086,0 0,-48.1875 -58.3086,0 z m 0,0"
          style="fill:#d1d1ab;fill-opacity:1;fill-rule:evenodd;stroke:none" />
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15984"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4377,7 +4432,7 @@
            xlink:href="#glyph7-21" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g15990"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4405,10 +4460,10 @@
       <path
          inkscape:connector-curvature="0"
          id="path15998"
-         d="m 247.54297,841.88977 58.30859,0 0,-48.1875 -58.30859,0 z m 0,0"
+         d="m 247.54297,833.88428 58.30859,0 0,-48.1875 -58.30859,0 z m 0,0"
          style="fill:#d1d1ab;fill-opacity:1;fill-rule:evenodd;stroke:none" />
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-90.183594,362.36475)"
          id="g16000"
          style="fill:#000000;fill-opacity:1">
         <use
@@ -4429,10 +4484,11 @@
            id="use16262"
            y="451.31714"
            x="412.02954"
-           xlink:href="#glyph12-1" />
+           xlink:href="#glyph12-1"
+           transform="translate(-119.21076,28.174798)" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16264"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4458,7 +4514,7 @@
            xlink:href="#glyph12-4" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16272"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4477,7 +4533,7 @@
            xlink:href="#glyph12-6" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16278"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4496,7 +4552,7 @@
            xlink:href="#glyph12-8" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16284"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4536,7 +4592,7 @@
            xlink:href="#glyph12-13" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16296"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4555,7 +4611,7 @@
            xlink:href="#glyph12-6" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-209.39435,398.54504)"
          id="g16302"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -4580,7 +4636,7 @@
     </g>
     <g
        id="g22806"
-       transform="matrix(0.41012268,0,0,0.41012268,15.769628,478.58634)">
+       transform="matrix(0.36666721,0,0,0.36666721,0.28542225,505.27584)">
       <path
          inkscape:connector-curvature="0"
          id="path15872"
@@ -5015,7 +5071,7 @@
            xlink:href="#glyph10-8" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16178"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5034,7 +5090,7 @@
            xlink:href="#glyph11-1" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16184"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5046,7 +5102,7 @@
            xlink:href="#glyph11-11" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16188"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5065,7 +5121,7 @@
            xlink:href="#glyph11-1" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16194"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5077,7 +5133,7 @@
            xlink:href="#glyph11-11" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16202"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5089,7 +5145,7 @@
            xlink:href="#glyph11-8" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16206"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5101,7 +5157,7 @@
            xlink:href="#glyph11-2" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16210"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5120,7 +5176,7 @@
            xlink:href="#glyph11-4" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16216"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5132,7 +5188,7 @@
            xlink:href="#glyph11-8" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16220"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -5144,7 +5200,7 @@
            xlink:href="#glyph11-9" />
       </g>
       <g
-         transform="translate(-90.183594,370.37024)"
+         transform="translate(-186.34898,324.41168)"
          id="g16224"
          style="fill:#5999d4;fill-opacity:1">
         <use
@@ -6968,9 +7024,9 @@
            height="155.20589"
            x="538.71466"
            y="812.0434" /></flowRegion><flowPara
-         id="flowPara22631"></flowPara></flowRoot>    <g
+         id="flowPara22631" /></flowRoot>    <g
        id="g22733"
-       transform="matrix(0.41012268,0,0,0.41012268,21.683239,497.64131)">
+       transform="matrix(0.36666721,0,0,0.36666721,70.588899,531.18159)">
       <rect
          y="770.0899"
          x="480.17184"
@@ -7175,16 +7231,47 @@
            id="tspan22727"
            sodipodi:role="line">7</tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:114.16101074px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif, Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="189.11542"
-       y="732.48065"
-       id="text23030"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan23032"
-         x="189.11542"
-         y="732.48065">{</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.71523422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.25787,705.02821 133.56836,-41.1806"
+       id="path8237"
+       inkscape:path-effect="#path-effect8239"
+       inkscape:original-d="m 112.25787,705.02821 133.56836,-41.1806"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.71523422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.43691,722.57472 134.4636,40.82251"
+       id="path8241"
+       inkscape:path-effect="#path-effect8243"
+       inkscape:original-d="m 112.43691,722.57472 134.4636,40.82251"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.73991632px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.10202,817.93132 134.54512,-3.92665"
+       id="path8249"
+       inkscape:path-effect="#path-effect8251"
+       inkscape:original-d="m 112.10202,817.93132 134.54512,-3.92665"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.72413784px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.08181,834.81049 134.72491,3.62986"
+       id="path8253"
+       inkscape:path-effect="#path-effect8255"
+       inkscape:original-d="m 112.08181,834.81049 134.72491,3.62986"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.71523422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 246.54242,804.93591 -133.92646,-35.27208 134.1055,2.6857"
+       id="path8273"
+       inkscape:path-effect="#path-effect8275"
+       inkscape:original-d="m 246.54242,804.93591 -133.92646,-35.27208 134.1055,2.6857"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.71523422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 112.61596,795.98361 134.1055,13.24941"
+       id="path8277"
+       inkscape:path-effect="#path-effect8279"
+       inkscape:original-d="m 112.61596,795.98361 134.1055,13.24941"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
