@@ -48,17 +48,17 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.31818182)%
+  \begin{picture}(1,1.13636364)%
     \put(0,0){\includegraphics[width=\unitlength]{Chirp_Message.eps}}%
     \put(0.43853402,1.05779482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.03039865,0.73561358){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{\textbf{Tempo}}}}}%
-    \put(0.19053176,1.20295526){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Frequenza}}}}%
-    \put(0.54992131,0.88229136){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
-    \put(1.05611926,0.9226467){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13217693\unitlength}\centering \end{minipage}}}%
-    \put(0.60760579,1.00122244){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Preambolo}}}}%
-    \put(0.54974406,0.70159434){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
-    \put(0.60757431,0.75674017){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{SFD}}}}%
-    \put(0.55007709,0.14204892){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
-    \put(0.60750383,0.35963044){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{Payload}}}}%
+    \put(0.0005006,0.63842822){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{\textbf{Time}}}}}%
+    \put(0.13822006,1.06868137){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Frequency}}}}%
+    \put(0.44730635,0.77346522){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
+    \put(1.05611926,0.92264669){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13217693\unitlength}\centering \end{minipage}}}%
+    \put(0.49691674,0.88295803){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Preamble}}}}%
+    \put(0.44715385,0.60710869){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
+    \put(0.49645182,0.63423506){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{Sync Word, SFD}}}}%
+    \put(0.44744029,0.09196927){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\textbf{}}}}}%
+    \put(0.49682909,0.29228338){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{Data}}}}%
   \end{picture}%
 \endgroup%
