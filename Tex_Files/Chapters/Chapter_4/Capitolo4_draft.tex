@@ -239,3 +239,40 @@ correttamente riga \ref{line:crc_valid}
 
 
 
+\subsection{Chip interno}
+Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
+informazioni dato che la tecnologia è proprietaria di Semtech. Nella
+documentazione ufficiale è presente una rappresentazione grafica dei vari
+blocchi presenti al interno dei moduli radio.
+
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{SX1301}
+\caption{Struttura interna ricevitore SX1301}
+\label{fig:sx1301}
+\end{figure}
+
+Dalla figura \ref{fig:sx1301} e dalla documentazione \improvement{inserire link}
+che il gateway rimane in ascolto su 8 
+canali diverse, le quali permettono di coprire tutti i vari SF. 
+Questo è possibili data la quasi ortogonalità degli Spreading Factor
+, in questo modo il ricevitore è in grado di ricevere un pacchetto
+con uno Spreading Factor $i$ anche nel caso in cui si sovrapponga ad un altro
+pacchetto con Spreading Factor pari a $j$, fintanto che $i\neq j$. Questa
+pseudo-ortogonalità utilizzata in LoRa, permette di utilizzare differenti SF per
+ottenere un maggiore throughput rispetto a schemi di modulazione tradizionale.
+Il ricevitore  SX1301 può demodulare fino ad un massimo di 8 pacchetti
+contemporaneamente, questo non vuol dire che ricevitori futuri non possano
+demodulare contemporaneamente un numero di pacchetti maggiore.
+Oltre a ciò grazie alla modulazione utilizzata abbiamo vantaggi quali:
+\begin{itemize}
+\item I vari nodi della rete, possono cambiare frequenza in ogni trasmissione in
+modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
+interferenze.
+\item Non è necessario avere tabelle contenenti informazioni riguardanti il
+data-rate dei vari nodi. Ogni data-rate viene demodulato contemporaneamente.
+\item È possibilie utilizzare più antenne nel gateway per realizzare il
+cosidetto true antenna diversity, per aumentare la robustezza al multi-path
+\end{itemize}
+\unsure{Riguardare ultimo punto della documentazione pagina 14}
+
