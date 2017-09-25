@@ -1,4 +1,69 @@
-\chapter{Implementazione}
+\chapter{Caso di studio}
+\section{OSGi}
+La tecnologia OSGi è un insieme di specifiche che definiscono dei componenti
+dinamici per l'ambiente Java. Queste specifiche, garantiscono lo sviluppo di
+applicazioni composte da "moduli" i quali possono essere riutilizzati per
+applicazioni future. Nel framework OSGi questi moduli prendono il nome di
+\emph{bundle}. Similmente  alle applicazioni \emph{jar}, ogni bundle è composto
+dai files contenti le classi ed i metodi specifici per la applicazione che
+implementa. Quello che lo differenzia da un applicazione \emph{jar} è la
+presenza al suo interno di metadati utili al framework OSGi per determinare
+quali classi sono private ed utilizzabili solo all'interno dell'esecuzione del
+modulo, da quelle che possono essere esposte e riutilizzate dagli altri moduli.
+La possibilità del riutilizzo di questi moduli permette di
+creare applicazioni di ridotta complessità che utilizzano le API di .
+\subsection{Ciclo vitale dei bundle}
+Data la modularità che questo framework offre, può capitare che dei bundle
+richiedano di utilizzare delle API messe a disposizione da un bundle non ancora
+presente nel sistema. Inoltre è necessario che questi errori vengano gestiti dal
+framework in modo tale da non bloccare l'esecuzione delle applicazione.
+Per questo motivo OSGi ha implementato vari stati in cui un bundle può trovarsi:
+\begin{itemize}
+        \item   \textit{Installed} Il bundle è stato installato nel sistema, ma
+                non sono presenti alcune delle sue dipendenze.
+        \item   \textit{Resolved} Il bundle è installato e le sue dipendenze
+                presenti nel sistema.
+        \item   \textit{Starting} Uno stadio temporaneo attraverso il quale il
+                bundle passa prima di essere attivato.
+        \item   \textit{Active} Il bundle è stato correttamente attivato e sta
+                eseguendo le sue funzioni all'interno del sistema.
+        \item   \textit{Stopping} Uno stadio temporaneo in cui il bundle passa
+                prima di essere disattivato.
+        \item   \textit{Uninstalled} Il bundle è stato rimosso dal container
+                OSGi
+\end{itemize}
+\subsection{Registrazione del servizio}
+La classificazione del tipo di classi che un bundle implementa, vine
+interpretata dal framework OSGi grazie ai metadati aggiuntivi all'interno del
+bundle stesso. È necessario quindi avere un registro nel quale if framework osgi
+raggruppa tutti i metodi esposti e richiesti dai vari bundle in modo tale che 
+attivando un nuovo bundle, questo registro venga aggiornato e sia possibile
+determinare se altri bundle posso passare da disattivi ad attivi.
+La soluzione a questo, è l'utilizzo di registri di servizio. Ogni bundle può
+esporre dei metodi ed registrarli attraverso il service registry. In questo
+modo, altri bundle possono accedere al service registry e utilizzare i metodi
+listati nel registro. Un bundle quindi può registrare un servizio, può
+utilizzare un servizio oppure può mettersi in attesa aspettando che un servizio
+venga registrato o eliminato.
+\begin{figure}[h]
+\centering 
+\includegraphics[width=10cm]{osgi_service}
+\caption{OSGi services}
+\label{}
+\end{figure}
+\subsection{Layer}
+\begin{figure}[h]
+\centering 
+\includegraphics[width=10cm]{osgi}
+\caption{Layer OSGi}
+\label{}
+\end{figure}
+
+
+
+Il concetto alla base dello standard OSGi e modularità,
+
+
 Utilizzando il modulo SX1301 in combinazione con il gateway prodotto da Eurotech
 ReliaGATE 10-11, si è andato a sviluppare un software in grado di ricevere i
 pacchetti inviati da dispositivi LoRa e inviarli ad un Broker Mqtt.
