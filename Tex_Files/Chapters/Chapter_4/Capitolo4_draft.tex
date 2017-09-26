@@ -1,4 +1,40 @@
 \chapter{Caso di studio}
+Con l'evolversi della tecnologia, ed in particolare con l'avvento dell'IoT,
+l'aspettativa delle applicazioni basate sul cloud è cambiata. La necessità di
+elaborare un numero sempre maggiore di dati ha spinto, sempre più aziende, ad
+adottare strumenti forniti da terzi.  Ed è qui che l'architettura classica del
+software monolitico ha mostrato i suoi limiti. Con architettura monolitica si
+intende una applicazione self-contained, la quale è indipendente dalle altre
+applicazioni presenti nel sistema.  Basandosi su questa architettura, ogni
+applicazione necessita di essere disinstallata e reinstallata nel momento in cui
+sia necessario apportare delle semplici modifiche andando a creare molti disagi
+all'utilizzatore finale della applicazione.  Per superare i limiti della
+architettura monolitica, sono stati introdotte software basato su
+\emph{microservices}.  La differenza ,tra una architettura monolitica ed una
+basata su microservizi, è la  modularità che quest'ultima garantisce.  Prendiamo
+ad esempio una applicazione formata da un database, un interfaccia web
+(client-side user interface)  e una applicazione server (server-side
+application).  L'applicazione server-side interpreterà le richieste fatte
+dall'utente andando ad eseguire operazioni interne al server, aggiornerà il
+database e fornirà il risultato all'utente finale tramite l'interfaccia web.
+Questo tipo di architettura viene comunemente definita monolitica; è infatti
+necessario riscrivere o aggiornare l'intera applicazione per apportare delle
+modifiche o aggiungere delle funzionalità.\\ Con il termine \emph{microservices}
+si intende una architettura basata su oggetti chiamati \emph{component} ognuno
+dei quali fornisce ed utilizza \emph{servizi}.  Con \emph{component}, si intende
+una "parte" di software che può essere aggiornata e sostituita indipendente
+dalla applicazione principale.  Ogni \emph{component} si basa sull'utilizzo e la
+condivisione di servizzi.  I servizi sono l'equivalente delle librerie in una
+architettura monolitica, al contrario di queste ultime però, i servizi sono
+sviluppabili indipendentemente dalla applicazione principale. Se per esempio la
+nostra applicazione utilizza una libreria basata su  altre librerie, un
+cambiamento ad una di queste ultime, necessita la riscrittura dell'intera
+applicazione.  Contrariamente, se una applicazione è composta da tanti servizi,
+si ha la possibilità di risviluppare o aggiornare localmente il servizio senza
+dover riscrivere l'intera applicazione. In questo capitolo si studierà
+l'implementazione di applicativi per la gestione e l'interazione di sensori
+basti su LoRa tramite l'utilizzo del framework EveryWare Software Framework ESF
+sviluppato da Eurotech basto sul framework OSGi.
 \section{OSGi}
 La tecnologia OSGi è un insieme di specifiche che definiscono dei componenti
 dinamici per l'ambiente Java. Queste specifiche, garantiscono lo sviluppo di
@@ -12,6 +48,15 @@ quali classi sono private ed utilizzabili solo all'interno dell'esecuzione del
 modulo, da quelle che possono essere esposte e riutilizzate dagli altri moduli.
 La possibilità del riutilizzo di questi moduli permette di
 creare applicazioni di ridotta complessità che utilizzano le API di .
+Il framework OSGi ha una struttura a layer la quale garantisce una maggiore
+sicurezza .
+\begin{figure}[h]
+\centering 
+\includegraphics[width=10cm]{osgi}
+\caption{Layer OSGi}
+\label{}
+\end{figure}
+
 \subsection{Ciclo vitale dei bundle}
 Data la modularità che questo framework offre, può capitare che dei bundle
 richiedano di utilizzare delle API messe a disposizione da un bundle non ancora
@@ -33,81 +78,25 @@ Per questo motivo OSGi ha implementato vari stati in cui un bundle può trovarsi
                 OSGi
 \end{itemize}
 \subsection{Registrazione del servizio}
-La classificazione del tipo di classi che un bundle implementa, vine
-interpretata dal framework OSGi grazie ai metadati aggiuntivi all'interno del
-bundle stesso. È necessario quindi avere un registro nel quale if framework osgi
-raggruppa tutti i metodi esposti e richiesti dai vari bundle in modo tale che 
-attivando un nuovo bundle, questo registro venga aggiornato e sia possibile
-determinare se altri bundle posso passare da disattivi ad attivi.
+Dovendo garantire la modularità, è necessario da parte del framework essere
+costruito basandosi su di una architettura fail safe. 
 La soluzione a questo, è l'utilizzo di registri di servizio. Ogni bundle può
 esporre dei metodi ed registrarli attraverso il service registry. In questo
 modo, altri bundle possono accedere al service registry e utilizzare i metodi
 listati nel registro. Un bundle quindi può registrare un servizio, può
 utilizzare un servizio oppure può mettersi in attesa aspettando che un servizio
 venga registrato o eliminato.
-\begin{figure}[h]
-\centering 
-\includegraphics[width=10cm]{osgi_service}
-\caption{OSGi services}
-\label{}
-\end{figure}
-\subsection{Layer}
-\begin{figure}[h]
-\centering 
-\includegraphics[width=10cm]{osgi}
-\caption{Layer OSGi}
-\label{}
-\end{figure}
-
-
-
-Il concetto alla base dello standard OSGi e modularità,
-
-
-Utilizzando il modulo SX1301 in combinazione con il gateway prodotto da Eurotech
-ReliaGATE 10-11, si è andato a sviluppare un software in grado di ricevere i
-pacchetti inviati da dispositivi LoRa e inviarli ad un Broker Mqtt.
-
-\subsection{SX1301}
-Nella tabella \ref{tab:sx1301_spec} sono riportate le caratteristiche elettriche
-massime del  chip SX1301. Il Chip, supporta tensioni di
-alimentazione fino a 4V e  come e possibile osservare il range di temperatura in cui il
-chip può operare è molto ampio, rendendolo ideali per applicazioni esterne ed
-interne. 
-
-\begin{table}[h]
-\centering 
-\includegraphics[width=16cm]{SX1301_table}
-\caption{Caratteristiche elettriche SX1301}
-\label{tab:sx1301_spec}
-\end{table}
-Utilizzando i valori nominali riportati nella tabella \ref{tab:sx1301_spec_1},
-si hanno valori di corrente pari a 1[uA] in idle  e di 5[mA] in pieno
-funzionamento.
-\begin{table}[h]
-\centering 
-\includegraphics[width=16cm]{SX1301_table_1}
-\caption{Caratteristiche elettriche SX1301}
-\label{tab:sx1301_spec_1}
-\end{table}
-Il chip è equipaggiato con un connettore sma al quale è collegata una
-antenna omindirezionale, ideata per la frequenza 868[MHz] con un guadagno pari a 3dB.
-\subsection{ReliaGATE}
-Il gateway a cui è collegato il modulo SX1301 è il ReliaGATE 10-11 prodotto da
-Eurotech. Al suo interno troviamo un processore Texas Instruments TI AM335X Cortex-A8 
-equipaggiato con 512MB di RAM e 4GB di storage eMMC. Il ReliaGATE offre una
-vasta gamma di porte tra cui 232/485, 2CAN bus, 2 porte USB e 2 porte Ethernet,
-inoltre ha connettività Bluetooth, WiFi e GPS. Al suo interno è installo
-Everyware™ Software Framework (ESF), la versione commerciale del software Kura.
-\begin{figure}[h]
-\centering 
-\includegraphics[width=11cm]{Reliagate_10_11}
-\caption{Caratteristiche elettriche SX1301}
-\label{fig:ReliaGATE}
-\end{figure}
-
+Inoltre i servizi sono dinamici, ogni bundle può mettersi in lista per
+richiedere un servizio mentre altri stanno ancora utilizzando il servizio.
 
 \subsection{Architettura del software}
+Per integrare ESF con il ricevitore lora SX1301, è stato necessario l'utilizzo
+di due software aggiuntivi.
+Il primo è LoRa packet forwarder, il quale e fornito da Semtech. Questo
+applicativo permette di astrarre ad un più alto livello i dati ricevuti dal
+ricevitore SX1301.
+L'altra applicazione utilizzata, è LoRa Gateway Bridge, la quale permette il
+reindirizzamento dei dati forniti dal packet forwarder ad un server Mqtt.
 Lo scopo di questa tesi era riuscire ad implementare dei moduli osgi,
 installabili al interno del framework ESF, in grado di controllare il
 comportamento del devices SX1301. In particolare utilizzando l'utility messa a
@@ -121,13 +110,43 @@ sviluppata da brocaar \improvement{Aggiunger link}.
 \caption{Architettura del software}
 \label{fig:Software_stack}
 \end{figure}
+\subsection{ESF}
+Everyware software framework, è la versione commerciale del software Kura
+preinstallata nel ReliaGATE 10-11. . 
+
+\section{Everyware Software}
+ESF o Everyware Software, è framework che si interpone tra il sistema operativo
+e le applicazioni utente. Basato su Java/OSGi, ESF si pone l'obiettivo di
+offrire al consumatore la possibilità di sviluppare in maniera semplice e veloce
+applicazioni per il mercato M2M.  Ideato per operare all'interno di gateway
+industriali, fornisce al consumatore servizi e librerie per l'accesso delle più
+comuni porte di comunicazione RS232/485, GPIO, CAN.  Grazie all'utilizzo di
+bundle, il consumatore, sarà in grado di aggiornare e riconfigurare
+l'applicazione a seconda del tipo di utilizzo. Gli applicativi installati in ESF
+sono sviluppati come OSGi Declarative Service, dando la possibilità di
+configurare i vari applicativi del gateway tramite una semplice interfaccia web
+\ref{fig:ESF_web}.
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{ESF_layer.eps}
+        \caption{OSGi services}
+        \label{}
+\end{figure}
+
+
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=16cm]{ESF.png}
+                \caption{Interfaccia web ESF}
+        \label{fig:ESF_web}
+\end{figure}
 
 \subsection{Semtech packet forwarder}
-Il packet forwarder, è un software il quale riceve o invia pacchetti radio Lora ,
+Il packet forwarder, è un software che permette la ricezione e l'invio di pacchetti radio Lora ,
 tramite una connessione SPI con il device SX1301. Nel caso di ricezione di un
-pacchetto, l'applicativo incapsula i dati ricevuti in un formato IP/UDP, e li
+pacchetto, l'applicativo incapsula i dati ricevuti in un formato UDP, e li
 ritrasmette nella rete internet/intranet. Per la sua configurazione viene
-utilizzato un file Json nel quale trviamo tutte le varie opzioni di
+utilizzato un file Json nel quale troviamo tutte le varie opzioni di
 configurazione per i moduli radio presenti al interno del chip.
 \inputminted[mathescape, gobble=2, frame=lines, linenos=true
 framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/global_json.conf}
@@ -137,23 +156,12 @@ framesep=2mm, firstline=173,lastline=184]{json}{Code_Files/global_json.conf}
 \subsection{LoRa Gateway Bridge}
 LoRa Gateway Bridge, è l'applicativo il quale riceve i vari pachetti UDP inviati
 dal packet forwarder e li trasmette ad un Broker MQTT. Il software è scritto nel
-linguaggio GO. Per renderlo interfacciabile con ESF, sono state apportate delle 
+linguaggio GO. Questo applicativo insieme ad altri, fa parte del software utilizzato da The Things
+Network. Per renderlo interfacciabile con ESF, sono state apportate delle 
 modifiche al codice, in particolare è stata aggiunta la possibilità di
 specificare il publish e il subscribed topic, i quali erano hard-coded.
 
-\subsection{ESF}
-Everyware software framework, è la versione commerciale del software Kura
-preinstallata nel ReliaGATE 10-11. ESF si pone l'obiettivo di offrire un
-container Java/OSGi per le applicazioni M2M. Gli applicativi installati in ESF
-sono sviluppati come OSGi Declarative Service, dando la possibilità di
-configurare i vari applicativi del gateway tramite una semplice interfaccia web.
 
-\begin{figure}[h]
-\centering 
-\includegraphics[width=16cm]{ESF.png}
-\caption{Architettura del software}
-\label{fig:Software_stack}
-\end{figure}
 
 \subsection{Realizzazione}
 Per gestire i due software preinstallati si è optato per la creazione di due
@@ -252,25 +260,104 @@ Tramite questo bundle l'utente finale ha la possibilità di decidere
 \caption{Architettura del software}
 \label{fig:Software_stack}
 \end{figure}
+\section{Hardware utilizzato}
 
-\subsection{Misurazioni}
-In via sperimentale, è stato scelto di installare in  il gateway
-ReliaGate 10-11 ad una altezza di 11m. Configurato il gateway per l'utilizzo del
-broker open source  mosquitto.org. La prova di ricezione è stata condotta per
-tentativi, cercando di testare la massima distanza di trasmissione del
-dispositivo LoRa Mote . 
+
+
+\subsection{SX1301}
+Per ricevere i pacchetti LoRa, è stato utilizzato il ricevitore SX1301 prodotto
+da Semtech collegato al gateway ReliaGate 10-11.
+\subsubsection{Chip interno}
+Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
+informazioni dato che la tecnologia è proprietaria di Semtech. Nella
+documentazione ufficiale è presente una rappresentazione grafica dei vari
+blocchi presenti al interno del modulo radio.
 
 \begin{figure}[h]
 \centering 
-\includegraphics[width=4cm]{LoRaMote_no_wave}
-\caption{Architettura del software}
-\label{fig:Software_stack}
+\includegraphics[width=11cm]{SX1301}
+\caption{Struttura interna ricevitore SX1301}
+\label{fig:sx1301}
 \end{figure}
 
+Come scritto nella documentazione  \improvement{inserire link} e intuibile dalla
+figura \ref{fig:sx1301} il gateway rimane in ascolto su 8 
+canali diverse,  permettendoli di coprire tutti i vari SF. 
+Questo è possibili data la quasi ortogonalità degli Spreading Factor
+, in questo modo il ricevitore è in grado di ricevere un pacchetto
+con uno Spreading Factor $i$ anche nel caso in cui si sovrapponga ad un altro
+pacchetto con Spreading Factor pari a $j$, fintanto che $i\neq j$. Questa
+pseudo-ortogonalità utilizzata in LoRa, permette di utilizzare differenti SF per
+ottenere un maggiore throughput rispetto a schemi di modulazione tradizionale.
+Il ricevitore  SX1301 può demodulare fino ad un massimo di 8 pacchetti
+contemporaneamente.
+Nella tabella \ref{tab:sx1301_spec} sono riportate le caratteristiche elettriche
+massime del  chip SX1301. Il Chip, supporta tensioni di
+alimentazione fino a 4V e  come e possibile osservare il range di temperatura in cui il
+chip può operare è molto ampio, rendendolo ideale per applicazioni esterne ed
+interne. 
+
+\begin{table}[h]
+\centering 
+\includegraphics[width=16cm]{SX1301_table}
+\caption{Caratteristiche elettriche SX1301}
+\label{tab:sx1301_spec}
+\end{table}
+Utilizzando i valori nominali riportati nella tabella \ref{tab:sx1301_spec_1},
+si hanno valori di corrente pari a 1[uA] in idle  e di 5[mA] in pieno
+funzionamento.
+\begin{table}[h]
+\centering 
+\includegraphics[width=16cm]{SX1301_table_1}
+\caption{Caratteristiche elettriche SX1301}
+\label{tab:sx1301_spec_1}
+\end{table}
+Il chip è equipaggiato con un connettore sma al quale è collegata una
+antenna omnidirezionale, ideata per la frequenza 868[MHz] con un guadagno pari a 3dB.
+
+\subsection{ReliaGATE}
+Il gateway a cui è collegato il modulo SX1301 è il ReliaGATE 10-11 prodotto da
+Eurotech. Al suo interno troviamo un processore Texas Instruments TI AM335X Cortex-A8 
+equipaggiato con 512MB di RAM e 4GB di storage eMMC. Il ReliaGATE offre una
+vasta gamma di porte tra cui 232/485, 2CAN bus, 2 porte USB e 2 porte Ethernet,
+inoltre ha connettività Bluetooth, WiFi e GPS. Al suo interno è installo
+Everyware™ Software Framework (ESF) versione 5.
+\begin{figure}[h]
+\centering 
+\includegraphics[width=11cm]{Reliagate_10_11}
+\caption{Caratteristiche elettriche SX1301}
+\label{fig:ReliaGATE}
+\end{figure}
+
+
+\subsection{Misurazioni}
+Finito lo sviluppo dei bundle, si è scelto di testare la distanza massima
+di comunicazione raggiungibile utilizzando il device LoRa Mote ed il ricevitore in
+possesso.
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=4cm]{LoRaMote_no_wave}
+        \caption{Dispositivo LoRa Mote}
+        \label{fig:Software_stack}
+\end{figure}
+In via sperimentale, è stato installato  il gateway
+ReliaGate 10-11 ad una altezza di circa 11m. La prova di ricezione è stata condotta per
+tentativi, cercando , per quanto possibile, di testare diversi punti distribuiti
+alla stessa distanza radiale.
 Per constatare l'avvenuta ricezione del
-messaggio è stata utilizzata l'applicazione Android gratuita MyMQTT, tramite la
-quale è  possibile iscriversi ad un topic predefinito ed rimanere in ascolto dei
+messaggio, è stata utilizzata l'applicazione Android gratuita \href{
+https://play.google.com/store/apps/details?id=at.tripwire.mqtt.client&hl=en}{My
+MQTT}, tramite la
+quale è stato possibile iscriversi ad un topic predefinito ed rimanere in ascolto dei
 messaggi pubblicati in esso. 
+Come broker MQTT si è scelto di utilizzare il
+broker open source \href{http://mosquitto.org/}{"mosquitto.org"}. 
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=10cm]{casa}
+        \caption{Installazione dell'antenna}
+        \label{fig:Software_stack}
+\end{figure}
 
 \begin{figure}[h]
 \centering 
@@ -301,43 +388,4 @@ correttamente riga \ref{line:crc_valid}
         "forward_crc_error": false |$\label{line:crc_valid}$|
     }
 \end{lstlisting}
-
-
-
-\subsection{Chip interno}
-Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
-informazioni dato che la tecnologia è proprietaria di Semtech. Nella
-documentazione ufficiale è presente una rappresentazione grafica dei vari
-blocchi presenti al interno dei moduli radio.
-
-\begin{figure}[h]
-\centering 
-\includegraphics[width=11cm]{SX1301}
-\caption{Struttura interna ricevitore SX1301}
-\label{fig:sx1301}
-\end{figure}
-
-Dalla figura \ref{fig:sx1301} e dalla documentazione \improvement{inserire link}
-che il gateway rimane in ascolto su 8 
-canali diverse, le quali permettono di coprire tutti i vari SF. 
-Questo è possibili data la quasi ortogonalità degli Spreading Factor
-, in questo modo il ricevitore è in grado di ricevere un pacchetto
-con uno Spreading Factor $i$ anche nel caso in cui si sovrapponga ad un altro
-pacchetto con Spreading Factor pari a $j$, fintanto che $i\neq j$. Questa
-pseudo-ortogonalità utilizzata in LoRa, permette di utilizzare differenti SF per
-ottenere un maggiore throughput rispetto a schemi di modulazione tradizionale.
-Il ricevitore  SX1301 può demodulare fino ad un massimo di 8 pacchetti
-contemporaneamente, questo non vuol dire che ricevitori futuri non possano
-demodulare contemporaneamente un numero di pacchetti maggiore.
-Oltre a ciò grazie alla modulazione utilizzata abbiamo vantaggi quali:
-\begin{itemize}
-\item I vari nodi della rete, possono cambiare frequenza in ogni trasmissione in
-modo casuale, andando a migliorare di molto la robustezza del sistema alle varie
-interferenze.
-\item Non è necessario avere tabelle contenenti informazioni riguardanti il
-data-rate dei vari nodi. Ogni data-rate viene demodulato contemporaneamente.
-\item È possibilie utilizzare più antenne nel gateway per realizzare il
-cosidetto true antenna diversity, per aumentare la robustezza al multi-path
-\end{itemize}
-\unsure{Riguardare ultimo punto della documentazione pagina 14}
 
