@@ -1,0 +1,21 @@
+{
+        "rxInfo":{
+                "mac":"aa555a0000000101",
+                "time":"2017-08-26T17:01:56.870329Z",
+                "timestamp":1122401132,
+                "frequency":868500000,
+                "channel":1,
+                "rfChain":1,
+                "crcStatus":1,
+                "codeRate":"4/5",
+                "rssi":-74,
+                "loRaSNR":8.2,
+                "size":29,
+                "dataRate":{
+                        "modulation":"LORA",
+                        "spreadFactor":12,
+                        "bandwidth":125
+                }
+        },
+        "phyPayload":"QKMbMroAXQACF8XVkpmBTIoBHzV0iNtTa0cbkCo="
+}
