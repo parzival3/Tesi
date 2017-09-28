@@ -2,58 +2,54 @@
 Con l'evolversi della tecnologia, ed in particolare con l'avvento dell'IoT,
 l'aspettativa delle applicazioni basate sul cloud è cambiata. La necessità di
 elaborare un numero sempre maggiore di dati ha spinto, sempre più aziende, ad
-adottare strumenti cloud based forniti da terzi come Microsoft Azure o Amazon
+adottare strumenti cloud based forniti da terzi come ad esempio Microsoft Azure o Amazon
 AWS.  Ed è utilizzando questi servizi  che l'architettura classica del
 software monolitico ha mostrato i suoi limiti. Con architettura monolitica si
 intende una applicazione self-contained indipendente dalle altre
 applicazioni presenti nel sistema.  Basandosi su questa modello, ogni
-applicazione necessita di essere disinstallata e reinstallata nel momento in cui
-sia necessario apportare delle semplici modifiche andando a creare molti disagi
-nella gestione ed aggiornamento del software.  Per superare i limiti del
+software necessita di essere disinstallato e reinstallato nel momento in cui
+sia necessario apportare delle semplici modifiche. Per superare i limiti del
 modello monolitico, è stato introdotto il concetto di 
-\emph{microservzio}.  La differenza ,tra una architettura monolitica ed una
-basata su microservizi, è la  modularità che quest'ultima garantisce.  Prendiamo
+\emph{microservzio}.  La differenza tra una architettura monolitica ed una
+basata su microservizi è la  modularità che quest'ultima garantisce.  Prendiamo
 come esempio una applicazione formata da un database, un interfaccia web
 (client-side user interface)  e una applicazione server (server-side
 application).  L'applicazione server-side interpreterà le richieste fatte
 dall'utente andando ad eseguire operazioni interne al server, aggiornerà il
 database e fornirà il risultato all'utente finale tramite l'interfaccia web.
-Nel modello classico , è 
-necessario riscrivere o aggiornare l'intero software per apportare delle
-modifiche o aggiungere delle funzionalità.\\ Con il termine \emph{microservices}
+Nel modello classico  è necessario riscrivere o aggiornare l'intero 
+software per apportare delle modifiche o aggiungere delle funzionalità.\\ 
+Con il termine \emph{microservices}
 si intende una architettura basata su oggetti chiamati \emph{component} ognuno
-dei quali fornisce ed utilizza dei \emph{servizi}.  Con \textit{component}, si intende
+dei quali fornisce ed utilizza dei \emph{servizi}.  Per \textit{component}, si intende
 una "parte" di software che può essere aggiornata e sostituita indipendente
 dalla applicazione principale.  Ogni \emph{component} si basa sull'utilizzo e la
 condivisione di servizi.  I servizi sono l'equivalente delle librerie in una
 architettura monolitica, al contrario di queste ultime però, i servizi sono
-sviluppabili indipendentemente dalla applicazione principale. Se per esempio la
-nostra applicazione utilizza una libreria basata su  altre librerie, un
-cambiamento ad una di queste ultime, necessita la riscrittura dell'intera
-applicazione.  Contrariamente, se una applicazione è composta da tanti servizi,
-si ha la possibilità di risviluppare o aggiornare localmente il servizio senza
-dover riscrivere l'intera applicazione. In questo capitolo si studierà
+sviluppabili indipendentemente dalla applicazione principale.
+In questo capitolo si studierà
 l'implementazione di applicativi per la gestione e l'interazione di sensori
 basti su LoRa tramite l'utilizzo del framework EveryWare Software Framework ESF
-sviluppato da Eurotech basto sul framework OSGi.
+basato su OSGi e sviluppato da Eurotech.
 \section{OSGi}
 La tecnologia OSGi (Open Services Gateway initiative),
 è un insieme di specifiche che definiscono dei componenti
-dinamici estendendo le funzionalità dell'ambiente  Java.
+dinamici in grado di estendere le funzionalità dell'ambiente  Java.
 Basandosi su di una architettura a microservizi, OSGi permette la gestione in
 modo remoto di componenti chiamati Bundle o Deployment Package(dp), i quali
 possono essere installati, attivati, aggiornati e fermati senza la necessità di
 riavviare l'applicazione principale\\
 Ogni bundle è composto dai files contenti le classi ed i metodi specifici per le
 funzionalità che implementa e dei metadati utili al framework
- per determinare quali classi sono private ed utilizzabili solo all'interno
-dell'esecuzione del modulo, da quelle condivisibili agli altri componenti. 
+ per determinare le classi private, ed utilizzabili solo all'interno
+dell'esecuzione del modulo, da quelle condivisibili con gli altri componenti. 
 La possibilità del riutilizzo di questi moduli permette di
 creare software di ridotta complessità che sfrutta API di altri bundle
-per fornire nuove funzionalità 
+per fornire nuove funzionalità .
 \subsection{Layer}
-Per rendere possibile lo sviluppo di applicazioni basate su questo nuovo modello
-OSGi ha sviluppato un modello strutturato su sei layer .
+Per rendere compatibile questa architettura con il linguaggio di programmazione
+Java e la Java Virtual Machine, OSGi ha strutturato il framework su vari
+livelli:
 \begin{itemize}
         \item   \textit{Bundles}. Bundles sono normali applicazioni JAR contenenti
         \item   \textit{Services}. Il service layer connette in maniera dinamica
@@ -82,10 +78,10 @@ OSGi ha sviluppato un modello strutturato su sei layer .
 In un modello così dinamico, è necessario che il framework sia basato su di un
 software fail-safe in grado di gestire le eccezioni che si possono verificare
 durante l'installazione e disinstallazione di nuovi moduli.
-Non è raro infatti che nuovi bundle installati nel sistema, richiedano servizi
+Non è raro infatti che nuovi bundle ,installati nel sistema, richiedano servizi
 non ancora disponibili o attualmente utilizzati da altri bundle.
-Per far fronte ai problemi riscontrabili, OSGi, categorizza i bundle presenti
-nel sistema con uno \emph{stato} tra:
+Per far fronte ai problemi riscontrabili, OSGi, assegna ad ogni  i bundle  uno 
+\emph{stato} tra:
 \begin{itemize}
         \item   \textit{Installed} Il bundle è stato installato nel sistema, ma
                 non sono presenti alcune delle sue dipendenze.
@@ -100,9 +96,17 @@ nel sistema con uno \emph{stato} tra:
         \item   \textit{Uninstalled} Il bundle è stato rimosso dal container
                 OSGi
 \end{itemize}
+
+\subsection{Module layer}
+Il module layer è dove il framework OSGi gestisce la "modularità" di un bundle.
+È in questo layer che vengono processati i metadati contenuti all'interno del
+file MANIFEST.MF. Tramite questo file il framework OSGi è in grado di
+determinare le dipendenze del bundle e quali servizi è in grado di esportare.
+
 \subsection{Registrazione del servizio}
-Dovendo garantire la modularità, è necessario da parte del framework essere
-costruito basandosi su di una architettura fail safe. 
+Un \emph{servizio} in OSGi è definito tramite una classe Java standard. Per
+implementare un nuovo servizio, è necessario definire quale classe o quale
+interfaccia si vuole fornire il servizio.
 La soluzione a questo, è l'utilizzo di registri di servizio. Ogni bundle può
 esporre dei metodi ed registrarli attraverso il service registry. In questo
 modo, altri bundle possono accedere al service registry e utilizzare i metodi
@@ -111,18 +115,23 @@ utilizzare un servizio oppure può mettersi in attesa aspettando che un servizio
 venga registrato o eliminato.
 Inoltre i servizi sono dinamici, ogni bundle può mettersi in lista per
 richiedere un servizio mentre altri stanno ancora utilizzando il servizio.
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=9cm]{osgi_service}
+        \caption{Schema utilizzo servizi OSGi}
+        \label{}
+\end{figure}
 
 \section{Everyware Software}
-ESF o Everyware Software, è framework che si interpone tra il sistema operativo
+ESF o Everyware Software è un framework che si interpone tra il sistema operativo
 e le applicazioni utente. Basato su Java/OSGi, ESF si pone l'obiettivo di
-offrire al consumatore la possibilità di sviluppare in maniera semplice e veloce
-applicazioni per il mercato M2M.  Ideato per operare all'interno di gateway
+offrire  la possibilità di sviluppare applicativi, per il mercato M2M ,in maniera semplice e veloce
+. Ideato per operare all'interno di gateway
 industriali, fornisce al consumatore servizi e librerie per l'accesso delle più
-comuni porte di comunicazione RS232/485, GPIO, CAN.  Grazie all'utilizzo di
-bundle, il consumatore, sarà in grado di aggiornare e riconfigurare
-l'applicazione a seconda del tipo di utilizzo. Gli applicativi installati in ESF
-sono sviluppati come OSGi Declarative Service, dando la possibilità di
-configurare i vari applicativi del gateway tramite una semplice interfaccia web
+comuni porte di comunicazione RS232/485, GPIO, CAN.
+ESF tramite la sua interfaccia web, permette di 
+sviluppare applicativi basati su OSGi Declarative Service, consentendo di configurare
+ogni bundle tramite una interfaccia web.
 \ref{fig:ESF_web}.
 %\begin{figure}[h]
 %        \centering 
@@ -147,15 +156,16 @@ Per integrare ESF con il ricevitore lora SX1301, è stato necessario l'utilizzo
 di due software aggiuntivi.
 Il primo è LoRa packet forwarder fornito da Semtech. Questo
 applicativo permette di comunicare con le periferiche di basso livello presenti
-nel ReliaGate 10-11 in modo da astrarre ad un più alto livello i dati ricevuti dal
+nel ReliaGATE 10-11 in modo da astrarre ad un più alto livello i dati ricevuti dal
 ricevitore SX1301.
 L'altra applicazione utilizzata, è LoRa Gateway Bridge. Tramite questa
-applicazione si ha la possibilità di 
+applicazione è stato possibile 
 reindirizzare i dei dati forniti dal packet forwarder ad un server MQTT.
 
-Lo scopo di questa tesi era riuscire ad implementare dei moduli osgi,
-installabili all'interno del framework ESF, in grado di controllare il
-comportamento del devices SX1301.  \improvement{Aggiunger link}.
+Lo scopo di questa tesi era l'implementazione  di  due moduli osgi 
+installabili all'interno del framework ESF, in grado di interagire con le due
+applicazioni LoRa packet forwarder e LoRa Gateway Bridge per controllare da
+remoto il comportamento del ricevitore SX1301.  \improvement{Aggiunger link}.
 
 \begin{figure}[h]
         \centering 
@@ -177,21 +187,25 @@ framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/global_json.conf}
 framesep=2mm, firstline=173,lastline=184]{json}{Code_Files/global_json.conf}
 
 \subsection{LoRa Gateway Bridge}
-LoRa Gateway Bridge, è l'applicativo il quale riceve i vari pachetti UDP inviati
-dal packet forwarder e li trasmette ad un Broker MQTT. Il software è scritto nel
-linguaggio GO. Questo applicativo insieme ad altri, fa parte del software utilizzato da The Things
-Network. Per renderlo interfacciabile con ESF, sono state apportate delle 
+LoRa Gateway Bridge, è un applicativo in grado di identificare i vari pachetti UDP inviati
+dal packet forwarder e inotrarli ad un Broker MQTT. 
+Il software è scritto nel linguaggio GO e permette una configurazione tramite
+linea di comando.  Per renderlo interfaciabile con ESF, sono state apportate delle 
 modifiche al codice, in particolare è stata aggiunta la possibilità di
 specificare il publish e il subscribed topic, i quali erano hard-coded.
+%\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+%framesep=2mm, firstline=1,lastline=23]{go}{Code_Files/bridge_mqtt.go}
+Il codice sottostante, rappresenta un esempio di pacchetto LoRa inoltrato dal
+LoRa Gateway Bridge ad un broker MQTT
 \inputminted[mathescape, gobble=2, frame=lines, linenos=true
 framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/message.json}
 \section{Hardware utilizzato}
 
 \subsection{SX1301}
-Per ricevere i pacchetti LoRa, è stato utilizzato il ricevitore SX1301 prodotto
-da Semtech collegato al gateway ReliaGate 10-11.
+Per la ricezione dei pacchetti LoRa, è stato utilizzato il chip SX1301 prodotto
+da Semtech e collegato al gateway ReliaGate 10-11.
 \subsubsection{Chip interno}
-Per quanto riguarda la struttura interna dei moduli radio, non si hanno molte
+Per quanto riguarda la struttura interna del modulo radio, non si hanno molte
 informazioni dato che la tecnologia è proprietaria di Semtech. Nella
 documentazione ufficiale è presente una rappresentazione grafica dei vari
 blocchi presenti al interno del modulo radio.
@@ -204,10 +218,11 @@ blocchi presenti al interno del modulo radio.
 \end{figure}
 
 Come scritto nella documentazione  \improvement{inserire link} e intuibile dalla
-figura \ref{fig:sx1301} il gateway rimane in ascolto su 8 
-canali diverse,  permettendoli di coprire tutti i vari SF. 
-Questo è possibili data la quasi ortogonalità degli Spreading Factor
-, in questo modo il ricevitore è in grado di ricevere un pacchetto
+figura \ref{fig:sx1301} il chip è in grado di scansionare contemporaneamente 
+8 canali diversi (IF0 a IF7)  permettendoli di rimanere in ascolto per garantire
+la ricezione dei preamboli.
+Inoltre data la quasi ortogonalità degli Spreading Factor
+, il chip è in grado di ricevere un pacchetto
 con uno Spreading Factor $i$ anche nel caso in cui si sovrapponga ad un altro
 pacchetto con Spreading Factor pari a $j$, fintanto che $i\neq j$. Questa
 pseudo-ortogonalità utilizzata in LoRa, permette di utilizzare differenti SF per
@@ -254,9 +269,11 @@ Everyware™ Software Framework (ESF) versione 5.
 
 
 
-\subsection{Realizzazione}
+\section{Realizzazione}
+
 Per gestire i due software preinstallati si è optato per la creazione di due
 applicativi osgi distinti.
+\subsection{Lora Config}
 Il primo applicativo chiamato Lora Config si pone il compito di leggere ed
 interpretare il file di configurazione utilizzato dal programma \emph{Packet
 Forwarder}, per poi andare ad esporre i parametri principali all'utente.
@@ -266,10 +283,10 @@ La libreria utilizzata per manipolare i file di tipo Json è
 
 Tramite la quale vengono riempiti i campi della classe LoraSettings. Il file
 Json è composto da due parti. Nella prima parte
-troviamo tutte le impostazioni per la configurazione delle frequenze nelle quali
-il device SX1301 deve rimanere in ascolto, nella seconda
+troviamo tutte le impostazioni per la configurazione dei canali (IF0 a IF7)
+, nella seconda
 parte sono presenti le impostazioni per il forward dei pacchetti. 
-Per semplificare la gestione dell'bundle, sono state create due classi distinte
+Per semplificare la gestione del bundle, sono state create due classi distinte
 SX1301Configuration e GatewayConfiguration, accessibili tramite la classe LoraSettings.
 
 \begin{minted}[linenos=true, numbersep=5pt, gobble=2, frame=lines, %
@@ -282,11 +299,11 @@ framesep=2mm]{java}
        } 
 \end{minted}
 
-Per applicare le modifiche eseguite alla configurazione, è necessario che
-l'applicativo sia riavviato. Per eseguire questa operazione, si è scelto di
+Per applicare le modifiche apportate alla configurazione, è necessario che
+il packet forwarder venga riavviato. Per eseguire questa operazione, si è scelto di
 utilizzare la libreria 
 \mint{Java}|import com.apache.commons.exec|
-la quale fornisce delle \emph{API} per chiamare processi esterni, in particolare
+la quale fornisce delle API per chiamare processi esterni, in particolare
 si è scelto di utilizzare l'utility di sistema \emph{pkill} per terminare il
 processo del pkt forwarder.
 \begin{minted}[linenos=true, numbersep=5pt, gobble=2, frame=lines, %
@@ -331,12 +348,14 @@ framesep=2mm]{java}
 
 
 \subsection{Mqtt Bridge Config}
-Il secondo bundle creato ha lo scopo di esporre all'utente un facile modo per
-configurare  \emph{Lora Gateway Bridge}.  Anche in questo caso è necessario il
-riavvio del applicativo per fare in modo che le modifiche abbiano effetto, anche
-in questo caso è stata usata la libreria
+Il secondo bundle prende il nome di MQTT Bridge Config e ha lo scopo 
+di esporre , tramite l'interfaccia web di ESF, le varie opzioni a linea di
+comando dell'applicativo.
+ \emph{Lora Gateway Bridge}.  Anche in questo caso è necessario il
+riavvio del applicativo per fare in modo che le modifiche abbiano effetto. 
+Come nel bundle precedente è stata usata la libreria
 \mint{Java}|import com.apache.commons.exec|
-Tramite questo bundle l'utente finale ha la possibilità di decidere 
+Tramite l'interfaccia è possibile modificare i seguenti parametri:
 \begin{itemize}
 \item il topic sul quale pubblicare i messaggi ricevuti in formato UDP dal
 \emph{pkt forwarder}.
@@ -355,62 +374,51 @@ Tramite questo bundle l'utente finale ha la possibilità di decidere
 
 \section{Misurazioni}
 Finito lo sviluppo dei bundle, si è scelto di testare la distanza massima
-di comunicazione raggiungibile utilizzando il device LoRa Mote ed il ricevitore in
-possesso.
+di comunicazione raggiungibile dall'hardware in possesso. 
+Il device utilizzato per l'invio dei pacchetti LoRa prodotto dalla Semtech e
+prende il nome di LoRa Mote.
 \begin{figure}[h]
         \centering 
                 \includegraphics[width=4cm]{LoRaMote_no_wave}
         \caption{Dispositivo LoRa Mote}
         \label{fig:Software_stack}
 \end{figure}
-In via sperimentale, è stato installato  il gateway
+In via sperimentale è stato installato  il gateway
 ReliaGate 10-11 ad una altezza di circa 11m. La prova di ricezione è stata condotta per
-tentativi, cercando , per quanto possibile, di testare diversi punti distribuiti
+tentativi cercando , per quanto possibile, di testare diversi punti distribuiti
 alla stessa distanza radiale. 
-Per constatare l'avvenuta ricezione del
-messaggio, è stata utilizzata l'applicazione Android gratuita \href{
-https://play.google.com/store/apps/details?id=at.tripwire.mqtt.client&hl=en}{My
-MQTT}, tramite la
-quale è stato possibile iscriversi ad un topic predefinito ed rimanere in ascolto dei
-messaggi pubblicati in esso. 
-Come broker MQTT si è scelto di utilizzare il
-broker open source \href{http://mosquitto.org/}{"mosquitto.org"}. 
 \begin{figure}[h]
         \centering 
                 \includegraphics[width=10cm]{casa}
         \caption{Installazione dell'antenna}
         \label{fig:Software_stack}
 \end{figure}
-
-
+Per constatare l'avvenuta ricezione del
+messaggio è stata utilizzata l'applicazione Android gratuita \href{
+https://play.google.com/store/apps/details?id=at.tripwire.mqtt.client&hl=en}{My
+MQTT}, tramite la
+quale è possibile iscriversi ad un topic predefinito ed rimanere in ascolto dei
+messaggi pubblicati in esso. 
+Come broker MQTT si è scelto di utilizzare il
+broker open source \href{http://mosquitto.org/}{"mosquitto.org"}. 
 \subsection{Osservazioni}
+
 \begin{figure}[h]
         \centering 
                 \includegraphics[width=16cm]{map}
         \caption{Copertura Lora}
         \label{fig:map}
 \end{figure}
-Osservando dalla mappa, è possibile notare che l'ambiente circostante
-al luogo dove l'antenna è situata a è pressoché rurale.
-Come è facile osservare dalla mappa in figura \ref{fig:map}, la distanza
-massima raggiunta varia molto a seconda della conformazione del territorio. In
-assenza di edifici in linea d'aria,  punto 8 nella figura \ref{fig:map}, è stato
-possibili inviare un pachetto lora ad una distanza di 8.2[km]. Nelle effettuare
-la prova è stato scelto di inviare al server Mqtt solo i pachetti ricevuti
-correttamente riga \ref{line:crc_valid}
-\begin{lstlisting}[
-    language=json,escapechar=|] %language and your escape char
-    "gateway_conf": {
-        "gateway_ID": "AA555A0000000000",
-        "server_address": "0.0.0.0",
-        "serv_port_up": 1703,
-        "serv_port_down": 1702,
-        "keepalive_interval": 10,
-        "stat_interval": 30,
-        "push_timeout_ms": 100,
-        "forward_crc_disabled": false,
-        "forward_crc_valid": true, 
-        "forward_crc_error": false |$\label{line:crc_valid}$|
-    }
-\end{lstlisting}
+Dovendo testare la massima distanza l'algoritmo ADR è stato disattivato,
+permettendo così al device di non cambiare configurazione durante i vari test.
+Il device LoRa Mote è stato configurato 
+per l'invio di messaggi con uno Spread Factor pari a 12 e una larghezza
+di banda pari a 125[Khz]. L'ambiente circostante
+al luogo dove l'antenna è situata è un ambiente suburbano pianeggiante.
+La distanza massima raggiunta ,nei punti testati, varia molto in base alla
+conformazione del territorio. In assenza di edifici in linea d'aria tra gateway
+e il dispositivo LoRa Mote, è stato possibile ricevere correttamente un pacchetto alla distanza 
+di 8,2[Km].
+Nella mappa ogni colore corrisponde ad un livello  RSSI ( Received
+Signal Strength Indicator) con cui il quale il messaggio inviato in quel punto è stato ricevuto .
 
