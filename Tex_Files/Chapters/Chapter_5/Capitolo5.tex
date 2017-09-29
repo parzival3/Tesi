@@ -3,26 +3,25 @@ Lo scopo dell’elaborato era di introdurre la visione di Internet of Things e
 testare un possibile sviluppo applicativo tramite l'utilizzo della tecnologia  
 LoRa ed il framework ESF sviluppato da Eurotech.\\
 Dopo un'introduzione relativa agli ambiti applicativi e alle problematiche da
-affrontare in questa visione, sono state introdotte le relative tecnologie
-abilitanti per la realizzazione di  questo paradigma. 
+affrontare in questa visione, sono state trattate le relative tecnologie
+abilitanti per la realizzazione di  questo paradigma mettendone in evidenza i
+vari pregi e difetti. 
 Successivamente, si è parlato della modulazione LoRa e lo standard LoRaWAN
 andandone a trattare gli aspetti principali che caratterizzano questa
 tecnologia.
-Dopo questa introduzione dello stato dell'arte, si è proseguito esponendo il
-concetto di microservices mettendo in luce i pricipali vantaggi rispetto alla
-architettura tradizionale.
-framework OSGi è stato concepito per poter implementare questo tipo di
-architettura.
-In seguito si è parlato dello sviluppo dei due bundle OSGi per
-l'interfacciamento del digital baseband chip SX1301 con il framework sviluppato
-da Eurotech e basato su OSGi ESF.
-In fine si è voluto testare il range di operabilità dei moduli in esame per
-verificare le reali potenzialità della tecnologi LoRa in un ambiente suburbano.
-Pur avendo usato hardware adatto solo allo sviluppo \improvement{parola}  i
-risultati ottenuti sono concordati a quelli dichiarati dalla casa produttrice
-Semtech.
-\section{Sviluppi futuri}
-Come sviluppo futuro è necessario integrare un application server in grado di
-cooperare con il framework ESF. Inoltre per ottenere le massime performance
-dalla rete, è necessario creare un algoritmo ADR adattabile ai vari ambiti in
-cui i devices opereranno.
+Infine si è approfondito il concetto di microservizzi e di come questo concetto
+è stato implementato nella piattaforma Everyware Software Framework di Eurotech.
+Questa piattaforma si è dimostrata
+particolarmente adatta a questa visione, poiché permette di risolvere alcuni
+dei principali problemi legati allo sviluppo di applicazioni M2M, in particolare all’eterogeneità
+dell’hardware relativa ai dispositivi in gioco. 
+L’approccio con il framework OSGi risulta molto efficace poiché permette la
+scrittura di  software di  ridotta complessità e dinamicamente aggiornabile, 
+riuscendo così a ridurre il tempo di sviluppo e di conseguenza il time to market
+dei nuovi prodotti.
+Tramite questa piattaforma e l'utilizzo di due software aggiuntivi, 
+sono stati sviluppati due bundle , Mqtt Bridge Config e Lora Config,
+per la gestione di un ricevitore LoRa connesso al gateway prodotto da Eurotech ReliaGATE 10-11 
+. A sviluppo completato, è stata condotta una prova per testare la
+distanza massima raggiungibile dal modulo radio in dotazione, la quale è
+risultata coerente con i dati forniti dalla casa produttrice del ricevitore.
