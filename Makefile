@@ -9,7 +9,7 @@ BIBTEX = bibtex
 all: compile view clean
 
 compile: $(TEX)
-	$(LATEX) $(TEX)
+	$(LATEX) $(TEX) 
 	$(BIBTEX) Tesi.aux
 	$(LATEX) $(TEX)
 	$(LATEX) $(TEX)
@@ -21,7 +21,7 @@ view: compile
 
 clean: 
 	rm -f *.aux
-	rm -f *.log
+#	rm -f *.log
 	rm -f *.toc
 	rm -f *.lof
 	rm -f *.out

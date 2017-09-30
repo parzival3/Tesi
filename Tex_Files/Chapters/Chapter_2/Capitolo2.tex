@@ -2,7 +2,7 @@
 Data la grande varietà dei possibili scenari applicativi dell'IoT , trovare uno standard
 capace di adattarsi, in modo dinamico, ad ognuno di essi, non è un compito
 facile. Le tecnologie wireless tradizionali, non sono in grado di soddisfare
-la dinamicità  dell'IoT.
+la dinamicità  di questo paradigma.
 Già diverse soluzioni sono nate per cercare di fronteggiare questi
 problemi, optando per metodi risolutivi  anche molto distanti l'uno dall'altro.
 Con questo capitolo si approfondiranno le problematiche, che i nuovi standard, riguardanti il
@@ -13,16 +13,16 @@ alimentati a batteria distribuiti in una vasta area geografica.
 Il range di queste tecnologie è limitato a poche centinaia di metri al massimo.
 Tutto ciò implica che i devices, non possono essere implementati in tutti gli
 ambienti, ma solo in uno spazio ristretto alla portata del segnale del gateway.
-Quindi scenari quali la sicurezza sanitaria, agricoltura di precisione, logistica ecc. Non
-permetto l'utilizzo di questa tecnologia.
+Quindi scenari quali la sicurezza sanitaria, agricoltura di precisione, logistica non
+permettono l'utilizzo di questa tecnologia.
 La grande copertura offerta dalle tecnologia cellulare è la ragione per la quale
 è ad oggi la tecnologia più utilizzata nelle comunicazioni M2M.
 Tuttavia, il continuo progresso tecnologico, sta portando l'abbandono della rete
 GSM da parte degli operatori telefonici, per poter riutilizzare le bande da essa
-occupata con tecnologie nuove. In generale, la tecnologia cellulare non
+occupata con tecnologie più innovative. In generale, la tecnologia cellulare non
 garantisce una durata della batteria molto prolungata ed inoltre il costo
 complessivo dei moduli cellulari è molto elevato, data la complessità delle 
-forme d'onda .%\improvement{Completare}
+forme d'onda .
 
 Dovendo ingegnerizzare il network layer, è importante capire quali sono le
 principali problematiche che le tecnologie attuali non sono in grado di colmare.
@@ -73,33 +73,33 @@ innovativo, che integra le tecnologie cellulari tradizionali e quelle a corto
 raggio per affrontare diverse esigenze delle applicazioni IoT. 
 Le reti LPWA, andando a sacrificare il massimo throughput dei devices, ne sono in
 grado di gestire un gran numero contemporaneamente, cosa che con le tecnologie
-wireless tradizionali non è possibile realizzare.%\improvement{Riscrivere}
+wireless tradizionali non è possibile realizzare.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
-        \includegraphics[width=16cm]{network-com}
+        \includegraphics[width=12cm]{network-com}
     \caption{Comparazione tipologia di reti}
 \end{figure}
 
 In questo contesto, i maggiori competitor sono  NB-IoT, EC-GSM-IoT
 LTE-M, SigFox e Lora. Le prime tre  sono una evoluzione delle precedenti reti
-cellulari 2G,3G e 4G. Operando su bande di frequenza licenziate, e necessario
+cellulari 2G,3G e 4G. Operando sulle bande di frequenza licenziate, e necessario
 che ognuna di queste tecnologie sia approvata dalla 3GPP ( 3rd Generation
 Partnership Project), la quale si occupa della standardizzazione dei sistemi di
 telecomunicazione a livello internazionale.
-All'opposto, Sigfox e Lora sono due tecnologie che operano nulle frequenze ISM
+All'opposto, Sigfox e Lora sono due tecnologie che operano nelle frequenze ISM
 (Industrial, Scientific and Medical). Le frequenze ISM sono uno spettro radio
 riservato alle applicazioni di radiocomunicazione non commerciali.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
         \includegraphics[width=10cm]{Orignal/freq}
     \caption{Comparazione tipologia di reti}
 \end{figure}
 
-In particolare entrambe le tecnologie operano  nella banda degli 868[MHz]
-la quale permette una potenza del segnale inviato massima pari a 14[dbm] ed un
-duty cycle inferiore al 1\%.%\improvement{Completare}
+In particolare entrambe le tecnologie operano  nella banda degli 868 [MHz]
+la quale permette una potenza del segnale inviato massima pari a 14 [dbm] ed un
+duty cycle inferiore al 1\%.
  
 \section{NB-IoT}
 Narrowband IoT (NB-IoT) o LTE Cat NB1 è uno standard certificato nella release 13 del 3GPP, la
@@ -107,18 +107,18 @@ quale riutilizza le infrastrutture già presenti, quali 2G, 3G, 4G per la rapida
 realizzazione di una rete LPWA per l'IoT.
 Focalizzandosi sulla durata della batteria, i moduli NB-IoT risultano avere un
 costo all'unità minore del 75\% rispetto ad un normale modulo LTE.
-Basato frequenze licenziate, NB-IoT è in grado di
+Basato sulle frequenze licenziate, NB-IoT è in grado di
 offrire tre diversi scenari di sviluppo \cite{NB-white_paper}
 \begin{itemize}
-\item \emph{standalone}, utilizzando qualsiasi spettro disponibile del
+\item \emph{standalone}, utilizzando qualsiasi spettro disponibile dell'
 operatore.
 \item \emph{guard band}, utilizzando lo spettro libero presente tra due bande
 radio, per prevenire interferenze.
 \item \emph{in band}, utilizzando lo stesso spettro della banda LTE.
 \end{itemize}
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
-        \includegraphics[width=16cm]{nb-iot}
+        \includegraphics[width=12cm]{nb-iot}
     \caption{Modalità di funzionamento NB-IoT}
 \end{figure}
 L'obbiettivo che NB-IoT si prefigge è quello di mettere a disposizione una
@@ -132,11 +132,12 @@ NB-IoT, una delle tecnologie che sta riscuotendo maggiore successo nel abito IoT
 Dalla realise 8 del 3GPP, diverse nuove tipologie di rete LTE sono disponibili.
 La categoria che offre le migliori performance batteria/data-rate è la categoria
 LTE Cat-M1 o LTE-M.
-LTE-M a differenza del NB-IoT, rispecchia LTE in pieno, quindi implementa due
-moduli di ricezione, è full duplex supportando la Frequency Division Multiplexing
-(FDM) e Time Division Multiplexing (TDM). Risultando adatto per applicazioni con
-esigenze diverse da quelle del NB-IoT, è in grado di raggiunger i 5Mbps in
-uplink e 10[Mbps] in downlink teorici.  Questo tipo di connessione sarà utile
+Questa categoria ,a differenza del NB-IoT, rispecchia lo standard LTE in pieno, 
+implementando  la Frequency Division Multiplexing
+(FDM) e Time Division Multiplexing (TDM). Risultando adatta per applicazioni
+nelle quali è necessario l'invio di dati audio o video oppure per comunicazioni a
+bassa latenza . Il data-rate raggiungibile è pari a 5Mbps in
+uplink e 10 [Mbps] in downlink .  Questo tipo di connessione sarà utile
 per tutte quelle applicazioni in cui è richiesta una elevata sicurezza del dato
 da trasmettere, come ad esempio applicazioni di video-sorveglianza o automotive
 .Questa tecnologia ,già disponibile negli Stati Uniti tramite la rete Verizon, è
@@ -160,7 +161,7 @@ La figura \ref{tab:IoT_cell_comp} riassume in breve le varie caratteristiche
 delle reti cellulari facenti parte della categoria LPWA
 \begin{table}[h]
     \centering 
-                \includegraphics[width=16cm]{tim_iot}
+                \includegraphics[width=12cm]{tim_iot}
     \caption{Comparazione reti cellulari per l'IoT}
     \label{tab:IoT_cell_comp} 
 \end{table}
@@ -175,17 +176,17 @@ Correntemente SigFox è presente in Francia, Belgio, Olanda e Portogallo come
 illustrato nella figura \ref{fig:Sig_covereg}.
 \begin{figure}[h]
     \centering 
-                \includegraphics[width=11cm]{SigFox_covereg}
+                \includegraphics[width=12cm]{SigFox_covereg}
     \caption{Mappa copertura SigFox}
     \label{fig:Sig_covereg} 
 \end{figure}
 
 Gli end-devices comunicano con le varie base stations usando una modulazione (BPSK)
-\emph{Binary Phase Shift Keying} con una banda di soli 100[Hz]. 
+\emph{Binary Phase Shift Keying} con una banda di soli 100 [Hz]. 
 Per via delle regolazioni vigenti nello spettro ISM, è per garantire una durata
 della batteria pari ad una decina di anni, il numero massimo di messaggi
-inviabili in un giorno è 140, con lunghezza del payload pari a 12[byte] e un
-throughput pari a 100[bps]. SigFox si colloca come rete LPWAN con il minore
+inviabili in un giorno è 140, con lunghezza del payload pari a 12 [byte] e un
+throughput pari a 100 [bps]. SigFox si colloca come rete LPWAN con il minore
 throughput, limitando il numero di use-case possibili. Inizialmente SigFox
 supportava solo comunicazioni unidirezionali, successivamente, ha introdotto la
 possibilità di avere una comunicazione bidirezionale, limitando il numero di
@@ -199,28 +200,29 @@ LoRaWAN\cite{LoRaWAN101} nella quale viene definito un protocollo di comunicazio
 il quale usa LoRa come layer fisico. 
 Basandosi su una tecnica di comunicazione a \emph{spread spectrum}, LoRa è in
 grado di instaurare una comunicazione bidirezionale tra device e gateway.
-I punti chiave dei questa tecnologia, sono il grande raggio di copertura , il 
+I punti chiave dei questa tecnologia sono il grande raggio di copertura , il 
 basso consumo energetico e la capacità di adattare in maniera dinamica il
-data rate, il quale può variare dai 0.3 ai 50[Kbps] a seconda dell'utilizzo. 
+data rate, il quale può variare dai 0.3 ai 50 [Kbps] a seconda dell'utilizzo. 
 Come per SigFox, la tecnologia sviluppata da Semtech, si basa sulle bande ISM,
 inoltre Essendo il protocollo LoRaWAN open source, si ha la possibilità di
 creare delle reti pubbliche o private senza disporre di alcuna licenza, 
 riducendo così il time to market di questa tecnologia.  
 Progetti come \href{https://www.thethingsnetwork.org/}{The Things Network}
 mirano a creare una rete LoRa ,pubblica è privata,  a livello globale.
+
 \section{Osservazioni}
 In questo mercato frammentato, non è semplice capire quale tecnologia sia adatta
 a ricoprire una data applicazione. Essendo questi standard molto giovani, è
-difficile comprendere le reali potenzialità di ognuna di queste soluzioni.
+complicato comprendere le reali potenzialità di ognuna di queste soluzioni.
 Quello che è possibile prevedere, sarà un incremento esponenziale di device che
 stanno alla base della piramide in figura \ref{fig:pyramid}, devices i quali
 potranno essere utilizzati in innumerevoli settori, non ancora esplorati dalle
 tecnologie attuali, come per esempio i contatori della dell'acqua, applicazioni
-per l'agricoltura di precisione ecc. 
+per l'agricoltura di precisione e così via. 
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
-                \includegraphics[width=11cm]{pyramid}
+                \includegraphics[width=12cm]{pyramid}
     \caption{Capacità delle reti LPWA}
     \label{fig:pyramid} 
 \end{figure}
@@ -229,13 +231,13 @@ per l'agricoltura di precisione ecc.
 Per le aziende, che si apprestano ad investire sul mondo dell'IoT, la scelta
 della corretta tecnologia su cui andare a sviluppare i loro servizi non risulta
 semplice, in quanto, fattori quali sicurezza, aggiornamenti software,
-affidabilità devono essere ancora testate a pieno. Con la figura
+affidabilità devono essere ancora testati a pieno. Con la figura
 \ref{fig:feature_comp} si vuole riassumere in breve i punti chiave delle
 tecnologie appena trattate.
 
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering 
-                \includegraphics[width=11cm]{Comparsion_no_line}
+                \includegraphics[width=9cm]{Comparsion_no_line}
     \caption{Comparazione feature reti LPWAN}
     \label{fig:feature_comp} 
 \end{figure}

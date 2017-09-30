@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{453.54330709bp}%
+    \setlength{\unitlength}{340.15748031bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,14 +48,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.46875)%
+  \begin{picture}(1,0.625)%
     \put(0,0){\includegraphics[width=\unitlength]{Chirp.eps}}%
-    \put(0.30149222,0.72723397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.01702997,0.36833513){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
-    \put(0.01706708,0.07237592){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
-    \put(0.48030952,0.01080666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
-    \put(0.04754423,0.22276038){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
-    \put(0.29643417,0.4311829){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Simbolo}}}%
-    \put(0.79608311,0.40663413){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\hypertarget{label_in_fig_1}{}}}}%
+    \put(0.40198955,0.96964529){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0.00260205,0.37792398){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_1$}}}%
+    \put(0.00264008,0.07464702){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$f_0$}}}%
+    \put(0.4773366,0.01155544){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Tempo}}}%
+    \put(0.03387081,0.22874987){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[b]{\smash{Frequenza}}}}%
+    \put(0.28891477,0.44232578){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Simbolo}}}%
+    \put(0.8009179,0.41717013){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{\hypertarget{label_in_fig_1}{}}}}%
   \end{picture}%
 \endgroup%
