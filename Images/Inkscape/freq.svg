@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg21634"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="12cm"
+   height="5.0999999cm"
+   viewBox="0 0 425.19692 180.70867"
+   sodipodi:docname="freq.svg">
+  <metadata
+     id="metadata21640">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs21638" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1676"
+     inkscape:window-height="1029"
+     id="namedview21636"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="cm"
+     inkscape:zoom="1.5124153"
+     inkscape:cx="187.50895"
+     inkscape:cy="169.36439"
+     inkscape:window-x="0"
+     inkscape:window-y="17"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg21634">
+    <sodipodi:guide
+       position="37.026866,867.48657"
+       orientation="1,0"
+       id="guide21712" />
+    <sodipodi:guide
+       position="-181.4035,847.17303"
+       orientation="0,1"
+       id="guide21714" />
+    <sodipodi:guide
+       position="150.75224,703.51045"
+       orientation="0,1"
+       id="guide21716" />
+    <sodipodi:guide
+       position="267.12244,777.56421"
+       orientation="1,0"
+       id="guide21718" />
+  </sodipodi:namedview>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="207.54562"
+     y="10.144195"
+     id="text21644"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21646"
+       x="207.54562"
+       y="10.144195"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif Bold'">Frequency Spectrum Allocation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="208.93877"
+     y="30.008209"
+     id="text21648"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21650"
+       x="208.93877"
+       y="30.008209">Unlicensed ISM/SRD bands:</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="72.396492"
+     y="45.360012"
+     id="text21652"
+     sodipodi:linespacing="125%"
+     inkscape:transform-center-x="-2.1435742"
+     inkscape:transform-center-y="10.003382"><tspan
+       sodipodi:role="line"
+       id="tspan21654"
+       x="72.396492"
+       y="45.360012" /><tspan
+       sodipodi:role="line"
+       x="72.396492"
+       y="58.868256"
+       id="tspan21656">260-470 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="72.396492"
+       y="72.376495"
+       id="tspan21658">902-928 MHZ</tspan><tspan
+       sodipodi:role="line"
+       x="72.396492"
+       y="85.884735"
+       id="tspan21660">2400- 2483.5 MHz</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="31.148109"
+     y="57.328274"
+     id="text21662"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21664"
+       x="31.148109"
+       y="57.328274"
+       style="fill:#ff0000">USA/Canada</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="20.502039"
+     y="148.60901"
+     id="text21666"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21668"
+       x="20.502039"
+       y="148.60901"
+       style="fill:#ff0000">Europe:</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="72.254379"
+     y="150.78101"
+     id="text21670"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21672"
+       x="72.254379"
+       y="150.78101"
+       style="text-align:start;text-anchor:start">433.050-434.790 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="72.254379"
+       y="164.28925"
+       id="tspan21674"
+       style="text-align:start;text-anchor:start">863.0-870.0 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="72.254379"
+       y="177.79749"
+       id="tspan21676"
+       style="text-align:start;text-anchor:start">2400-2483.5 MHz</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="256.80072"
+     y="58.326077"
+     id="text21678"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="256.80072"
+       y="58.326077"
+       id="tspan21682"
+       style="fill:#ff0000">Japan:</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.80659485px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="310.78085"
+     y="61.753811"
+     id="text21686"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan21688"
+       x="310.78085"
+       y="61.753811"
+       style="text-align:start;text-anchor:start">315 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="310.78085"
+       y="75.262054"
+       id="tspan21690"
+       style="text-align:start;text-anchor:start">426-430, 449, 469 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="310.78085"
+       y="88.770294"
+       id="tspan21692"
+       style="text-align:start;text-anchor:start">2400-2483.5 MHz</tspan><tspan
+       sodipodi:role="line"
+       x="310.78085"
+       y="102.27853"
+       id="tspan21694"
+       style="text-align:start;text-anchor:start">2471-2497 MHz</tspan></text>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot21696"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(0,-733.29209)"><flowRegion
+       id="flowRegion21698"><rect
+         id="rect21700"
+         width="280.34628"
+         height="198.35822"
+         x="550.1134"
+         y="712.99701" /></flowRegion><flowPara
+       id="flowPara21702"></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot21704"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="translate(0,-733.29209)"><flowRegion
+       id="flowRegion21706"><rect
+         id="rect21708"
+         width="1134.609"
+         height="1235.1105"
+         x="-37.026867"
+         y="-217.96417" /></flowRegion><flowPara
+       id="flowPara21710"></flowPara></flowRoot></svg>

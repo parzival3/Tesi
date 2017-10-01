@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.4)  30 SEP 2017 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.4)  1 OCT 2017 16:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -951,8 +951,11 @@ runsystem(rm Tesi.aex)...executed.
 (./Tex_Files/Abstract/Sommario.aux)
 (./Tex_Files/Chapters/Chapter_1/Capitolo1_new.aux)
 (./Tex_Files/Chapters/Chapter_2/Capitolo2.aux)
-(./Tex_Files/Chapters/Chapter_3/Capitolo3.aux)
-(./Tex_Files/Chapters/Chapter_4/Capitolo4_draft.aux
+(./Tex_Files/Chapters/Chapter_3/Capitolo3.aux
+
+LaTeX Warning: Label `fig:stack_lora' multiply defined.
+
+) (./Tex_Files/Chapters/Chapter_4/Capitolo4_draft.aux
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -1094,7 +1097,7 @@ LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 43.
 
-<Images/logouniud.pdf, id=199, 250.55496pt x 250.55496pt>
+<Images/logouniud.pdf, id=195, 250.55496pt x 250.55496pt>
 File: Images/logouniud.pdf Graphic file (type pdf)
 
 <use Images/logouniud.pdf>
@@ -1154,41 +1157,35 @@ l.21 \end{abstract}
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.46 \listoftodos[Note]
-                        [2
+l.47 \tableofcontents
+                      [2
 
 
 ]
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 22.39185pt on input line 46.
+(Font)              scaled to size 22.39185pt on input line 47.
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 46.
- (./Tesi.tdo)
-\tf@tdo=\write10
-\openout10 = `Tesi.tdo'.
+(Font)              scaled to size 22.39185pt on input line 47.
+ (./Tesi.toc [3])
+\tf@toc=\write10
+\openout10 = `Tesi.toc'.
 
- [3] [4
-
-] (./Tesi.toc [5])
-\tf@toc=\write11
-\openout11 = `Tesi.toc'.
-
- [6]
-(./Tesi.lof [7
+ [4] (./Tesi.lof [5
 
 ])
-\tf@lof=\write12
-\openout12 = `Tesi.lof'.
+\tf@lof=\write11
+\openout11 = `Tesi.lof'.
 
- [8]
+ [6]
 \openout2 = `Tex_Files/Chapters/Chapter_1/Capitolo1_new.aux'.
 
- (./Tex_Files/Chapters/Chapter_1/Capitolo1_new.tex
+
+(./Tex_Files/Chapters/Chapter_1/Capitolo1_new.tex
 Capitolo 1.
-<Images/IoT-c1.pdf, id=358, 455.2441pt x 289.49883pt>
+<Images/IoT-c1.pdf, id=344, 455.2441pt x 289.49883pt>
 File: Images/IoT-c1.pdf Graphic file (type pdf)
  <use Images/IoT-c1.pdf>
-Package pdftex.def Info: Images/IoT-c1.pdf used on input line 25.
+Package pdftex.def Info: Images/IoT-c1.pdf used on input line 24.
 (pdftex.def)             Requested size: 341.43306pt x 217.1324pt.
 LaTeX Font Info:    Font shape `T1/fve/m/it' in size <12> not available
 (Font)              Font shape `T1/fve/m/sl' tried instead on input line 32.
@@ -1203,19 +1200,19 @@ Underfull \vbox (badness 4505) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Font shape `T1/fve/m/n' will be
-(Font)              scaled to size 15.55188pt on input line 53.
+(Font)              scaled to size 15.55188pt on input line 52.
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
-(Font)              scaled to size 15.55188pt on input line 53.
+(Font)              scaled to size 15.55188pt on input line 52.
 
 [2 <./Images/IoT-c1.pdf>]
-<Images/iot_devices.pdf, id=477, 771.88374pt x 475.7775pt>
+<Images/iot_devices.pdf, id=464, 771.88374pt x 475.7775pt>
 File: Images/iot_devices.pdf Graphic file (type pdf)
 
 <use Images/iot_devices.pdf>
 Package pdftex.def Info: Images/iot_devices.pdf used on input line 101.
 (pdftex.def)             Requested size: 284.52756pt x 175.37427pt.
  [3]
-<Images/three-layer.pdf, id=487, 455.2441pt x 503.6138pt>
+<Images/three-layer.pdf, id=473, 455.2441pt x 503.6138pt>
 File: Images/three-layer.pdf Graphic file (type pdf)
 
 <use Images/three-layer.pdf>
@@ -1233,45 +1230,44 @@ Capitolo 2.
 
 
 
-] [8] <Images/network-com.pdf, id=577, 455.2441pt x 291.46379pt>
+] [8] <Images/network-com.pdf, id=550, 455.2441pt x 291.46379pt>
 File: Images/network-com.pdf Graphic file (type pdf)
 
 <use Images/network-com.pdf>
 Package pdftex.def Info: Images/network-com.pdf used on input line 80.
 (pdftex.def)             Requested size: 341.43306pt x 218.60619pt.
  [9 <./Images/network-com.pdf>]
-<Images/Orignal/freq.png, id=626, 1333.98375pt x 917.4275pt>
-File: Images/Orignal/freq.png Graphic file (type png)
+<Images/freq.pdf, id=598, 341.43306pt x 145.10905pt>
+File: Images/freq.pdf Graphic file (type pdf)
+ <use Images/freq.pdf>
+Package pdftex.def Info: Images/freq.pdf used on input line 96.
+(pdftex.def)             Requested size: 284.52756pt x 120.93202pt.
 
-<use Images/Orignal/freq.png>
-Package pdftex.def Info: Images/Orignal/freq.png used on input line 96.
-(pdftex.def)             Requested size: 284.52756pt x 195.6752pt.
- [10 <./Images/Orignal/freq.png>]
-<Images/nb-iot.pdf, id=633, 455.2441pt x 98.87646pt>
+<Images/nb-iot.pdf, id=600, 455.2441pt x 98.87646pt>
 File: Images/nb-iot.pdf Graphic file (type pdf)
  <use Images/nb-iot.pdf>
 Package pdftex.def Info: Images/nb-iot.pdf used on input line 121.
 (pdftex.def)             Requested size: 341.43306pt x 74.16017pt.
 
-[11 <./Images/nb-iot.pdf>]
-<Images/tim_iot.pdf, id=654, 455.2441pt x 270.3012pt>
+[10 <./Images/freq.pdf>] [11 <./Images/nb-iot.pdf>]
+<Images/tim_iot.pdf, id=640, 455.2441pt x 270.3012pt>
 File: Images/tim_iot.pdf Graphic file (type pdf)
  <use Images/tim_iot.pdf>
 Package pdftex.def Info: Images/tim_iot.pdf used on input line 164.
 (pdftex.def)             Requested size: 341.43306pt x 202.73363pt.
 
-<Images/SigFox_covereg.pdf, id=656, 323.50781pt x 361.35pt>
+<Images/SigFox_covereg.pdf, id=642, 323.50781pt x 361.35pt>
 File: Images/SigFox_covereg.pdf Graphic file (type pdf)
 
 <use Images/SigFox_covereg.pdf>
 Package pdftex.def Info: Images/SigFox_covereg.pdf used on input line 179.
-(pdftex.def)             Requested size: 341.43306pt x 381.37506pt.
+(pdftex.def)             Requested size: 227.62204pt x 254.25003pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12 <./Images/tim_iot.pdf>] [13 <./Images/SigFox_covereg.pdf>]
-<Images/pyramid.pdf, id=684, 455.2441pt x 190.63345pt>
+<Images/pyramid.pdf, id=673, 455.2441pt x 190.63345pt>
 File: Images/pyramid.pdf Graphic file (type pdf)
 
 <use Images/pyramid.pdf>
@@ -1280,27 +1276,24 @@ Package pdftex.def Info: Images/pyramid.pdf used on input line 225.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14]
-<Images/Comparsion_no_line.pdf, id=692, 312.98033pt x 256.0748pt>
+ [14 <./Images/pyramid.pdf>]
+<Images/Comparsion_no_line.pdf, id=693, 312.98033pt x 256.0748pt>
 File: Images/Comparsion_no_line.pdf Graphic file (type pdf)
 
 <use Images/Comparsion_no_line.pdf>
 Package pdftex.def Info: Images/Comparsion_no_line.pdf used on input line 240.
 (pdftex.def)             Requested size: 256.0748pt x 209.5216pt.
-) [15 <./Images/pyramid.pdf> <./Images/Comparsion_no_line.pdf
-
-pdfTeX warning: pdflatex (file ./Images/Comparsion_no_line.pdf): PDF inclusion:
- multiple pdfs with page group included in a single page
->]
+) [15 <./Images/Comparsion_no_line.pdf>]
 \openout2 = `Tex_Files/Chapters/Chapter_3/Capitolo3.aux'.
 
- (./Tex_Files/Chapters/Chapter_3/Capitolo3.tex [16
+
+(./Tex_Files/Chapters/Chapter_3/Capitolo3.tex [16
 
 
 
 ]
 Capitolo 3.
-<Images/spread_spectrum_temp.pdf, id=723, 312.98033pt x 199.1693pt>
+<Images/spread_spectrum_temp.pdf, id=710, 312.98033pt x 199.1693pt>
 File: Images/spread_spectrum_temp.pdf Graphic file (type pdf)
 
 <use Images/spread_spectrum_temp.pdf>
@@ -1312,7 +1305,7 @@ LaTeX Font Info:    Font shape `T1/fve/m/n' will be
 LaTeX Font Info:    Font shape `T1/fve/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 36.
  [17] [18 <./Images/spread_spectrum_temp.pdf>] [19] <Images/Time_Chirp.pdf, id=
-752, 455.2441pt x 213.39566pt>
+740, 455.2441pt x 213.39566pt>
 File: Images/Time_Chirp.pdf Graphic file (type pdf)
 
 <use Images/Time_Chirp.pdf>
@@ -1331,7 +1324,7 @@ ted-to.pdf Images/Eps/Chirp.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Eps/Chirp-eps-converted-to.pdf, id=773, 342.27875pt x 214.8025pt>
+<Images/Eps/Chirp-eps-converted-to.pdf, id=760, 342.27875pt x 214.8025pt>
 File: Images/Eps/Chirp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/Eps/Chirp-eps-converted-to.pdf>
@@ -1353,7 +1346,7 @@ verted-to.pdf Images/Eps/Chirp_SF.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Eps/Chirp_SF-eps-converted-to.pdf, id=797, 342.27875pt x 172.645pt>
+<Images/Eps/Chirp_SF-eps-converted-to.pdf, id=784, 342.27875pt x 172.645pt>
 File: Images/Eps/Chirp_SF-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Images/Eps/Chirp_SF-eps-converted-to.pdf>
@@ -1364,14 +1357,14 @@ Package pdftex.def Info: Images/Eps/Chirp_SF-eps-converted-to.pdf used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-<Images/Chirp_Message.pdf, id=803, 312.98033pt x 355.65945pt>
+<Images/Chirp_Message.pdf, id=791, 312.98033pt x 355.65945pt>
 File: Images/Chirp_Message.pdf Graphic file (type pdf)
 
 <use Images/Chirp_Message.pdf>
 Package pdftex.def Info: Images/Chirp_Message.pdf used on input line 292.
 (pdftex.def)             Requested size: 256.0748pt x 291.00226pt.
 
-<Images/PHY_packet.pdf, id=805, 312.98033pt x 28.45276pt>
+<Images/PHY_packet.pdf, id=793, 312.98033pt x 28.45276pt>
 File: Images/PHY_packet.pdf Graphic file (type pdf)
 
 <use Images/PHY_packet.pdf>
@@ -1381,21 +1374,21 @@ Package pdftex.def Info: Images/PHY_packet.pdf used on input line 315.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./Images/Chirp_Message.pdf>] [26 <./Images/PHY_packet.pdf>]
-<Images/OSI_vs_lora.pdf, id=1047, 341.43306pt x 184.94292pt>
+<Images/OSI_vs_lora.pdf, id=1035, 341.43306pt x 184.94292pt>
 File: Images/OSI_vs_lora.pdf Graphic file (type pdf)
 
 <use Images/OSI_vs_lora.pdf>
 Package pdftex.def Info: Images/OSI_vs_lora.pdf used on input line 365.
 (pdftex.def)             Requested size: 312.9803pt x 169.5428pt.
 
-<Images/LPWAN_Star_network.pdf, id=1048, 31.29803pt x 22.7622pt>
+<Images/LPWAN_Star_network.pdf, id=1036, 31.29803pt x 22.7622pt>
 File: Images/LPWAN_Star_network.pdf Graphic file (type pdf)
 
 <use Images/LPWAN_Star_network.pdf>
 Package pdftex.def Info: Images/LPWAN_Star_network.pdf used on input line 373.
 (pdftex.def)             Requested size: 312.9803pt x 227.74336pt.
 
-<Images/Lora_WAN_Stack.pdf, id=1049, 312.98033pt x 213.39566pt>
+<Images/Lora_WAN_Stack.pdf, id=1037, 312.98033pt x 213.39566pt>
 File: Images/Lora_WAN_Stack.pdf Graphic file (type pdf)
 
 <use Images/Lora_WAN_Stack.pdf>
@@ -1405,69 +1398,119 @@ Package pdftex.def Info: Images/Lora_WAN_Stack.pdf used on input line 388.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28 <./Images/LPWAN_Star_network.pdf>]
+<Images/LoRaWAN_packet.pdf, id=1068, 312.98033pt x 122.34686pt>
+File: Images/LoRaWAN_packet.pdf Graphic file (type pdf)
+
+<use Images/LoRaWAN_packet.pdf>
+Package pdftex.def Info: Images/LoRaWAN_packet.pdf used on input line 463.
+(pdftex.def)             Requested size: 312.9803pt x 122.35028pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29 <./Images/Lora_WAN_Stack.pdf>] [30]
-<Images/Orignal/collision.png, id=1120, 578.16pt x 433.62pt>
+ [29 <./Images/Lora_WAN_Stack.pdf>] [30 <./Images/LoRaWAN_packet.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31]
+<Images/Orignal/collision.png, id=1133, 578.16pt x 433.62pt>
 File: Images/Orignal/collision.png Graphic file (type png)
 
 <use Images/Orignal/collision.png>
-Package pdftex.def Info: Images/Orignal/collision.png used on input line 518.
+Package pdftex.def Info: Images/Orignal/collision.png used on input line 556.
 (pdftex.def)             Requested size: 312.9803pt x 234.73357pt.
-) [31] [32 <./Images/Orignal/collision.png (PNG copy)>]
+ [32]) [33 <./Images/Orignal/collision.png (PNG copy)>]
 \openout2 = `Tex_Files/Chapters/Chapter_4/Capitolo4_draft.aux'.
 
- (./Tex_Files/Chapters/Chapter_4/Capitolo4_draft.tex
-Capitolo 4.
-
-Underfull \vbox (badness 4505) has occurred while \output is active []
-
- [33
+ (./Tex_Files/Chapters/Chapter_4/Capitolo4_draft.tex [34
 
 
 
 ]
-<Images/osgi.pdf, id=1136, 597.50786pt x 512.1496pt>
+Capitolo 4.
+
+Underfull \vbox (badness 4505) has occurred while \output is active []
+
+ [35]
+<Images/osgi.pdf, id=1153, 597.50786pt x 512.1496pt>
 File: Images/osgi.pdf Graphic file (type pdf)
  <use Images/osgi.pdf>
-Package pdftex.def Info: Images/osgi.pdf used on input line 66.
+Package pdftex.def Info: Images/osgi.pdf used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 243.88313pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[34] [35 <./Images/osgi.pdf>]
-<Images/osgi_service.pdf, id=1211, 192.72pt x 66.2475pt>
+[36] [37 <./Images/osgi.pdf>]
+<Images/osgi_service.pdf, id=1229, 192.72pt x 66.2475pt>
 File: Images/osgi_service.pdf Graphic file (type pdf)
 
 <use Images/osgi_service.pdf>
-Package pdftex.def Info: Images/osgi_service.pdf used on input line 114.
+Package pdftex.def Info: Images/osgi_service.pdf used on input line 116.
 (pdftex.def)             Requested size: 256.0748pt x 88.02516pt.
- [36 <./Images/osgi_service.pdf>]
-<Images/ESF.png, id=1226, 1670.24pt x 906.38625pt>
+ [38 <./Images/osgi_service.pdf>]
+<Images/ESF.png, id=1243, 1670.24pt x 906.38625pt>
 File: Images/ESF.png Graphic file (type png)
  <use Images/ESF.png>
-Package pdftex.def Info: Images/ESF.png used on input line 139.
-(pdftex.def)             Requested size: 341.43306pt x 185.28482pt.
+Package pdftex.def Info: Images/ESF.png used on input line 141.
+(pdftex.def)             Requested size: 455.24408pt x 247.03722pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (56.90723pt too wide) in paragraph at lines 141--142
+ [][] 
+ []
 
- [37 <./Images/ESF.png>]
-<Images/Application_layer.pdf, id=1233, 312.98033pt x 341.43306pt>
+[39 <./Images/ESF.png>] <Images/SX1301.pdf, id=1250, 577.35701pt x 232.87pt>
+File: Images/SX1301.pdf Graphic file (type pdf)
+
+<use Images/SX1301.pdf>
+Package pdftex.def Info: Images/SX1301.pdf used on input line 159.
+(pdftex.def)             Requested size: 312.9803pt x 126.23827pt.
+
+
+LaTeX Warning: Citation `SX1301' on page 40 undefined on input line 164.
+
+<Images/SX1301_table.pdf, id=1253, 312.98033pt x 99.58464pt>
+File: Images/SX1301_table.pdf Graphic file (type pdf)
+
+<use Images/SX1301_table.pdf>
+Package pdftex.def Info: Images/SX1301_table.pdf used on input line 182.
+(pdftex.def)             Requested size: 341.43306pt x 108.64081pt.
+
+<Images/SX1301_table_1.pdf, id=1255, 312.98033pt x 71.1319pt>
+File: Images/SX1301_table_1.pdf Graphic file (type pdf)
+
+<use Images/SX1301_table_1.pdf>
+Package pdftex.def Info: Images/SX1301_table_1.pdf used on input line 191.
+(pdftex.def)             Requested size: 341.43306pt x 77.6006pt.
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-33.def
+File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
+)
+<Images/Reliagate_10_11.pdf, id=1256, 451.6875pt x 384.6872pt>
+File: Images/Reliagate_10_11.pdf Graphic file (type pdf)
+
+<use Images/Reliagate_10_11.pdf>
+Package pdftex.def Info: Images/Reliagate_10_11.pdf used on input line 206.
+(pdftex.def)             Requested size: 170.71652pt x 145.39609pt.
+ [40 <./Images/SX1301.pdf>]
+Underfull \vbox (badness 7047) has occurred while \output is active []
+
+ [41 <./Images/SX1301_table.pdf> <./Images/SX1301_table_1.pdf
+
+pdfTeX warning: pdflatex (file ./Images/SX1301_table_1.pdf): PDF inclusion: mul
+tiple pdfs with page group included in a single page
+> <./Images/Reliagate_10_11.pdf
+
+pdfTeX warning: pdflatex (file ./Images/Reliagate_10_11.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>] <Images/Application_layer.pdf, id=1322, 341.43306pt x 455.2441pt>
 File: Images/Application_layer.pdf Graphic file (type pdf)
 
 <use Images/Application_layer.pdf>
-Package pdftex.def Info: Images/Application_layer.pdf used on input line 160.
-(pdftex.def)             Requested size: 312.9803pt x 341.44261pt.
+Package pdftex.def Info: Images/Application_layer.pdf used on input line 226.
+(pdftex.def)             Requested size: 227.62204pt x 303.50458pt.
  (./_minted-Tesi/default-pyg-prefix.pygstyle) (./_minted-Tesi/default.pygstyle)
 
 (./_minted-Tesi/69DDAB8F00823DF0AB0B7A7E1488278CD5009A0AAE488339EE54BDE381B5BB0
-0.pygtex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38 <./Images/Application_layer.pdf>]
+0.pygtex [42 <./Images/Application_layer.pdf>]
 LaTeX Font Info:    Try loading font information for T1+fvm on input line 1.
- (/usr/share/texmf-dist/tex/latex/bera/t1fvm.fd
+
+(/usr/share/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
@@ -1476,62 +1519,18 @@ LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 )
 (./_minted-Tesi/69DDAB8F00823DF0AB0B7A7E1488278CD5009A0AAE488339EE54BDE381B5BB0
-0.pygtex [39])
+0.pygtex [43])
 (./_minted-Tesi/0E3E9C7066C13F58A4E71B526126CB79BFBF95177741FAC4871445C1C942049
-D.pygtex [40]) <Images/SX1301.pdf, id=1257, 577.35701pt x 232.87pt>
-File: Images/SX1301.pdf Graphic file (type pdf)
-
-<use Images/SX1301.pdf>
-Package pdftex.def Info: Images/SX1301.pdf used on input line 203.
-(pdftex.def)             Requested size: 312.9803pt x 126.23827pt.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 208.
- [41 <./Images/SX1301.pdf>]
-<Images/SX1301_table.pdf, id=1272, 312.98033pt x 99.58464pt>
-File: Images/SX1301_table.pdf Graphic file (type pdf)
-
-<use Images/SX1301_table.pdf>
-Package pdftex.def Info: Images/SX1301_table.pdf used on input line 226.
-(pdftex.def)             Requested size: 455.24408pt x 144.85442pt.
-
-Overfull \hbox (56.90723pt too wide) in paragraph at lines 226--227
- [][] 
- []
-
-<Images/SX1301_table_1.pdf, id=1274, 312.98033pt x 71.1319pt>
-File: Images/SX1301_table_1.pdf Graphic file (type pdf)
-
-<use Images/SX1301_table_1.pdf>
-Package pdftex.def Info: Images/SX1301_table_1.pdf used on input line 235.
-(pdftex.def)             Requested size: 455.24408pt x 103.46747pt.
-
-Overfull \hbox (56.90723pt too wide) in paragraph at lines 235--236
- [][] 
- []
-
-(/usr/share/texmf-dist/tex/latex/ucs/data/uni-33.def
-File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)
-<Images/Reliagate_10_11.pdf, id=1275, 451.6875pt x 384.6872pt>
-File: Images/Reliagate_10_11.pdf Graphic file (type pdf)
-
-<use Images/Reliagate_10_11.pdf>
-Package pdftex.def Info: Images/Reliagate_10_11.pdf used on input line 250.
-(pdftex.def)             Requested size: 312.9803pt x 266.56732pt.
- [42 <./Images/SX1301_table.pdf> <./Images/SX1301_table_1.pdf
-
-pdfTeX warning: pdflatex (file ./Images/SX1301_table_1.pdf): PDF inclusion: mul
-tiple pdfs with page group included in a single page
->]
+D.pygtex) [44]
 \openout5 = `Tesi.pyg'.
 
 
 (./_minted-Tesi/67CDC198791E622FDDFC901CB7F9D4889BA957CFB2DA3FFF498A9262495C78E
-5.pygtex) [43 <./Images/Reliagate_10_11.pdf>]
+5.pygtex)
 \openout3 = `Tesi.pyg'.
 
 
-(./_minted-Tesi/AE5A629A0B8FF103D497EBC40EBD3501F41451465CAA30B6B7EFC4BDF0131F3
+(./_minted-Tesi/67A66196DBAD5C1ABFCBC5D6C6B7256EF41451465CAA30B6B7EFC4BDF0131F3
 6.pygtex)
 \openout5 = `Tesi.pyg'.
 
@@ -1542,59 +1541,49 @@ tiple pdfs with page group included in a single page
 
 
 (./_minted-Tesi/69977F52DDC8C7206CFC63B9C33E90C1F41451465CAA30B6B7EFC4BDF0131F3
-6.pygtex
+6.pygtex [45]
 LaTeX Font Info:    Try loading font information for TS1+fvm on input line 12.
  (/usr/share/texmf-dist/tex/latex/bera/ts1fvm.fd
 File: ts1fvm.fd 2004/09/07 scalable font definitions for TS1/fvm.
 )
 LaTeX Font Info:    Font shape `TS1/fvm/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 12.
- [44])
+)
 \openout5 = `Tesi.pyg'.
 
 
 (./_minted-Tesi/893BA0CA4A79BE443C6573DC6F9146669BA957CFB2DA3FFF498A9262495C78E
-5.pygtex) <Images/LoRaMote_no_wave.pdf, id=1338, 332.24126pt x 410.53375pt>
+5.pygtex) [46] <Images/casa.pdf, id=1362, 455.2441pt x 378.85782pt>
+File: Images/casa.pdf Graphic file (type pdf)
+
+<use Images/casa.pdf>
+Package pdftex.def Info: Images/casa.pdf used on input line 372.
+(pdftex.def)             Requested size: 284.52756pt x 236.7971pt.
+ [47 <./Images/casa.pdf>]
+<Images/LoRaMote_no_wave.pdf, id=1376, 332.24126pt x 410.53375pt>
 File: Images/LoRaMote_no_wave.pdf Graphic file (type pdf)
 
 <use Images/LoRaMote_no_wave.pdf>
-Package pdftex.def Info: Images/LoRaMote_no_wave.pdf used on input line 370.
+Package pdftex.def Info: Images/LoRaMote_no_wave.pdf used on input line 384.
 (pdftex.def)             Requested size: 113.81102pt x 140.63202pt.
 
-<Images/casa.pdf, id=1339, 455.2441pt x 378.85782pt>
-File: Images/casa.pdf Graphic file (type pdf)
- <use Images/casa.pdf>
-Package pdftex.def Info: Images/casa.pdf used on input line 380.
-(pdftex.def)             Requested size: 284.52756pt x 236.7971pt.
-
-[45]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<Images/map.pdf, id=1347, 455.2441pt x 389.80276pt>
+<Images/map.pdf, id=1379, 455.2441pt x 389.80276pt>
 File: Images/map.pdf Graphic file (type pdf)
  <use Images/map.pdf>
-Package pdftex.def Info: Images/map.pdf used on input line 396.
-(pdftex.def)             Requested size: 455.24408pt x 389.81964pt.
-
-Overfull \hbox (56.90723pt too wide) in paragraph at lines 396--397
- [][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[46 <./Images/LoRaMote_no_wave.pdf>]) [47 <./Images/casa.pdf>] [48 <./Images/ma
-p.pdf>]
+Package pdftex.def Info: Images/map.pdf used on input line 400.
+(pdftex.def)             Requested size: 341.43306pt x 292.36324pt.
+)
+[48 <./Images/LoRaMote_no_wave.pdf>] [49 <./Images/map.pdf>]
 \openout2 = `Tex_Files/Chapters/Chapter_5/Capitolo5.aux'.
 
- (./Tex_Files/Chapters/Chapter_5/Capitolo5.tex
+
+(./Tex_Files/Chapters/Chapter_5/Capitolo5.tex [50
+
+
+
+]
 Capitolo 5.
-) [49
-
-
-
-] [50
+) [51] [52
 
 
 ] (./Tesi.bbl
@@ -1627,21 +1616,24 @@ Underfull \hbox (badness 2547) in paragraph at lines 37--42
  / sites / default / files /
  []
 
-) [51
+) [53
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./Tesi.aux (./Tex_Files/Abstract/Sommario.aux)
 (./Tex_Files/Chapters/Chapter_1/Capitolo1_new.aux)
 (./Tex_Files/Chapters/Chapter_2/Capitolo2.aux)
 (./Tex_Files/Chapters/Chapter_3/Capitolo3.aux)
 (./Tex_Files/Chapters/Chapter_4/Capitolo4_draft.aux)
 (./Tex_Files/Chapters/Chapter_5/Capitolo5.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: BFD75D87B1C2494135303673A97AB257;2957.
+(rerunfilecheck)             Checksum: D88CDC47D4E52F51B961C80ACD540A1D;2901.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1650,13 +1642,13 @@ runsystem(rm Tesi.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27130 strings out of 494845
- 496561 string characters out of 6175986
- 613392 words of memory out of 5000000
- 29632 multiletter control sequences out of 15000+600000
+ 27056 strings out of 494845
+ 494860 string characters out of 6175986
+ 613243 words of memory out of 5000000
+ 29560 multiletter control sequences out of 15000+600000
  65440 words of font info for 78 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 69i,17n,94p,807b,710s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,17n,94p,807b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1668,10 +1660,10 @@ b></usr/share/texmf-dist/fonts/type1/public/bera/fver8a.pfb></usr/share/texmf-d
 ist/fonts/type1/public/bera/fvmb8a.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/bera/fvmr8a.pfb></usr/share/texmf-dist/fonts/type1/public/bera/fvsr8a.pfb></u
 sr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Tesi.pdf (61 pages, 5908889 bytes).
+Output written on Tesi.pdf (61 pages, 5199718 bytes).
 PDF statistics:
- 1631 PDF objects out of 1728 (max. 8388607)
- 1201 compressed objects within 13 object streams
+ 1655 PDF objects out of 1728 (max. 8388607)
+ 1218 compressed objects within 13 object streams
  165 named destinations out of 1000 (max. 500000)
- 557 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 words of extra memory for PDF output out of 10000 (max. 10000000)
 

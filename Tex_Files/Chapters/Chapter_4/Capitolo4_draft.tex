@@ -39,9 +39,11 @@ Basandosi su di una architettura a microservizi, OSGi permette la gestione in
 modo remoto di componenti chiamati Bundle o Deployment Package(dp), i quali
 possono essere installati, attivati, aggiornati e fermati senza la necessità di
 riavviare l'applicazione principale\\
-Ogni bundle è composto dai file contenti le classi ed i metodi specifici per le
-funzionalità che implementa e da  metadati utili al framework
-per distinguere le classi private da quelle pubbliche. 
+Ogni bundle è composto dai file contenenti le classi ed i metodi specifici per le
+funzionalità che implementa e da  metadati utili al framework.
+Utilizzando quest'ultimi OSGi è in grado di capire quali classi sono pubbliche e
+condivisibili con altri moduli, da quelle private e utilizzabili solo
+all'interno del bundle.
 Per rendere compatibile questa architettura con il linguaggio di programmazione
 Java e la Java Virtual Machine, OSGi ha strutturato il framework su vari
 livelli:
@@ -101,8 +103,8 @@ determinare le dipendenze del bundle e quali servizi è in grado di esportare.
 Un \emph{servizio} in OSGi è definito tramite una classe Java standard. Per
 implementare un nuovo servizio, è necessario definire quale classe o quale
 interfaccia si vuole fornire il servizio.
-La soluzione a questo, è l'utilizzo di registri di servizio. Ogni bundle può
-esporre dei metodi ed registrarli attraverso il service registry. In questo
+La soluzione a questa problematica è l'utilizzo di registri di servizio. Ogni bundle può
+esporre dei metodi e registrarli attraverso il service registry. In questo
 modo, altri bundle possono accedere al service registry e utilizzare i metodi
 listati nel registro. Un bundle quindi può registrare un servizio, può
 utilizzare un servizio oppure può mettersi in attesa aspettando che un servizio
@@ -136,57 +138,11 @@ comportamento dei gatway.
 
 \begin{figure}[th]
         \centering 
-                \includegraphics[width=12cm]{ESF.png}
+                \includegraphics[width=16cm]{ESF}
                 \caption{Interfaccia web ESF}
         \label{fig:ESF_web}
 \end{figure}
 
-\pagebreak
-
-
-\section{Architettura del software}
-Per integrare ESF con il ricevitore lora SX1301, è stato necessario l'utilizzo
-di due software aggiuntivi.
-Il primo è LoRa packet forwarder fornito da Semtech. Questo
-applicativo permette di comunicare con le periferiche di basso livello presenti
-nel ReliaGATE 10-11 in modo da astrarre ad un più alto livello i dati ricevuti dal
-ricevitore .
-L'altra applicazione utilizzata, è LoRa Gateway Bridge. Tramite questa
-applicazione è stato possibile 
-reindirizzare i dei dati forniti dal packet forwarder ad un server MQTT.
-
-\begin{figure}[th]
-        \centering 
-                \includegraphics[width=11cm]{Application_layer}
-        \caption{Architettura del software}
-        \label{fig:Software_stack}
-\end{figure}
-
-\subsection{Semtech packet forwarder}
-Il packet forwarder è un software che permette la ricezione e l'invio di pacchetti radio Lora ,
-tramite una connessione SPI con il device SX1301. Nel caso di ricezione di un
-pacchetto, l'applicativo incapsula i dati ricevuti in un formato UDP, e li
-ritrasmette nella rete internet/intranet. Per la sua configurazione viene
-utilizzato un file Json nel quale troviamo tutte le varie opzioni di
-configurazione per i moduli radio presenti al interno del chip.
-\inputminted[mathescape, gobble=2, frame=lines, linenos=true
-framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/global_json.conf}
-\inputminted[mathescape, gobble=2, frame=lines, linenos=true
-framesep=2mm, firstline=173,lastline=184]{json}{Code_Files/global_json.conf}
-
-\subsection{LoRa Gateway Bridge}
-LoRa Gateway Bridge è un applicativo in grado di identificare i vari pachetti UDP inviati
-dal packet forwarder e inotrarli ad un Broker MQTT. 
-Il software è scritto nel linguaggio GO e permette una configurazione tramite
-linea di comando.  Per renderlo interfaciabile con ESF, sono state apportate delle 
-modifiche al codice; in particolare è stata aggiunta la possibilità di
-specificare il publish e il subscribed topic, i quali erano hard-coded.
-%\inputminted[mathescape, gobble=2, frame=lines, linenos=true
-%framesep=2mm, firstline=1,lastline=23]{go}{Code_Files/bridge_mqtt.go}
-Il codice sottostante, rappresenta un esempio di pacchetto LoRa inoltrato dal
-LoRa Gateway Bridge ad un broker MQTT
-\inputminted[mathescape, gobble=2, frame=lines, linenos=true
-framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/message.json}
 \section{Hardware utilizzato}
 
 \subsection{SX1301}
@@ -205,7 +161,7 @@ blocchi interni al chip.
         \label{fig:sx1301}
 \end{figure}
 
-Come scritto nella documentazione  \improvement{inserire link} e intuibile dalla
+Come scritto nella documentazione \cite{SX1301} e intuibile dalla
 figura \ref{fig:sx1301} il chip è in grado di scansionare contemporaneamente 
 8 canali diversi (IF0 a IF7)  permettendoli di rimanere in ascolto per garantire
 la ricezione dei segnali con SF diversi.
@@ -223,7 +179,7 @@ interne.
 
 \begin{table}[th]
         \centering 
-                \includegraphics[width=16cm]{SX1301_table}
+                \includegraphics[width=12cm]{SX1301_table}
         \caption{Caratteristiche elettriche SX1301}
 \label{tab:sx1301_spec}
 \end{table}
@@ -232,7 +188,7 @@ si hanno valori di corrente pari a 1[uA] in idle  e di 5[mA] in pieno
 funzionamento.
 \begin{table}[th]
         \centering 
-                \includegraphics[width=16cm]{SX1301_table_1}
+                \includegraphics[width=12cm]{SX1301_table_1}
         \caption{Caratteristiche elettriche SX1301}
         \label{tab:sx1301_spec_1}
 \end{table}
@@ -247,18 +203,62 @@ inoltre ha connettività Bluetooth, WiFi e GPS. Al suo interno è installo
 Everyware™ Software Framework (ESF) versione 5.
 \begin{figure}[th]
         \centering 
-                \includegraphics[width=11cm]{Reliagate_10_11}
+                \includegraphics[width=6cm]{Reliagate_10_11}
         \caption{ReliaGATE 10-11}
         \label{fig:ReliaGATE}
 \end{figure}
 
 
 
-\section{Realizzazione}
+\section{Architettura del software}
+Per integrare ESF con il ricevitore lora SX1301, è stato necessario l'utilizzo
+di due software aggiuntivi.
+Il primo è LoRa packet forwarder fornito da Semtech. Questo
+applicativo permette di comunicare con le periferiche di basso livello presenti
+nel ReliaGATE 10-11 in modo da astrarre ad un più alto livello i dati ricevuti dal
+ricevitore .
+L'altra applicazione utilizzata, è LoRa Gateway Bridge. Tramite questa
+applicazione è stato possibile 
+reindirizzare i dei dati forniti dal packet forwarder ad un server MQTT.
 
+\begin{figure}[th]
+        \centering 
+                \includegraphics[width=8cm]{Application_layer}
+        \caption{Architettura del software}
+        \label{fig:Software_stack}
+\end{figure}
+
+\subsection{Semtech packet forwarder}
+Il packet forwarder è un software che permette la ricezione e l'invio di pacchetti radio Lora ,
+tramite una connessione SPI con il device SX1301. Nel caso di ricezione di un
+pacchetto, l'applicativo incapsula i dati ricevuti in un formato UDP, e li
+ritrasmette nella rete internet/intranet. Per la sua configurazione viene
+utilizzato un file Json nel quale troviamo tutte le varie opzioni di
+configurazione per i moduli radio presenti al interno del chip.
+\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/global_json.conf}
+\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+framesep=2mm, firstline=173,lastline=184]{json}{Code_Files/global_json.conf}
+
+\subsection{LoRa Gateway Bridge}
+LoRa Gateway Bridge è un applicativo in grado di identificare i vari pacchetti UDP inviati
+dal packet forwarder e inoltrarli ad un Broker MQTT. 
+Il software è scritto nel linguaggio GO e permette una configurazione tramite
+linea di comando.  Per renderlo interfaciabile con ESF, sono state apportate delle 
+modifiche al codice; in particolare è stata aggiunta la possibilità di
+specificare il publish e il subscribed topic, i quali erano hard-coded.
+%\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+%framesep=2mm, firstline=1,lastline=23]{go}{Code_Files/bridge_mqtt.go}
+Il codice sottostante, rappresenta un esempio di pacchetto LoRa inoltrato dal
+LoRa Gateway Bridge ad un broker MQTT
+\inputminted[mathescape, gobble=2, frame=lines, linenos=true
+framesep=2mm, firstline=1,lastline=23]{json}{Code_Files/message.json}
+
+\subsection{Bundle OSGi}
 Per gestire i due software preinstallati si è optato per la creazione di due
 applicativi osgi distinti Lora Config e Mqtt Bridge.
-\subsection{Lora Config}
+
+\subsubsection{Lora Config}
 Il primo applicativo chiamato Lora Config si pone il compito di leggere ed
 interpretare il file di configurazione utilizzato dal programma \emph{Packet
 Forwarder}, per poi andare ad esporre i parametri principali all'utente tramite
@@ -267,7 +267,7 @@ La libreria utilizzata per manipolare i file di tipo Json è
 
 \mint{Java}|import com.eclipsesource.json|
 
-Tramite la quale vengono riempiti i campi della classe LoraSettings. Il file
+Tramite questa libreria vengono riempiti i campi della classe LoraSettings. Il file
 Json è composto da due parti. Nella prima parte
 troviamo tutte le impostazioni per la configurazione dei canali (IF0 a IF7)
 , nella seconda
@@ -278,8 +278,6 @@ SX1301Configuration e GatewayConfiguration, accessibili tramite la classe LoraSe
 \begin{minted}[linenos=true, numbersep=5pt, gobble=2, frame=lines, %
 framesep=2mm]{java}
     public class LoraSettings {
-            public static final String KEY_GATEWAY_CONFIG = "gateway_conf";
-            public static final String KEY_SX1301 = "SX1301_conf";
             private SX1301Configuration sx1301Conf;
             private GatewayConfiguration gatewayConf;
        } 
@@ -333,7 +331,7 @@ framesep=2mm]{java}
 
 
 
-\subsection{Mqtt Bridge Config}
+\subsubsection{Mqtt Bridge Config}
 Il secondo bundle prende il nome di MQTT Bridge Config e ha lo scopo 
 di esporre , tramite l'interfaccia web di ESF, le varie opzioni a linea di
 comando dell'applicativo
@@ -361,24 +359,30 @@ Tramite l'interfaccia web è possibile modificare i seguenti parametri:
 %\end{figure}
 
 \section{Misurazioni}
-Finito lo sviluppo dei bundle, si è scelto di testare la distanza massima
-di comunicazione raggiungibile dall'hardware in possesso. 
-Il device utilizzato per l'invio dei pacchetti LoRa è prodotto dalla Semtech e
-prende il nome di LoRa Mote.
-\begin{figure}[th]
-        \centering 
-                \includegraphics[width=4cm]{LoRaMote_no_wave}
-        \caption{Dispositivo LoRa Mote}
-        \label{fig:Software_stack}
-\end{figure}
+
+Uno degli aspetti più discussi riguardo alle tecnologie LPWAN è la massima coper-
+tura raggiungibile. E’ un dettaglio cruciale per la stima corretta dei costi necessari
+alla creazione di una rete pubblica o privata. 
+Per questo motivo terminato lo sviluppo dei bundle si è scelto di testare la
+copertura fornita dal ricevitore SX1301.
 In via sperimentale è stato installato  il gateway
-ReliaGATE 10-11 ad una altezza di circa 11m. La prova di ricezione è stata condotta per
-tentativi cercando , per quanto possibile, di testare diversi punti distribuiti
-alla stessa distanza radiale. 
+ReliaGATE 10-11 ad una altezza di circa 11m in una zona suburbana pianeggiante.
 \begin{figure}[th]
         \centering 
                 \includegraphics[width=10cm]{casa}
         \caption{Installazione dell'antenna}
+        \label{fig:Software_stack}
+\end{figure}
+La prova di ricezione è stata condotta per
+tentativi cercando , per quanto possibile, di testare diversi punti distribuiti
+alla stessa distanza radiale. 
+Il dispositivo utilizzato per l'invio dei pacchetti LoRa è prodotto dalla
+Semtech e prende il nome di LoRa Mote.
+
+\begin{figure}[th]
+        \centering 
+                \includegraphics[width=4cm]{LoRaMote_no_wave}
+        \caption{Dispositivo LoRa Mote}
         \label{fig:Software_stack}
 \end{figure}
 Per constatare l'avvenuta ricezione del
@@ -393,24 +397,21 @@ broker open source \href{http://mosquitto.org/}{"mosquitto.org"}.
 
 \begin{figure}[th]
         \centering 
-                \includegraphics[width=16cm]{map}
+                \includegraphics[width=12cm]{map}
         \caption{Copertura Lora}
         \label{fig:map}
 \end{figure}
-Nella mappa ogni colore corrisponde ad un livello  RSSI ( Received
-Signal Strength Indicator) con cui il quale il messaggio inviato in quel punto 
-è stato ricevuto.
-Dovendo testare la massima distanza di comunicazione, l'algoritmo ADR è stato disattivato,
-permettendo così al device di non cambiare configurazione durante i vari test.
-LoRa Mote è stato configurato 
-per l'invio di messaggi con uno Spread Factor pari a 12 e una larghezza
-di banda pari a 125[Khz]. L'ambiente circostante
-al luogo dove l'antenna è stata situata è un ambiente suburbano pianeggiante.
-La distanza massima raggiunta varia di alcuni chilometri in base alla
-conformazione del territorio. In assenza di edifici in linea d'aria tra gateway
-e il dispositivo LoRa Mote, è stato possibile ricevere correttamente un 
-pacchetto alla distanza di 8,2[Km].
-Per quanto concerne i risultati ottenuti sono inferiori rispetto a quelli
-dichiarati da Semtech. È bene però ricordare che l'antenna utilizzata per
-effettuare la prova, non è adatta per applicazioni esterne. 
-
+Nella mappa ogni colore corrisponde ad un livello  RSSI ( Received Signal
+Strength Indicator) con cui il quale il messaggio inviato in quel punto è stato
+ricevuto.  Dovendo testare la massima distanza di comunicazione l'algoritmo ADR
+è stato disattivato, permettendo così al device di non cambiare configurazione
+durante i vari test.  LoRa Mote è stato configurato per l'invio di messaggi con
+uno Spread Factor pari a 12 e una larghezza di banda pari a 125[Khz]. 
+La distanza massima raggiunta varia di alcuni chilometri in base
+alla conformazione del territorio. In assenza di edifici in linea d'aria, tra
+gateway e il dispositivo LoRa Mote, è stato possibile ricevere correttamente un
+pacchetto alla distanza di 8,2[Km].  È utile ricordare che l'antenna utilizzata non apportava nessun guadagno al
+ricevitore, infatti è un'antenna adatta alla prototipazione e non ad un
+utilizzo esterno.
+Considerato questo ultimo fatto è possibile affermare che i risultati ottenuti sono in
+linea con quelli dichiarati da Semtech.

@@ -2,19 +2,19 @@
 Il successo delle reti LPWAN risiede nella loro abilità di offrire una
 connessione, a bassa potenza, per connettere un gran numero di  dispositivi distribuiti in una
 vasta area geografica. 
-Una delle  tecnologie che sta riscuotendo un grande successo ,nel
+Una delle  tecnologie che sta riscuotendo un grande successo in 
 ambito europeo, è LoRa.
 Brevettata dalla francese Cycleo e successivamente acquistata da Semtech, LoRa 
  offre un buon compromesso tra data-rate,
 durata della batteria e distanza di comunicazione.
 Grazie all'adozione di un protocollo open source, la facile implementazione della rete
-ed il costo contenuto dei moduli radio, LoRa, ha già una grande community attiva alle
-spalle. Per comprender il funzionamento di questa tecnologia, ed i vantaggi che ne
-derivano dal suo utilizzo , è necessario
+ed il costo contenuto dei moduli radio, LoRa, ha già una vasta community attiva alle
+spalle. Per comprendere il funzionamento di questa tecnologia, ed i vantaggi che ne
+derivano rispetto alle tecnologie concorrenti , è necessario
 studiare la modulazione alla base del layer fisico.
 
 \section{Narrow Band e Spread Spectrum}
-Per garantire la copertura wireless di una vasta area geografica, le retei LPWAN 
+Per garantire la copertura wireless di una vasta area geografica, le reti LPWAN 
 sono state ideate basandosi su  bilanci di
 collegamento (link budget) ideali  dell'ordine dei 150$\pm$ 10[dB]. 
 Queste specifiche, permettono  un range di operatività
@@ -49,7 +49,7 @@ Questa modulazione assegna ad ogni portante una banda di appena 100[Hz],
 riducendo in maniera drastica il data-rate ed  i vari scenari applicativi. 
 
 \subsection{Spread spectrum} 
-Per  Spread spectrum si intende una tecnica di trasmissione
+Per  Spread spectrum si intende un tecnica di trasmissione
 in grado di diffondere il segnale informativo in una banda più ampia di quella
 originariamente occupata dal segnale. Come risultato otteniamo una trasmissione 
 che incorpora un quantitativo di  rumore maggiore all'interno del singolo canale
@@ -59,7 +59,7 @@ naturali, al rumore e agli attacchi basati sul jamming.
 Per ottimizzare l'uso dello spettro, è possibile inviare segnali composti da  
 frequenze ortogonali tra loro, in questo modo è realizzabile la decodifica in maniera
 concorrente di segnali diversi, andando ad aumentare la capacità della rete.
-LoRa utilizza una  modulazione basata su di una tecnica di a 
+LoRa utilizza un sistema di modulazione basato su di una tecnica  a 
 spettro espanso che prende il nome di Chirp Spread Spectrum (CSS).
 \section{Layer fisico LoRa}
 \subsection{Chirp Spread Spectrum}
@@ -82,7 +82,7 @@ istantanea e  $c(t)$ \ref{eq:3} .
 \begin{equation}\label{eq:3}
         c(t) = \frac{1}{2\pi}\frac{d^2\theta(t)}{dt^2} = \frac{d\gamma(t)}{dt}
 \end{equation}
-A seconda di come vine scelta la funzione $\theta(t)$ il segnale avrà
+A seconda di come viene scelta la funzione $\theta(t)$ il segnale avrà
 andamenti diversi nel dominio del tempo; per semplificare la modulazione e
 demodulazione di quest'ultimo, LoRa utilizza una variazione lineare della frequenza.
 Il modo più semplice per ottenere un segnale siffatto, è andando a scegliere $\theta(t)$
@@ -230,7 +230,7 @@ documentazione ufficiale \cite{Basic_lora}.
 
 Dove $T_s$ rappresenta il tempo necessario per
 l'invio del simbolo, $X$ lo Spreading Factor usato e $B$ la banda.
-Ponendoci nel caso in cui la banda utilizzata nella comunicazione sia fissata a
+Ponendoci nella situazione in cui la banda utilizzata nella comunicazione sia fissata a
 priori; la variazione di un'unita dello SF comporterà una durata doppia del
 tempo di comunicazione.
 Analogamente un incremento della banda $B$ comporterà un
@@ -269,7 +269,7 @@ tecnologia LoRa è stata costruita.  Per ottenere una durata della batteria pari
 ad una decina d'anni, è necessario che i devices spendano la maggior parte del
 tempo in modalità deep-sleep e comunichino con il server solo in presenza di
 input esterni o all'attivazione di un timer.  Inoltre, per utilizzare
-le risorse in maniera ancora più efficace, i devices non implementa nessun tipo
+le risorse in maniera ancora più efficace, i devices non implementano nessun tipo
 di sincronizzazione con i gateways. La scelta di una comunicazione asincrona, ha
 portato alla implementazione di un "pacchetto fisico" costruito in questo
 modo:
@@ -394,7 +394,7 @@ Nella documentazione LoRaWAN sono definite tre classi di dispositivi ideate per
 diversi tipi di utilizzo. La classe principale è la classe \emph{A}, questa
 classe è implementata in ogni dispositivo ed è quella focalizzata al risparmi
 energetico. Le classi \emph{B}, e
-\emph{C} invece,sono una estensione della classe \emph{A}. Questo tipo di classi sono
+\emph{C} sono invece delle estensione della classe \emph{A}. Questo tipo di classi sono
 riservate a oggetti  alimentati tramite la rete elettrica oppure tramite 
 fonti di energia esterne.  
 \begin{itemize}
@@ -414,7 +414,7 @@ fonti di energia esterne.
         \item   \textbf{Class C} è anch'essa una estensione della classe \emph{A}. 
                 Questa classe permette il funzionamento quasi complementare del device; infatti
                 un  dispositivo di tipo \emph{C} rimarrà continuamente in ascolto finché non
-                necessiterà di comunicare lui stesso con il gateway. Ovviamente, rimanendo per la
+                necessita di comunicare lui stesso con il gateway. Ovviamente, rimanendo per la
                 maggior parte del tempo in ascolto, i devices che operano con questa classe
                 dovranno essere connessi ad una fonte di energia esterna. 
 \end{itemize}
@@ -432,7 +432,7 @@ Il protocollo  LoRaWAN supporta sia le frequenze che vanno dagli
 863-868[MHz] sia la banda dei 433[MHz]. Per la banda  nella fascia
 degli 860[MHz], LoRaWAN specifica tre diversi canali (868.10, 868.30 and 868.50
 MHz), con una bandwidth di 125[KHz] ciascuno, i quali dovranno essere supportati
-da ogni device. Inoltre, ogni gateway dovrà
+da ogni devices. Inoltre, ogni gateway dovrà
 rimanere in ascolto su tutti e tre questi canali, in particolare, essi
 formano un set comune utilizzabile nella \emph{join procedure} di un nuovo
 device. Per
@@ -457,27 +457,42 @@ l'utilizzo di duty cycle inferiori al 1\% e per i 433 duty cycle inferiori al
         \caption{Bande di frequenza per le varie regioni}
 \end{table}
 
-\subsection{Sicurezza }
-Un aspetto fondamentale che non viene sottovalutato nella specifica LoRaWAN è la
-sicurezza. Ogni device LoRa implementa al suo interno due chiavi di sicurezza
-uniche \emph{AppSkey} e \emph{NwkSkey} ,le quali sono criptate secondo le
-specifiche AES a 128 bits.
-La network session key (NwkSkey) è la chiave che viene utilizzata per garantire
-l'affidabilità nella comunicazione tra dispositivo e la rete. Questa chiave
-inoltre, è utilizzata per verificare la validità del messaggio tramite la
-procedura di controllo MIC (Message Integrity Check). 
-L'application session key (AppSkey) viene utilizzata per la criptazione e
-decriptazione del payload. Tramite questa chiave viene garantito lo scambio di informazioni 
-in modo sicuro tra il device layer e l'application layer. 
-Queste due chiavi (AppSkey, NwkSkey) sono uniche per ogni devices, e vengono
-rigenerate ad ogni volta che il dispositivo si spegne o cambia rete. 
-Se il devices è attivato ,in modo dinamico, tramite
-la procedura OTAA (\emph{Over the air activation}) queste chiavi vengono
-generate utilizzando una terza chiave chiamata \emph{AppKey} sempre lunga
-128 bits. Contrariamente, i devices che utilizzano la procedura APB
-(\emph{Activation by personalization}), manterranno invariate le chiavi anche per
-sessioni diverse, rendendo necessario un intervento manuale nella eventualità di
-un aggiornamento delle stesse.
+\subsection{Pacchetto LoRaWAN}
+\begin{figure}[h]
+        \centering 
+                \includegraphics[width=11cm]{LoRaWAN_packet}
+        \caption{Stack del protocollo della rete LoRaWAN}
+        \label{fig:stack_lora}
+\end{figure}
+All'interno del frame \emph{PHYPayload} del pacchetto LoRa,  è contenuto il
+messaggio LoRaWAN il quaele è strutturato in questo modo: 
+\begin{itemize}
+        \item   \textbf{MHDR:} Il MAC Header compone la prima parte del pachetto
+                , la quale si divide in tre sottocampi. Il primo specifica il
+                tipo di messagio nel campo MType che può essere di 6 tipi
+                diversi, rappresentati da 3 bit ciascuno. Major specifica il
+                formato dei messagi scambiati nella procedura di join ed i primi
+                4 bytes del MAC Payload.
+        \item   \textbf{MACPayload:} è composto da \textit{Frame header}(FHDR)
+                il quale indica a quale nodo va inviato/arriva il pacchetto ed è
+                utilizzato per l'algoritmo ADR. Il secondo campo è il 
+                \textit{Frame counter}, nel quale sono presenti due contatori,
+                uno per il numero di messaggi in uplink (FCntUp) inviati dal nodo,
+                il secondo per quelli ricevuti (FCntDown). Oltre a questi due frame è
+                presente il \textit{FPoprt} il quale è opzionale e indica la
+                presenza o meno di \textit{FRMPayload} dove è contenuta
+                l'informazione.
+        \item   \textbf{MIC:} acronimo di Message Integrity Check, è un codice
+                che vine calcolato per ogni pachetto e definisce l'integrità del
+                messaggio.
+\end{itemize}
+
+Per gestire la rete esiste una lista di MAC command che possono essere scambiati
+esclusivamente fra il server e MAC layer di un end-device. Non possono essere
+visibili alle applicazioni nel server o nei nodi. I più importanti sono:
+\textit{LinkCheckReq} viene utilizzato da un nodo per validare la connessione con la
+rete; \textit{LinkADRReq} è una richiesta per il nodo in cui viene chiesto di cambiare
+data-rate, potenza in trasmissione, canale, o rate di ritrasmissione;
 
 \section{Adaptive Data Rate}
 Adaptive data rate (ADR), è un meccanismo utilizzato per ottimizzare il data
@@ -501,10 +516,33 @@ trova ad una distanza ravvicinata dal gateway e non sono presenti elementi che
 possono interferire con la comunicazione; avendo un margine pari a 22[dB] è
 ragionevole andare ad abbassare il SF di 2-3 valori (10/9 SF) oppure andare a
 diminuire la potenza con cui il nodo trasmette. Determinare i parametri ottimi
-con cui questi device devono operare non è una scelta semplice, essa varia dalla
-regione in cui i devices operano e dallo stato della rete. Un possibile
+con cui questi devices devono operare non è una decisione semplice, essi
+variano dalla regione in cui i devices operano e dallo stato della rete. Un possibile
 algoritmo utilizzabile è quello consigliato da Semtech nella documentazione
 ufficiale.
+
+\subsection{Sicurezza }
+Un aspetto fondamentale che non viene sottovalutato nella specifica LoRaWAN è la
+sicurezza. Ogni nodo LoRa implementa al suo interno due chiavi di sicurezza
+uniche \emph{AppSkey} e \emph{NwkSkey} ,le quali sono criptate secondo le
+specifiche AES a 128 bits.
+La network session key (NwkSkey) è la chiave che viene utilizzata per garantire
+l'affidabilità nella comunicazione tra dispositivo e la rete. Questa chiave
+inoltre, è utilizzata per verificare la validità del messaggio tramite la
+procedura di controllo MIC (Message Integrity Check). 
+L'application session key (AppSkey) viene utilizzata per la criptazione e
+decriptazione del payload. Tramite questa chiave viene garantito lo scambio di informazioni 
+in modo sicuro tra il device layer e l'application layer. 
+Queste due chiavi (AppSkey, NwkSkey) sono uniche per ogni devices, e vengono
+rigenerate ad ogni volta che il dispositivo si spegne o cambia rete. 
+Se il devices è attivato ,in modo dinamico, tramite
+la procedura OTAA (\emph{Over the air activation}) queste chiavi vengono
+generate utilizzando una terza chiave chiamata \emph{AppKey} sempre lunga
+128 bits. Contrariamente, i nodi che utilizzando la procedura APB
+(\emph{Activation by personalization}), manterranno invariate le chiavi anche per
+sessioni diverse, rendendo necessario un intervento manuale nella eventualità di
+un aggiornamento delle stesse.
+
 
 \section{Limitazioni}
 Essendo una tecnologia molto giovane, non sono ancora chiari i limiti della
@@ -522,7 +560,7 @@ base dei dati forniti da Semtech .
 Il grafico \ref{fig:collision} è tratto dalla simulazione di Maarten
 Wey. In esso sono riportate ill numero di collisioni
 avvenute durante la simulazione di una rete LoRa, alla quale erano connessi 1000
-devices tramite un solo gateway. In questa simulazione viene messo in evidenza
+nodi tramite un solo gateway. In questa simulazione viene messo in evidenza
 come all'aumentare del numero di messaggi inviati in un minuto, la percentuale
 di errore nello scambio dei dati aumenta in maniera lineare.
 In concordanza con questi risultati, la ricerca effettuata
