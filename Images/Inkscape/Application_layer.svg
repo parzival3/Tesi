@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="12cm"
-   height="16cm"
+   height="13cm"
    viewBox="0 0 0 425.19683"
    id="svg2"
    version="1.1"
@@ -628,17 +628,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.593438"
-     inkscape:cx="262.47339"
-     inkscape:cy="320.40641"
+     inkscape:zoom="1.0029472"
+     inkscape:cx="88.326"
+     inkscape:cy="427.02076"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      units="cm"
-     inkscape:window-width="1676"
-     inkscape:window-height="1029"
+     inkscape:window-width="1916"
+     inkscape:window-height="1059"
      inkscape:window-x="0"
      inkscape:window-y="17"
      inkscape:window-maximized="0">
@@ -662,14 +662,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-485.43321)">
+     transform="translate(0,-591.73242)">
     <rect
        style="opacity:1;fill:#ffe680;fill-opacity:1;stroke:#000000;stroke-width:0.19429296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4138-3-2-0"
        width="135.20296"
        height="59.380497"
        x="0.23698854"
-       y="619.87305"
+       y="720.57623"
        ry="9.4068098" />
     <rect
        style="opacity:1;fill:#eeaaff;fill-opacity:1;stroke:#000000;stroke-width:0.19429296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -677,11 +677,11 @@
        width="135.20296"
        height="59.380497"
        x="0.37600565"
-       y="717.14246"
+       y="817.84564"
        ry="9.4068098" />
     <path
        style="fill:#1a1a1a;fill-rule:evenodd;stroke:#000000;stroke-width:0.57736284px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Lstart-97)"
-       d="m 128.89515,765.14228 56.46423,-21.72837"
+       d="m 128.89515,865.84549 56.46423,-21.72837"
        id="path4474-9"
        inkscape:connector-curvature="0" />
     <rect
@@ -771,7 +771,7 @@
          y="892.33655">SPI</tspan></text>
     <g
        id="g4446"
-       transform="matrix(1.0863917,0,0,1.0863917,9.663009,-183.46214)">
+       transform="matrix(1.0863917,0,0,1.0863917,9.663009,-82.758934)">
       <rect
          ry="8.6587639"
          y="789.2674"
@@ -794,7 +794,7 @@
     </g>
     <path
        style="fill:#1a1a1a;fill-rule:evenodd;stroke:#000000;stroke-width:0.49546093px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1-0)"
-       d="m 243.10024,732.55237 48.45449,-18.64609"
+       d="m 243.10024,833.25558 48.45449,-18.64609"
        id="path4474-9-2"
        inkscape:connector-curvature="0" />
     <text
@@ -810,7 +810,7 @@
          y="945.94659">SX1301</tspan></text>
     <a
        id="a4431"
-       transform="matrix(0.71819482,0,0,0.71819482,-60.114358,421.45253)">
+       transform="matrix(0.71819482,0,0,0.71819482,-60.114358,522.15574)">
       <g
          transform="matrix(0.30269571,0,0,0.28662514,234.96867,69.734581)"
          id="g4410">
@@ -868,32 +868,32 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.21671104px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="68.363327"
-       y="749.54285"
+       y="850.24603"
        id="text4225"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4227"
          x="68.363327"
-         y="749.54285">Pkt forwarder</tspan></text>
+         y="850.24603">Pkt forwarder</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.21671104px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.40000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        x="69.440498"
-       y="654.43622"
+       y="755.1394"
        id="text4229"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4231"
          x="69.440498"
-         y="654.43622">Mqtt Bridge</tspan></text>
+         y="755.1394">Mqtt Bridge</tspan></text>
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.54158896px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-5-5);marker-end:url(#marker17476-4-9)"
-       d="m 70.566724,723.66276 0,-54.15889"
+       d="m 70.566724,824.36597 0,-54.15889"
        id="path17338-6-7"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.80707222;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.42121663, 0.80707221;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow2Lstart-5-5-4);marker-end:url(#marker17476-4-9-2)"
-       d="m 101.44288,631.12775 42.90791,-68.35612"
+       d="m 101.44288,731.83096 42.90791,-68.35612"
        id="path17338-6-7-4"
        inkscape:connector-curvature="0" />
     <path
@@ -913,20 +913,20 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.82783049;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.48349148, 0.82783049;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow2Lstart-5-5-4-6);marker-end:url(#marker17476-4-9-2-9)"
-       d="M 197.09148,560.58345 242.81924,678.0922"
+       d="m 197.09148,661.28666 45.72776,117.50875"
        id="path17338-6-7-4-6"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:28.51778221px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="174.21542"
-       y="548.07275"
+       y="648.77594"
        id="text34222"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan34224"
          x="174.21542"
-         y="548.07275"
+         y="648.77594"
          style="font-size:13.57989693px">Cloud</tspan></text>
     <flowRoot
        xml:space="preserve"
@@ -945,27 +945,27 @@
        width="71.144676"
        height="31.246407"
        x="183.10902"
-       y="721.82782"
+       y="822.53101"
        ry="4.949924" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.86391735px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="218.99477"
-       y="741.33722"
+       y="842.04041"
        id="text4451"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4453"
          x="218.99477"
-         y="741.33722">Lora Config</tspan></text>
+         y="842.04041">Lora Config</tspan></text>
     <path
        style="fill:#00112b;fill-rule:evenodd;stroke:#000000;stroke-width:0.54210949;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Lstart-3)"
-       d="m 132.34194,656.8511 54.65286,15.29225"
+       d="m 132.34194,757.55431 54.65286,15.29225"
        id="path4474-4"
        inkscape:connector-curvature="0" />
     <path
        style="fill:#1a1a1a;fill-rule:evenodd;stroke:#000000;stroke-width:0.4350737px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-1-05)"
-       d="m 249.98836,681.53771 42.57845,16.29623"
+       d="m 249.98836,782.24092 42.57845,16.29623"
        id="path4474-9-29"
        inkscape:connector-curvature="0" />
     <rect
@@ -974,48 +974,23 @@
        width="71.144676"
        height="31.246407"
        x="182.79376"
-       y="663.78192"
+       y="764.48511"
        ry="4.949924" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.86391735px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="217.04388"
-       y="684.61841"
+       y="785.32159"
        id="text4455"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4457"
          x="217.04388"
-         y="684.61841">Mqtt Bridge</tspan></text>
-    <rect
-       style="opacity:1;fill:#ffaacc;fill-opacity:1;stroke:#000000;stroke-width:0.19429296;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4138-0"
-       width="135.20296"
-       height="59.380497"
-       x="0.7174629"
-       y="812.68048"
-       ry="9.4068098" />
+         y="785.32159">Mqtt Bridge</tspan></text>
     <path
        style="fill:#b3b3b3;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.54158896px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart);marker-end:url(#marker17476)"
        d="m 70.45781,918.99309 0,-54.1589"
        id="path17338"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.57989693px;line-height:125%;font-family:'Droid Serif';-inkscape-font-specification:'Droid Serif, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="70.364319"
-       y="846.46149"
-       id="text4530"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4532"
-         x="70.364319"
-         y="846.46149"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.57989693px;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono'">OS</tspan></text>
-    <path
-       style="fill:#b3b3b3;fill-rule:evenodd;stroke:#b3b3b3;stroke-width:0.54158896px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Lstart-37);marker-end:url(#marker17476-5)"
-       d="m 69.63063,821.97081 0,-54.1589"
-       id="path17338-6"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

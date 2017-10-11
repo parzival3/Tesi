@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{First settings}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Themes, colors and fonts}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Frame numeration and foot}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Aspect ratio}{8}{0}{1}
+\beamer@sectionintoc {2}{Presentation elements}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Highlight current section}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Columns}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Images, videos and attachments}{12}{0}{2}
+\beamer@subsectionintoc {2}{4}{Overlays: pause, visible, unconver, only}{15}{0}{2}
+\beamer@subsectionintoc {2}{5}{Tables}{17}{0}{2}
+\beamer@subsectionintoc {2}{6}{Text blocks, definitions, theorems and proofs}{18}{0}{2}
+\beamer@subsectionintoc {2}{7}{Mathematical content}{20}{0}{2}
+\beamer@sectionintoc {3}{Presentation handout}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Handout option}{22}{0}{3}

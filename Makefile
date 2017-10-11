@@ -21,7 +21,7 @@ view: compile
 
 clean: 
 	rm -f *.aux
-#	rm -f *.log
+	rm -f *.log
 	rm -f *.toc
 	rm -f *.lof
 	rm -f *.out

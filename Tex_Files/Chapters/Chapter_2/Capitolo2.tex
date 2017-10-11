@@ -1,36 +1,35 @@
 \chapter{LPWAN}
 Data la grande varietà dei possibili scenari applicativi dell'IoT , trovare uno standard
 capace di adattarsi, in modo dinamico, ad ognuno di essi, non è un compito
-facile. Le tecnologie wireless tradizionali, non sono in grado di soddisfare
+facile. Le tecnologie wireless tradizionali non sono in grado di soddisfare
 la dinamicità  di questo paradigma.
 Già diverse soluzioni sono nate per cercare di fronteggiare questi
 problemi, optando per metodi risolutivi  anche molto distanti l'uno dall'altro.
-Con questo capitolo si approfondiranno le problematiche, che i nuovi standard, riguardanti il
-network layer, dovranno essere in grado di risolvere.
+Con questo capitolo si approfondiranno le problematiche, che i nuovi standard riguardanti il
+network layer dovranno essere in grado di risolvere.
 \section{Alla base delle reti LPWAN}  
-Le tecnologie wireless com ZigBee, WiFi, non sono ideate per connettere devices
+Le tecnologie wireless come ad esempio ZigBee, WiFi, non sono ideate per connettere devices
 alimentati a batteria distribuiti in una vasta area geografica.
 Il range di queste tecnologie è limitato a poche centinaia di metri al massimo.
-Tutto ciò implica che i devices, non possono essere implementati in tutti gli
+Tutto ciò implica che i devices non possono essere implementati in tutti gli
 ambienti, ma solo in uno spazio ristretto alla portata del segnale del gateway.
 Quindi scenari quali la sicurezza sanitaria, agricoltura di precisione, logistica non
 permettono l'utilizzo di questa tecnologia.
 La grande copertura offerta dalle tecnologia cellulare è la ragione per la quale
 è ad oggi la tecnologia più utilizzata nelle comunicazioni M2M.
-Tuttavia, il continuo progresso tecnologico, sta portando l'abbandono della rete
-GSM da parte degli operatori telefonici, per poter riutilizzare le bande da essa
-occupata con tecnologie più innovative. In generale, la tecnologia cellulare non
+Tuttavia il continuo progresso tecnologico sta portando l'abbandono della rete
+GSM da parte degli operatori telefonici, in modo da riutilizzare le bande da essa
+occupata con tecnologie più innovative. In generale la tecnologia cellulare non
 garantisce una durata della batteria molto prolungata ed inoltre il costo
-complessivo dei moduli cellulari è molto elevato, data la complessità delle 
-forme d'onda .
+complessivo dei moduli cellulari è molto elevato.
 
-Dovendo ingegnerizzare il network layer, è importante capire quali sono le
+Dovendo ridisegnare il network layer, è importante capire quali sono le
 principali problematiche che le tecnologie attuali non sono in grado di colmare.
 
 \begin{itemize}
 \item \textit{Indirizzabilità}: a causa dell’elevato numero di oggetti che entrano in
-gioco in IoT, la capacità di indirizzamento di IPv4 non è più suffi-
-ciente. IPv4 usa 32 bit per gli indirizzi, quindi ce ne possono essere
+gioco in IoT, la capacità di indirizzamento di IPv4 non è più sufficiente. 
+IPv4 usa 32 bit per gli indirizzi, quindi ce ne possono essere
 massimo $2^{32}$ diversi. Il passaggio a IPv6 risolverà il problema, in quanto si passerà da
 32 bit a 128 bit per gli indirizzi. 
 \item \textit{Scalabilità}: Dato l'elevato numero di devices previsti nei scenari
@@ -40,21 +39,17 @@ adattabile, in modo dinamico, al carico di dispositivi connessi.
 po la formazione iniziale del sistema, non devono aver bisogno di
 configurazione, ma devono essere in grado di stabilire connessioni
 autonomamente con gli altri oggetti già presenti.
-\item \textit{Costo unitario}: Il costo del end device, dovrà essere conveniente
+\item \textit{Costo unitario}: Il costo del end-device, dovrà essere conveniente
 per garantire la più ampia fetta di mercato.
 \item \textit{Fonti di energia}: 
-Gli oggetti nella maggior parte dei casi sono mobili, quindi non han-
-no sempre la possibilità di essere collegati a una fonte di energia. Le
-batterie inoltre sono pesanti e grandi.È necessario quindi andare a ridurre la quantità 
-di energia richiesta dagli oggetti, andando ad aumentare il tempo di deep-sleep
-.
+Gli oggetti nella maggior parte dei casi sono mobili, quindi non hanno sempre la possibilità di essere collegati a una fonte di energia. 
+È necessario quindi andare a ridurre la quantità di energia richiesta dagli
+oggetti.
+
 \item \textit{Interoperabilità}: gli oggetti sono di natura diversa (per esempio
 possono avere requisiti di larghezza di banda diversi, o hardware diverso).
 Questo implica la necessità di standard, in modo che oggetti di tipo
 diverso possano comunicare tra loro
-\item \textit{Costo computazionale}: La modulazione, alla base di queste nuove
-tipologie di rete, dovrà essere concepita in modo da non richiedere un costo
-computazionale elevato .
 \item \textit{Raggio d'azione}: La necessità di utilizzare questi devices in ambienti
 difficili o rurali, rende necessario l'utilizzo di tecnologie wireless con un
 raggio di azione dell'ordine di una decina di chilometri.
@@ -66,7 +61,7 @@ nodo della rete,  non dovrà compromettere il funzionamento dell'intera rete a l
 
 \section{LPWAN}
 Per colmare il gap tra tecnologie esistenti e la
-necessita di connettere milioni di devices diversi, sono nate le  LPWAN
+necessita di connettere milioni di devices diversi sono nate le  LPWAN
 \emph{Low power wide area network}.
 Le reti LPWAN rappresentano un modello  di comunicazione
 innovativo, che integra le tecnologie cellulari tradizionali e quelle a corto
@@ -81,13 +76,13 @@ wireless tradizionali non è possibile realizzare.
     \caption{Comparazione tipologia di reti}
 \end{figure}
 
-In questo contesto, i maggiori competitor sono  NB-IoT, EC-GSM-IoT
+In questo contesto i maggiori competitor sono  NB-IoT, EC-GSM-IoT
 LTE-M, SigFox e Lora. Le prime tre  sono una evoluzione delle precedenti reti
-cellulari 2G,3G e 4G. Operando sulle bande di frequenza licenziate, e necessario
+cellulari 2G,3G e 4G. Operando sulle bande di frequenza licenziate, è necessario
 che ognuna di queste tecnologie sia approvata dalla 3GPP ( 3rd Generation
 Partnership Project), la quale si occupa della standardizzazione dei sistemi di
 telecomunicazione a livello internazionale.
-All'opposto, Sigfox e Lora sono due tecnologie che operano nelle frequenze ISM
+All'opposto Sigfox e Lora sono due tecnologie che operano nelle frequenze ISM
 (Industrial, Scientific and Medical). Le frequenze ISM sono uno spettro radio
 riservato alle applicazioni di radiocomunicazione non commerciali.
 
@@ -98,13 +93,13 @@ riservato alle applicazioni di radiocomunicazione non commerciali.
 \end{figure}
 
 In particolare entrambe le tecnologie operano  nella banda degli 868 [MHz]
-la quale permette una potenza del segnale inviato massima pari a 14 [dbm] ed un
+la quale permette una potenza del segnale inviato massima pari a 14 [dBm] ed un
 duty cycle che può variare dal 0.1\% fino al 10\% a seconda del canale scelto.
  
 \section{NB-IoT}
 Narrowband IoT (NB-IoT) o LTE Cat NB1 è uno standard certificato nella release 13 del 3GPP, la
 quale riutilizza le infrastrutture già presenti, quali 2G, 3G, 4G per la rapida
-realizzazione di una rete LPWA per l'IoT.
+realizzazione di una rete LPWAN.
 Focalizzandosi sulla durata della batteria, i moduli NB-IoT risultano avere un
 costo all'unità minore del 75\% rispetto ad un normale modulo LTE.
 Basato sulle frequenze licenziate, NB-IoT è in grado di
@@ -121,41 +116,38 @@ radio, per prevenire interferenze.
         \includegraphics[width=12cm]{nb-iot}
     \caption{Modalità di funzionamento NB-IoT}
 \end{figure}
-L'obbiettivo che NB-IoT si prefigge è quello di mettere a disposizione una
+L'obbiettivo che NB-IoT si prefigge, è quello di mettere a disposizione una
 tecnologia con una elevata copertura ed un basso data-rate. La possibilità di
-riutilizzare strutture già esistenti, ed il basso costo per device , rendo
-NB-IoT, una delle tecnologie che sta riscuotendo maggiore successo nel abito IoT.
+riutilizzare strutture già esistenti e il basso costo per device , rendo
+NB-IoT una delle tecnologie che sta riscuotendo maggiore successo nel abito IoT.
 
 
 
 \section{LTE-M}
-Dalla realise 8 del 3GPP, diverse nuove tipologie di rete LTE sono disponibili.
-La categoria che offre le migliori performance batteria/data-rate è la categoria
+Dalla realise 8 del 3GPP diverse nuove tipologie di rete LTE sono disponibili.
+La categoria che offre le migliori performance batteria/data-rate, è la categoria
 LTE Cat-M1 o LTE-M.
 Questa categoria ,a differenza del NB-IoT, rispecchia lo standard LTE in pieno, 
 implementando  la Frequency Division Multiplexing
 (FDM) e Time Division Multiplexing (TDM). Risultando adatta per applicazioni
 nelle quali è necessario l'invio di dati audio o video oppure per comunicazioni a
-bassa latenza . Il data-rate raggiungibile è pari a 5Mbps in
+bassa latenza . Il data-rate raggiungibile è pari a 5 [Mbps] in
 uplink e 10 [Mbps] in downlink .  Questo tipo di connessione sarà utile
 per tutte quelle applicazioni in cui è richiesta una elevata sicurezza del dato
 da trasmettere, come ad esempio applicazioni di video-sorveglianza o automotive
-.Questa tecnologia ,già disponibile negli Stati Uniti tramite la rete Verizon, è
-in fase di roll out per molti operatori europei.
+.
 
 \section{EC-GSM-IoT}
 EC-GSM-IoT si basa su funzionalità aggiuntive a partire da EGPRS che consentono
 ad una rete GSM/EDGE di essere predisposta per fornire servizi IoT. Lo standard
 è stato pensato in particolare per quei Paesi, come quelli in via di sviluppo,
 dove una rete LTE non è ancora disponibile. L’occupazione spettrale di ogni
-canale corrisponde a  200 kHz.  Tuttavia, al fine di dispiegare EC-GSM-IoT, si
-richiede una banda utile di 2.4 MHz per permettere il frequency hopping , che,
-con l’aggiunta di 2 canali di guardia di 200 kHz ciascuno agli estremi della
-banda, porta l’occupazione di banda complessiva a 2.8 MHz.  La
-potenza di trasmissione del Il data rate di picco raggiungibile sia in DL sia in
-UL è di 491 kbps, mentre il valore mediato nominale è di 98 kbps sia in DL sia
-in UL. Al fine di soddisfare i requisiti di capacità (più di 50.000 terminali in
-ogni singolo settore di una cella trisettoriale). 
+canale corrisponde a  200 [kHz].  Tuttavia, al fine di dispiegare EC-GSM-IoT, si
+richiede una banda utile di 2.4 [MHz] per permettere il frequency hopping , che,
+con l’aggiunta di 2 canali di guardia di 200 [kHz] ciascuno agli estremi della
+banda, porta l’occupazione di banda complessiva a 2.8 [MHz].  La
+potenza di trasmissione del Il data rate di picco raggiungibile sia in down link sia in
+up link è di 491 [kbps].
 
 La figura \ref{tab:IoT_cell_comp} riassume in breve le varie caratteristiche
 delle reti cellulari facenti parte della categoria LPWA
@@ -169,10 +161,10 @@ delle reti cellulari facenti parte della categoria LPWA
 
 
 \section{Sigfox}
-SigFox, azienda francese, sta sviluppando in partnership con altri operatori di
+SigFox sta sviluppando in partnership con altri operatori di
 rete una soluzione LPWAN basata sulla sua tecnologia. Sigfox punta alla
 costruzione di una rete mondiale proprietaria basata su frequenze ISM.
-Correntemente SigFox è presente in Francia, Belgio, Olanda e Portogallo come
+Correntemente SigFox è presente in Francia, Belgio, Olanda e Portogallo, come
 illustrato nella figura \ref{fig:Sig_covereg}.
 \begin{figure}[h]
     \centering 
@@ -188,14 +180,14 @@ della batteria pari ad una decina di anni, il numero massimo di messaggi
 inviabili in un giorno è 140, con lunghezza del payload pari a 12 [byte] e un
 throughput pari a 100 [bps]. SigFox si colloca come rete LPWAN con il minore
 throughput, limitando il numero di use-case possibili. Inizialmente SigFox
-supportava solo comunicazioni unidirezionali, successivamente, ha introdotto la
+supportava solo comunicazioni unidirezionali, successivamente ha introdotto la
 possibilità di avere una comunicazione bidirezionale, limitando il numero di
 byte trasmissibili da gateway a devices a 4-8 bytes per giorno.
 
 \section{LoRaWAN}
 \emph{LoraWAN} è una tecnologia di modulazione wireless semi-proprietaria 
-sviluppata da Semtech. Essa è composta da un layer fisico ,proprietario, che
-prende il nome di \emph{Lora}\cite{LoRaCss101} , e una parte libera chiamata 
+sviluppata da Semtech. Essa è composta da un layer fisico proprietario, che
+prende il nome di \emph{Lora}\cite{LoRaCss101}  e una parte libera chiamata 
 LoRaWAN\cite{LoRaWAN101} nella quale viene definito un protocollo di comunicazione, 
 il quale usa LoRa come layer fisico. 
 Basandosi su una tecnica di comunicazione a \emph{spread spectrum}, LoRa è in
@@ -203,19 +195,19 @@ grado di instaurare una comunicazione bidirezionale tra device e gateway.
 I punti chiave dei questa tecnologia sono il grande raggio di copertura , il 
 basso consumo energetico e la capacità di adattare in maniera dinamica il
 data rate, il quale può variare dai 0.3 ai 50 [Kbps] a seconda dell'utilizzo. 
-Come per SigFox, la tecnologia sviluppata da Semtech, si basa sulle bande ISM,
+Come per SigFox la tecnologia sviluppata da Semtech, si basa sulle bande ISM,
 inoltre Essendo il protocollo LoRaWAN open source, si ha la possibilità di
 creare delle reti pubbliche o private senza disporre di alcuna licenza, 
 riducendo così il time to market di questa tecnologia.  
 Progetti come \href{https://www.thethingsnetwork.org/}{The Things Network}
-mirano a creare una rete LoRa ,pubblica è privata,  a livello globale.
+mirano a creare una rete LoRa pubblica e privata  a livello globale.
 
 \section{Osservazioni}
-In questo mercato frammentato, non è semplice capire quale tecnologia sia adatta
-a ricoprire una data applicazione. Essendo questi standard molto giovani, è
+In questo mercato frammentato non è semplice capire quale tecnologia sia adatta
+a ricoprire una data applicazione. Essendo questi standard molto giovani è
 complicato comprendere le reali potenzialità di ognuna di queste soluzioni.
 Quello che è possibile prevedere, sarà un incremento esponenziale di device che
-stanno alla base della piramide in figura \ref{fig:pyramid}, devices i quali
+stanno alla base della piramide in figura \ref{fig:pyramid}, i  quali
 potranno essere utilizzati in innumerevoli settori, non ancora esplorati dalle
 tecnologie attuali, come per esempio i contatori della dell'acqua, applicazioni
 per l'agricoltura di precisione e così via. 
@@ -228,9 +220,9 @@ per l'agricoltura di precisione e così via.
 \end{figure}
 
 \pagebreak
-Per le aziende, che si apprestano ad investire sul mondo dell'IoT, la scelta
+Per le aziende che si apprestano ad investire sul mondo dell'IoT, la scelta
 della corretta tecnologia su cui andare a sviluppare i loro servizi non risulta
-semplice, in quanto, fattori quali sicurezza, aggiornamenti software,
+semplice, in quanto fattori quali sicurezza, aggiornamenti software,
 affidabilità devono essere ancora testati a pieno. Con la figura
 \ref{fig:feature_comp} si vuole riassumere in breve i punti chiave delle
 tecnologie appena trattate.
