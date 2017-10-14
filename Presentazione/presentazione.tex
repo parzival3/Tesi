@@ -1,0 +1,111 @@
+\title{A Very Simple \LaTeXe{} Template}
+\author{
+        Vitaly Surazhsky \\
+                Department of Computer Science\\
+        Technion---Israel Institute of Technology\\
+        Technion City, Haifa 32000, \underline{Israel}
+            \and
+        Yossi Gil\\
+        Department of Computer Science\\
+        Technion---Israel Institute of Technology\\
+        Technion City, Haifa 32000, \underline{Israel}
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This is the paper's abstract \ldots
+\end{abstract}
+
+\section{Prima slide}
+This is time for all good men to come to the aid of their party!
+
+\section{Seconda slide}
+\section{5 slide}
+All'interno del paradigma dell'IoT è possibile individuare 3 livelli, il primo
+chiamato device layer, è il livello base, formato da tutti i devices che generano i dati.
+Il secondo livello è fomrato dal network layer, il quale rappresenta il mezzo di
+comunicazione utilizzato dai devices per scambare le informazioni con il layer
+supueriore detto application layer. Questo layer è composto da tutte le
+applicazioni che gestiscono i devices ed i dati da essi ricevuti, questo livello
+è il livello più importante, è qui che andremo ad estrapolare l'imformazione
+persente all'interno di essi generando così il profitto e migliorando i servizi
+collegati ai nostri dispositivi.
+\section{6 slide}
+Aspettandoci un così alto numero di devices sorgno spontanee alcune domande..
+La principale è come riuscire a connettere tutti questi dispositivi
+contemporaneamente. 
+Attualmente le tecnologie wireless tradizionali non sono in grado di sopperire 
+alle problematiche che l'IoT introduce  
+\begin{itemize}
+	\item	\textbf{Scalabilità} è necessario che la rete alla base di questi devices
+			sia in grado di adattarsi in modo dinamico al numero di dispositivi
+			presenti.
+	\item	\textbf{Sicurezza} quando si parla di IoT è dobbligo parlare di
+			sicurezza, anche perchè i devices dovranno avere una. 
+	\item	\textbf{Durata della batteria} i dispositivi dovranno avere una
+			durata della batteria pari a circa 10 anni.
+	\item	\textbf{Raggio d'azione} la distanza con la quale questi devices
+			devono raggiungere deve essere pari ad una 10 di chilometri.
+	\item	\textbf{Costo} il prezzo del singolo devices deve essere basso.
+\end{itemize}
+Questo ha portato a ridisegnare il network layer.
+\section{7 slide}
+Con LPWAN o Low power wide area network si intendono tutte quelle tecnologie
+create appositaemente per l'iot. Come dice il nome, queste tecnologie sono nate
+per avere un basso consumo energetico, 
+\begin{itemize}
+	\item basso consumo energetico
+	\item poter connettere un elevato numero di dispositivi disposti in una
+		grande area geografica parliamo di alcune 10 di chilometri
+\end{itemize}
+Tutto ciò a discapito della data-rate raggiungibile dai nostri devices, ma
+questo non è un problema poichè le informazioni che questi dispositivi
+raccolgono sono piccole e quindi non è necessario disporre di una connessione
+veloce e a lagra banda.
+\section{8 slide}
+Una delle LPWAN più interessanti è lora. lora nasce dalla Francese Semtech ed è
+composta da due parti, una che rappresenta la modulazione con la quale i dati
+vengono inviati, chiamata appunto LoRa e l'altra e LoRaWAN che rappresenta il
+protocollo con il quale questi dati vengono scambiati. LoRa il layer fisico è
+basato su frequenze ISM Industrial Scentific Medical le quali permetto uno
+sviluppo molto veloce della rete rispetto ad tecnologie basate su frequenze
+licenziate come ad esempio la rete cellulare. Questa tecnologia ha una copertura 
+dichiarata da Semtech pari ad una decina di chilometri ed e studiata per essere 
+resistente alle interferenze riguardanti altre comunicazioni e riguardanti gli
+ostacoli come ad esempio pallazzi condomini ecc...  È così possibile riuscire a
+garantire una copertura di alcuni chilometri anche in aree urbane.
+Dall'altra parte LoRaWAN è un protocollo opensurce il quale definisce tre
+tipologie di funzionamento riguardanti il devices e inoltre definisce la
+topologia della rete, la quale è una topologi a stella.
+\section{9 slide}
+Una topologia di rete a stella è così formata, alla base ci sono i devices che
+inviano il messaggio tramite la modulazione LoRa a dei gateway. Questi gateway
+ricevuto il messaggio lora andranno ad inoltralo tramite una comunicazione
+ethernet 4G 3G all'application layer. I devices IoT sono studiati principalmente
+per spendere la maggior parte della loro vita in modalità deepsleep e risvegliarsi solo
+all'occorrere di un evento o alla attivazione di un interupt.
+Quando il messaggio viene inviato dal dispositivio, esso può essere ricevuto da
+uno o più gatewys. Starà quindi all'application layer eliminare i duplicati e
+scegliere il gateway più vicino per rispondere al dispositivo.
+\section{10 slide}
+Un altra problematica del mondo dell'IoT riguarda la architettura tarmite la
+quale vengono progettate le applicazioni che controllono questi dispositivi.
+Data la grande possibilità di scenari applicativi è necessario andare a
+riprogettare le applicazioni tradizionali basate su di una struttura monolitica
+andando a implementare quella che viene chiamata una struttura a microservizzi.
+
+
+
+\section{Conclusions}\label{conclusions}
+We worked hard, and achieved very little.
+
+\bibliographystyle{abbrv}
+\bibliography{simple}
+
+\end{document}
+This is never printed

@@ -46,7 +46,7 @@
      inkscape:zoom="1.1900092"
      inkscape:cx="418.37564"
      inkscape:cy="-10.291137"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="19"
      inkscape:window-maximized="0"
      inkscape:current-layer="surface45964">
@@ -684,7 +684,7 @@
            height="57.043468"
            x="335.72458"
            y="688.11591" /></flowRegion><flowPara
-         id="flowPara7105"></flowPara></flowRoot>    <text
+         id="flowPara7105" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="80.369431"
@@ -694,11 +694,13 @@
          sodipodi:role="line"
          id="tspan7115"
          x="83.474594"
-         y="715.44">Video surveillance , </tspan><tspan
+         y="715.44"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Video surveillance , </tspan><tspan
          sodipodi:role="line"
          x="80.369431"
          y="728.3866"
-         id="tspan7117">infotainment</tspan></text>
+         id="tspan7117"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">infotainment</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -709,11 +711,13 @@
          sodipodi:role="line"
          id="tspan7121"
          x="87.829597"
-         y="763.01941">Smart home,</tspan><tspan
+         y="763.01941"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Smart home,</tspan><tspan
          sodipodi:role="line"
          x="87.829597"
          y="775.96606"
-         id="tspan7123">tracking</tspan></text>
+         id="tspan7123"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">tracking</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -724,15 +728,18 @@
          sodipodi:role="line"
          x="68.570892"
          y="810.01508"
-         id="tspan7157">Smart meter,</tspan><tspan
+         id="tspan7157"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Smart meter,</tspan><tspan
          sodipodi:role="line"
          x="71.676056"
          y="822.96167"
-         id="tspan7306"> precision agriculture, </tspan><tspan
+         id="tspan7306"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"> precision agriculture, </tspan><tspan
          sodipodi:role="line"
          x="68.570892"
          y="835.90833"
-         id="tspan7131">food tracking</tspan></text>
+         id="tspan7131"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">food tracking</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -743,7 +750,8 @@
          sodipodi:role="line"
          id="tspan7135"
          x="392.48813"
-         y="720.08435">LTE-M</tspan></text>
+         y="720.08435"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">LTE-M</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -754,7 +762,8 @@
          sodipodi:role="line"
          id="tspan7139"
          x="398.84277"
-         y="769.16736">LoRa, LTE-M</tspan></text>
+         y="769.16736"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">LoRa, LTE-M</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -765,11 +774,13 @@
          sodipodi:role="line"
          x="401.65375"
          y="818.00665"
-         id="tspan7145">LoRa, SigFox, </tspan><tspan
+         id="tspan7145"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">LoRa, SigFox, </tspan><tspan
          sodipodi:role="line"
          x="398.54858"
          y="830.95325"
-         id="tspan7149">NB-IoT,EC-GSM-IoT</tspan></text>
+         id="tspan7149"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">NB-IoT,EC-GSM-IoT</tspan></text>
     <path
        style="opacity:1;fill:#ffaaaa;fill-opacity:1;stroke:#000000;stroke-width:0.11253645;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 207.89102,742.1765 c 0.12252,-0.16119 7.79722,-10.92725 17.05486,-23.9246 9.25764,-12.99734 16.86056,-23.60039 16.89539,-23.56232 0.0348,0.0381 7.71863,10.80414 17.07512,23.92461 l 17.01181,23.85537 -34.12999,0 c -27.2665,0 -34.08518,-0.0589 -33.90719,-0.29306 z"
@@ -846,7 +857,8 @@
          sodipodi:role="line"
          id="tspan7294"
          x="104.57355"
-         y="672.50256">Applications</tspan></text>
+         y="672.50256"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Applications</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -857,7 +869,8 @@
          sodipodi:role="line"
          id="tspan7298"
          x="236.53592"
-         y="671.83942">Data usage</tspan></text>
+         y="671.83942"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Data usage</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.3572998px;line-height:125%;font-family:'Andale Mono';-inkscape-font-specification:'Andale Mono, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -868,6 +881,7 @@
          sodipodi:role="line"
          id="tspan7302"
          x="358.55133"
-         y="673.82874">Technology</tspan></text>
+         y="673.82874"
+         style="-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal">Technology</tspan></text>
   </g>
 </svg>
