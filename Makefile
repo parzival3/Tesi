@@ -20,6 +20,7 @@ view: compile
 .PHONY: compile view clean
 
 clean: 
+	rm -f *.log
 	rm -f *.aux
 	rm -f *.log
 	rm -f *.toc
